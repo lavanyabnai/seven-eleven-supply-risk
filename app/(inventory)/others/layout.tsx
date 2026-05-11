@@ -90,14 +90,14 @@ export default function Layout({children}:{children:React.ReactNode}) {
                   href={item.to}
                   prefetch={true}
                   className={classNames(
-                    isActive ? "text-[#00e682]" : "text-black hover:text-black",
+                    isActive ? "text-[#198754]" : "text-black hover:text-black",
                     "group flex flex-col items-center rounded-md p-2 overflow-x-hidden"
                   )}
                 >
                   <div
                     className={classNames(
                       "flex h-12 w-12 items-center justify-center rounded-md",
-                      isActive ? "bg-black text-[#00e682]" : "text-black"
+                      isActive ? "bg-black text-[#198754]" : "text-black"
                     )}
                   >
                     <Icon className="size-7" />

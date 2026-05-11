@@ -18,7 +18,7 @@ export default function SidebarDemo({ sidebarMenu }: { sidebarMenu: any }) {
               href={item.to}
               key={index}
               className={classNames(
-                pathname === item.to ? "text-[#00e682]" : "text-black hover:text-black",
+                pathname === item.to ? "text-[#198754]" : "text-black hover:text-black",
                 "group flex flex-col items-center rounded-md p-2",
                 "overflow-x-hidden"
               )}
@@ -26,7 +26,7 @@ export default function SidebarDemo({ sidebarMenu }: { sidebarMenu: any }) {
               <div
                 className={classNames(
                   "flex h-12 w-12 items-center justify-center rounded-md",
-                  pathname === item.to ? "bg-black text-[#00e682]" : "text-black",
+                  pathname === item.to ? "bg-black text-[#198754]" : "text-black",
                 )}
               >
                 {item.icon}
