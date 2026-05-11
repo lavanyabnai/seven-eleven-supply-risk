@@ -731,7 +731,7 @@ export default function RunScenario() {
             <Button
               onClick={handleCreateScenario}
               disabled={createScenarioMutation.isPending}
-              className="w-full bg-blue-600 hover:bg-blue-700 h-8 text-xs font-semibold font-sans"
+              className="w-full bg-[#00e682] hover:bg-[#00c970] text-black h-8 text-xs font-semibold font-sans"
             >
               {createScenarioMutation.isPending ? (
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
