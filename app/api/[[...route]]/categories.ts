@@ -11,13 +11,7 @@ import { categories, insertCategorySchema } from "@/db/schema";
 const app = new Hono()
   .get(
     "/",
-    clerkMiddleware(),
     async (c) => {
-      const auth = getAuth(c);
-
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
 
       const data = await db
         .select({
@@ -25,7 +19,7 @@ const app = new Hono()
           name: categories.name,
         })
         .from(categories)
-        .where(eq(categories.userId, auth.userId));
+        .where(eq(categories.userId, 'demo-user'));
 
       return c.json({ data });
   })
@@ -34,19 +28,13 @@ const app = new Hono()
     zValidator("param", z.object({
       id: z.string().optional(),
     })),
-    clerkMiddleware(),
     async (c) => {
-      const auth = getAuth(c);
       const { id } = c.req.valid("param");
 
       if (!id) {
         return c.json({ error: "Missing id" }, 400);
       }
       
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
-
       const [data] = await db
         .select({
           id: categories.id,
@@ -55,7 +43,7 @@ const app = new Hono()
         .from(categories)
         .where(
           and(
-            eq(categories.userId, auth.userId),
+            eq(categories.userId, 'demo-user'),
             eq(categories.id, id)
           ),
         );
@@ -69,21 +57,15 @@ const app = new Hono()
   )
   .post(
     "/",
-    clerkMiddleware(),
     zValidator("json", insertCategorySchema.pick({
       name: true,
     })),
     async (c) => {
-      const auth = getAuth(c);
       const values = c.req.valid("json");
-
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
 
       const [data] = await db.insert(categories).values({
         id: createId(),
-        userId: auth.userId,
+        userId: 'demo-user',
         ...values,
       }).returning();
 
@@ -91,7 +73,6 @@ const app = new Hono()
   })
   .post(
     "/bulk-delete",
-    clerkMiddleware(),
     zValidator(
       "json",
       z.object({
@@ -99,18 +80,13 @@ const app = new Hono()
       }),
     ),
     async (c) => {
-      const auth = getAuth(c);
       const values = c.req.valid("json");
-
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
 
       const data = await db
         .delete(categories)
         .where(
           and(
-            eq(categories.userId, auth.userId),
+            eq(categories.userId, 'demo-user'),
             inArray(categories.id, values.ids)
           )
         )
@@ -123,7 +99,6 @@ const app = new Hono()
   )
   .patch(
     "/:id",
-    clerkMiddleware(),
     zValidator(
       "param",
       z.object({
@@ -137,7 +112,6 @@ const app = new Hono()
       })
     ),
     async (c) => {
-      const auth = getAuth(c);
       const { id } = c.req.valid("param");
       const values = c.req.valid("json");
 
@@ -145,16 +119,12 @@ const app = new Hono()
         return c.json({ error: "Missing id" }, 400);
       }
 
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
-
       const [data] = await db
         .update(categories)
         .set(values)
         .where(
           and(
-            eq(categories.userId, auth.userId),
+            eq(categories.userId, 'demo-user'),
             eq(categories.id, id),
           ),
         )
@@ -169,7 +139,6 @@ const app = new Hono()
   )
   .delete(
     "/:id",
-    clerkMiddleware(),
     zValidator(
       "param",
       z.object({
@@ -177,22 +146,17 @@ const app = new Hono()
       }),
     ),
     async (c) => {
-      const auth = getAuth(c);
       const { id } = c.req.valid("param");
 
       if (!id) {
         return c.json({ error: "Missing id" }, 400);
       }
 
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
-
       const [data] = await db
         .delete(categories)
         .where(
           and(
-            eq(categories.userId, auth.userId),
+            eq(categories.userId, 'demo-user'),
             eq(categories.id, id),
           ),
         )

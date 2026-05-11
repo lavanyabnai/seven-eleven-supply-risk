@@ -12,7 +12,6 @@ import { calculatePercentageChange, fillMissingDays } from "@/lib/utils";
 const app = new Hono()
   .get(
     "/",
-    clerkMiddleware(),
     zValidator(
       "query",
       z.object({
@@ -22,12 +21,7 @@ const app = new Hono()
       }),
     ),
     async (c) => {
-      const auth = getAuth(c);
       const { from, to, accountId } = c.req.valid("query");
-
-      if (!auth?.userId) {
-        return c.json({ error: "Unauthorized" }, 401);
-      }
 
       const defaultTo = new Date();
       const defaultFrom = subDays(defaultTo, 30);
@@ -73,12 +67,12 @@ const app = new Hono()
       };
 
       const [currentPeriod] = await fetchFinancialData(
-        auth.userId,
+        'demo-user',
         startDate,
         endDate,
       );
       const [lastPeriod] = await fetchFinancialData(
-        auth.userId,
+        'demo-user',
         lastPeriodStart,
         lastPeriodEnd,
       );
@@ -119,7 +113,7 @@ const app = new Hono()
         .where(
           and(
             accountId ? eq(transactions.accountId, accountId) : undefined,
-            eq(accounts.userId, auth.userId),
+            eq(accounts.userId, 'demo-user'),
             lt(transactions.amount, 0),
             gte(transactions.date, startDate),
             lte(transactions.date, endDate),
@@ -162,7 +156,7 @@ const app = new Hono()
             accountId ? 
               eq(transactions.accountId, accountId) 
               : undefined,
-            eq(accounts.userId, auth.userId),
+            eq(accounts.userId, 'demo-user'),
             gte(transactions.date, startDate),
             lte(transactions.date, endDate),
           )
