@@ -28,7 +28,7 @@ export const useCreateLocation = () => {
           try {
             const errorData = await response.json();
             if ('error' in errorData) {
-              errorMessage = errorData.error;
+              errorMessage = String(errorData.error);
             }
           } catch {
             // If JSON parsing fails, fall back to text
