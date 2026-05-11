@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import {
   Card,
   CardContent,
@@ -14,7 +14,7 @@ import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from 
 
 
 
-// Ferguson labor cost as % of total DC warehousing cost — labor vs automation investment
+// 7-Eleven labor cost as % of total DC warehousing cost — labor vs automation investment
 const chartData = [
   { month: "Q1'24", desktop: 42, mobile: 8 },
   { month: "Q2'24", desktop: 44, mobile: 9 },

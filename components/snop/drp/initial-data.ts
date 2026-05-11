@@ -1,11 +1,11 @@
-import type { NetworkData, WarehouseKpis } from "./types"
+﻿import type { NetworkData, WarehouseKpis } from "./types"
 
 export const initialNetworkData: NetworkData = {
   plant: {
     name: "Kohler Plant - Kohler, WI",
   },
   centralWarehouse: {
-    name: "Ferguson Master DC - Newport News, VA",
+    name: "7-Eleven Master DC - Newport News, VA",
     orderQuantity: 12000,
     safetyStock: 2000,
     leadTime: 2,
@@ -94,11 +94,11 @@ export const initialNetworkData: NetworkData = {
   },
   regionalWarehouses: [
     {
-      name: "Ferguson DC - Atlanta, GA",
+      name: "7-Eleven DC - Atlanta, GA",
       orderQuantity: 4500,
       safetyStock: 800,
       leadTime: 1,
-      retailers: ["Ferguson Branch - Charlotte", "Ferguson Branch - Orlando", "Ferguson Branch - Miami"],
+      retailers: ["7-Eleven Branch - Charlotte", "7-Eleven Branch - Orlando", "7-Eleven Branch - Miami"],
       periods: [
         {
           periodUsage: 25,
@@ -183,11 +183,11 @@ export const initialNetworkData: NetworkData = {
       ],
     },
     {
-      name: "Ferguson DC - Dallas, TX",
+      name: "7-Eleven DC - Dallas, TX",
       orderQuantity: 3200,
       safetyStock: 600,
       leadTime: 1,
-      retailers: ["Ferguson Branch - Houston", "Ferguson Branch - San Antonio", "Ferguson Branch - Austin"],
+      retailers: ["7-Eleven Branch - Houston", "7-Eleven Branch - San Antonio", "7-Eleven Branch - Austin"],
       periods: [
         {
           periodUsage: 10,
@@ -272,11 +272,11 @@ export const initialNetworkData: NetworkData = {
       ],
     },
     {
-      name: "Ferguson DC - Chicago, IL",
+      name: "7-Eleven DC - Chicago, IL",
       orderQuantity: 2800,
       safetyStock: 500,
       leadTime: 1,
-      retailers: ["Ferguson Branch - Milwaukee", "Ferguson Branch - Indianapolis", "Ferguson Branch - Minneapolis"],
+      retailers: ["7-Eleven Branch - Milwaukee", "7-Eleven Branch - Indianapolis", "7-Eleven Branch - Minneapolis"],
       periods: [
         {
           periodUsage: 5,
@@ -364,28 +364,28 @@ export const initialNetworkData: NetworkData = {
 }
 
 export const initialKpis: WarehouseKpis = {
-  "Ferguson Master DC - Newport News, VA": {
+  "7-Eleven Master DC - Newport News, VA": {
     serviceLevel: 98.5,
     inventoryTurnover: 3.2,
     averageInventory: 8926.25,
     stockoutPeriods: 0,
     orderFrequency: 12.5, // percentage of periods with orders
   },
-  "Ferguson DC - Atlanta, GA": {
+  "7-Eleven DC - Atlanta, GA": {
     serviceLevel: 100,
     inventoryTurnover: 4.0,
     averageInventory: 3375.0,
     stockoutPeriods: 0,
     orderFrequency: 12.5,
   },
-  "Ferguson DC - Dallas, TX": {
+  "7-Eleven DC - Dallas, TX": {
     serviceLevel: 100,
     inventoryTurnover: 4.8,
     averageInventory: 2525.0,
     stockoutPeriods: 0,
     orderFrequency: 12.5,
   },
-  "Ferguson DC - Chicago, IL": {
+  "7-Eleven DC - Chicago, IL": {
     serviceLevel: 100,
     inventoryTurnover: 3.5,
     averageInventory: 2325.63,

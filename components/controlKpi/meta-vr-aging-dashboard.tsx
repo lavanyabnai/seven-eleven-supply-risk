@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import React from "react"
 
@@ -76,14 +76,14 @@ interface InventoryKPI {
   unit?: string
 }
 
-// Ferguson Enterprises slow-moving inventory aging data
-const fergusonInventoryData: SlowMovingInventoryItem[] = [
+// 7-Eleven Enterprises slow-moving inventory aging data
+const 7-elevenInventoryData: SlowMovingInventoryItem[] = [
   {
     id: "FRG-1001",
     sku: "FRG-WH-4050",
     description: "Bradford White 40-gal Water Heater (Discontinued Model)",
     category: "Slow-Moving Inventory",
-    location: "Ferguson DC - Newport News, VA",
+    location: "7-Eleven DC - Newport News, VA",
     quantity: 245,
     unitCost: 199.99,
     totalValue: 48997.55,
@@ -145,7 +145,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-WH-4050-LP",
     description: "Bradford White 40-gal Water Heater LP (Discontinued Model)",
     category: "Slow-Moving Inventory",
-    location: "Ferguson DC - Mocksville, NC",
+    location: "7-Eleven DC - Mocksville, NC",
     quantity: 156,
     unitCost: 299.99,
     totalValue: 46798.44,
@@ -189,7 +189,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-HV-SEER13",
     description: "13 SEER AC Condensing Unit 3-Ton (Being Replaced by 15 SEER Min)",
     category: "Slow-Moving Inventory",
-    location: "Ferguson DC - Newport News, VA",
+    location: "7-Eleven DC - Newport News, VA",
     quantity: 89,
     unitCost: 399.99,
     totalValue: 35599.11,
@@ -231,7 +231,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-HV-SEER13-5T",
     description: "13 SEER AC Condensing Unit 5-Ton (Being Replaced by 15 SEER Min)",
     category: "Slow-Moving Inventory",
-    location: "Ferguson DC - Dallas, TX",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 67,
     unitCost: 499.99,
     totalValue: 33499.33,
@@ -273,7 +273,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-PV-2040",
     description: "2in PVC Sch.40 Union - Slow Moving",
     category: "Slow-Moving Inventory",
-    location: "Ferguson DC - Newport News, VA",
+    location: "7-Eleven DC - Newport News, VA",
     quantity: 34,
     unitCost: 999.99,
     totalValue: 33999.66,
@@ -325,7 +325,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-FIT-CU34",
     description: "3/4in Copper Press Fitting Tee - Overstock",
     category: "Plumbing Fittings",
-    location: "Ferguson DC - Newport News, VA",
+    location: "7-Eleven DC - Newport News, VA",
     quantity: 312,
     unitCost: 49.99,
     totalValue: 15596.88,
@@ -366,7 +366,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-VLV-PRV34",
     description: "3/4in Pressure Reducing Valve - Watts LF25AUB",
     category: "Plumbing Valves",
-    location: "Ferguson DC - Mocksville, NC",
+    location: "7-Eleven DC - Mocksville, NC",
     quantity: 189,
     unitCost: 79.99,
     totalValue: 15118.11,
@@ -407,7 +407,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-FP-SPRNK12",
     description: "1/2in Fire Sprinkler Head - Residential Pendent",
     category: "Fire Protection",
-    location: "Ferguson DC - Dallas, TX",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 267,
     unitCost: 39.99,
     totalValue: 10677.33,
@@ -448,7 +448,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-WW-GV6",
     description: "6in Ductile Iron Gate Valve - Waterworks",
     category: "Waterworks",
-    location: "Ferguson DC - Newport News, VA",
+    location: "7-Eleven DC - Newport News, VA",
     quantity: 78,
     unitCost: 129.99,
     totalValue: 10139.22,
@@ -489,7 +489,7 @@ const fergusonInventoryData: SlowMovingInventoryItem[] = [
     sku: "FRG-HV-FILTER-BULK",
     description: "HVAC Air Filter Multi-Pack (16x25x1) - Bulk Overstock",
     category: "HVAC Supplies",
-    location: "Ferguson DC - Dallas, TX",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 1500,
     unitCost: 29.99,
     totalValue: 44985.0,
@@ -683,7 +683,7 @@ export default function MetaVRAgingDashboard() {
   }
 
   // Filter and sort data
-  const filteredAndSortedData = [...fergusonInventoryData]
+  const filteredAndSortedData = [...7-elevenInventoryData]
     .filter((item) => {
       const matchesSearch =
         item.sku.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -724,7 +724,7 @@ export default function MetaVRAgingDashboard() {
   const highTechRiskItems = filteredAndSortedData.filter((item) => item.techObsolescenceRisk === "high").length
 
   // Get unique categories for filter
-  const categories = Array.from(new Set(fergusonInventoryData.map((item) => item.category)))
+  const categories = Array.from(new Set(7-elevenInventoryData.map((item) => item.category)))
 
   return (
     <div className="w-full space-y-4">
@@ -733,7 +733,7 @@ export default function MetaVRAgingDashboard() {
         <CardHeader>
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
-              <CardTitle className="text-2xl font-bold">Ferguson Slow-Moving Inventory Aging Dashboard</CardTitle>
+              <CardTitle className="text-2xl font-bold">7-Eleven Slow-Moving Inventory Aging Dashboard</CardTitle>
               <CardDescription>
                 Wholesale distribution products with aging alerts and obsolescence tracking
               </CardDescription>

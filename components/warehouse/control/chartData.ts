@@ -1,4 +1,4 @@
-export interface KPIData {
+﻿export interface KPIData {
   title: string
   value: number
   status: "Above Target" | "Below Target" | "On Target"
@@ -11,7 +11,7 @@ export interface KPIData {
   }>
 }
 
-// Ferguson DC performance KPIs — daily operational metrics across regional DCs and MDCs
+// 7-Eleven DC performance KPIs — daily operational metrics across regional DCs and MDCs
 export const kpiDataArray: KPIData[] = [
   {
     title: "Pallets Received",

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Slider } from "@/components/ui/slider"
@@ -216,7 +216,7 @@ const SupplyChainDashboard = () => {
         maxValue={500}
       />
       <ChartCard
-        title="Ferguson DC storage (12 regional DCs)"
+        title="7-Eleven DC storage (12 regional DCs)"
         data={generateChartData("distributorsStorage")}
         color="hsl(25, 70%, 50%)"
         type="area"
@@ -251,7 +251,7 @@ const SupplyChainDashboard = () => {
         maxValue={2000}
       />
       <ChartCard
-        title="Shipping manufacturers to Ferguson DCs"
+        title="Shipping manufacturers to 7-Eleven DCs"
         data={generateChartData("shippingToDistributors")}
         color="hsl(45, 90%, 60%)"
         type="bar"
@@ -306,7 +306,7 @@ export default function SupplyChain() {
      
         <div className="flex flex-col md:flex-row md:items-center justify-between p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold text-blue-700">Ferguson Supply Chain Simulation</h2>
+            <h2 className="text-3xl font-bold text-blue-700">7-Eleven Supply Chain Simulation</h2>
           </div>
 
           {/* Search */}
@@ -356,7 +356,7 @@ export default function SupplyChain() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                Ferguson Branch [New York] Demand
+                7-Eleven Branch [New York] Demand
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -382,7 +382,7 @@ export default function SupplyChain() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                Ferguson DC [Newport News, VA] Hub
+                7-Eleven DC [Newport News, VA] Hub
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -474,7 +474,7 @@ export default function SupplyChain() {
               color: "hsl(120, 60%, 45%)",
             },
             shippingToDistributors: {
-              label: "Shipping to Ferguson DCs",
+              label: "Shipping to 7-Eleven DCs",
               color: "hsl(45, 90%, 60%)",
             },
           }}

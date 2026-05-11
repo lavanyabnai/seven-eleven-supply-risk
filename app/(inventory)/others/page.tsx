@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Link from "next/link"
 import {
@@ -16,7 +16,7 @@ import {
 const modules = [
   {
     name: "Distribution Network",
-    description: "Ferguson DC-to-branch delivery analysis across 9 regional DCs, 5 MDCs, and 1,517 branches nationwide.",
+    description: "7-Eleven DC-to-branch delivery analysis across 9 regional DCs, 5 MDCs, and 1,517 branches nationwide.",
     icon: Map,
     href: "/others/leadMap",
     color: "from-blue-500 to-blue-600",
@@ -27,7 +27,7 @@ const modules = [
   },
   {
     name: "Route Cost Analysis",
-    description: "Transportation cost per ton-mile analysis for Ferguson's DC-to-branch distribution lanes.",
+    description: "Transportation cost per ton-mile analysis for 7-Eleven's DC-to-branch distribution lanes.",
     icon: BarChart3,
     href: "/others/ptpk",
     color: "from-violet-500 to-violet-600",
@@ -38,7 +38,7 @@ const modules = [
   },
   {
     name: "DC Costing",
-    description: "Distribution center cost modeling for Ferguson's plumbing, HVAC, and waterworks warehouse operations.",
+    description: "Distribution center cost modeling for 7-Eleven's plumbing, HVAC, and waterworks warehouse operations.",
     icon: Warehouse,
     href: "/others/kpi",
     color: "from-amber-500 to-amber-600",
@@ -49,7 +49,7 @@ const modules = [
   },
   {
     name: "Logistics Dashboard",
-    description: "Ferguson fleet operations dashboard — 5,900 vehicles, same-day/next-day delivery performance.",
+    description: "7-Eleven fleet operations dashboard — 5,900 vehicles, same-day/next-day delivery performance.",
     icon: LayoutDashboard,
     href: "/others/logi",
     color: "from-emerald-500 to-emerald-600",
@@ -60,7 +60,7 @@ const modules = [
   },
   {
     name: "Domestic Freight",
-    description: "Ferguson US freight cost calculator with ATRI benchmarks for DC-to-branch and jobsite delivery.",
+    description: "7-Eleven US freight cost calculator with ATRI benchmarks for DC-to-branch and jobsite delivery.",
     icon: Truck,
     href: "/others/transportCost",
     color: "from-rose-500 to-rose-600",
@@ -71,7 +71,7 @@ const modules = [
   },
   {
     name: "International Sourcing",
-    description: "China import logistics for plumbing fixtures and PVF products — factory to Ferguson import centers.",
+    description: "China import logistics for plumbing fixtures and PVF products — factory to 7-Eleven import centers.",
     icon: Globe,
     href: "/others/chinavr",
     color: "from-cyan-500 to-cyan-600",
@@ -82,7 +82,7 @@ const modules = [
   },
   {
     name: "Fleet Analysis",
-    description: "Ferguson fleet & transportation analytics — executive, operations, service, and cost dashboards.",
+    description: "7-Eleven fleet & transportation analytics — executive, operations, service, and cost dashboards.",
     icon: Flag,
     href: "/others/transAnalysis",
     color: "from-indigo-500 to-indigo-600",
@@ -93,7 +93,7 @@ const modules = [
   },
   {
     name: "DC Operations",
-    description: "Ferguson distribution center operations — control tower, metrics, cost analysis, and benchmarking.",
+    description: "7-Eleven distribution center operations — control tower, metrics, cost analysis, and benchmarking.",
     icon: Package,
     href: "/others/warehouseAnalysis",
     color: "from-teal-500 to-teal-600",
@@ -111,10 +111,10 @@ export default function OthersPage() {
         {/* Header */}
         <div className="mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
-            Ferguson Supply Chain Analytics
+            7-Eleven Supply Chain Analytics
           </h1>
           <p className="mt-2 text-base text-slate-500 max-w-2xl">
-            Distribution network, transportation costing, DC operations, and international sourcing analytics for Ferguson Enterprises ($31.3B revenue, 1,700+ locations).
+            Distribution network, transportation costing, DC operations, and international sourcing analytics for 7-Eleven Enterprises ($31.3B revenue, 1,700+ locations).
           </p>
         </div>
 

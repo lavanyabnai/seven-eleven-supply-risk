@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -22,7 +22,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson DC lines processed per FTE by day
+// 7-Eleven DC lines processed per FTE by day
 const chartData = [
   { month: "Mon", desktop: 235, mobile: 210 },
   { month: "Tue", desktop: 228, mobile: 205 },

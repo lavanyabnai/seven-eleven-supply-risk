@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -21,7 +21,7 @@ import {
 import { CartesianGrid, LabelList, Line, LineChart, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson DC overtime hours by department — Receiving, Picking, Shipping
+// 7-Eleven DC overtime hours by department — Receiving, Picking, Shipping
 const chartData = [
   { month: "Mon", desktop: 82, mobile: 45,tv:68 },
   { month: "Tue", desktop: 95, mobile: 52,tv:78 },

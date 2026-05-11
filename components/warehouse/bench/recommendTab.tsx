@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React from 'react'
 
 import {
@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/table'
 
 
-// Ferguson Distribution Centers and Market Distribution Centers — benchmark comparison
+// 7-Eleven Distribution Centers and Market Distribution Centers — benchmark comparison
 const action = [
     {
         title: 'Front Royal VA (Regional DC)',

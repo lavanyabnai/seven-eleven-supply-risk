@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useEffect, useState } from "react"
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet"
@@ -21,8 +21,8 @@ interface CustomerData {
   profit: number
 }
 
-// Ferguson branch locations with realistic coordinates and profitability
-const fergusonBranchData: { city: string; lat: number; lng: number; baseProfit: number }[] = [
+// 7-Eleven branch locations with realistic coordinates and profitability
+const 7-elevenBranchData: { city: string; lat: number; lng: number; baseProfit: number }[] = [
   { city: "New York", lat: 40.71, lng: -74.01, baseProfit: 820000 },
   { city: "Los Angeles", lat: 34.05, lng: -118.24, baseProfit: 680000 },
   { city: "Houston", lat: 29.76, lng: -95.37, baseProfit: 540000 },
@@ -50,8 +50,8 @@ const fergusonBranchData: { city: string; lat: number; lng: number; baseProfit: 
 const generateCustomerData = (): CustomerData[] => {
   const customers: CustomerData[] = []
 
-  // Add main Ferguson branch locations
-  fergusonBranchData.forEach((branch, i) => {
+  // Add main 7-Eleven branch locations
+  7-elevenBranchData.forEach((branch, i) => {
     customers.push({
       id: `branch_${i}`,
       name: `FRG_Branch_${branch.city.replace(/\s/g, "")}`,

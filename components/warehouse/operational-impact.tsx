@@ -1,11 +1,11 @@
-"use client"
+﻿"use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { BarChart3, TrendingDown, Clock } from "lucide-react"
 import { Line, LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts"
 
-// Ferguson Front Royal VA DC — picking rate and branch order fulfillment decline
+// 7-Eleven Front Royal VA DC — picking rate and branch order fulfillment decline
 const impactData = [
   { day: "Apr 7", pickingRate: 96, orderFulfillment: 94 },
   { day: "Apr 8", pickingRate: 93, orderFulfillment: 91 },

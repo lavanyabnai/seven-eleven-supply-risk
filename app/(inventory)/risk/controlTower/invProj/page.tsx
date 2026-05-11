@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
@@ -273,7 +273,7 @@ export default function MetaQuestInventory() {
       <Card>
         <CardHeader>
         
-          <CardTitle className="mt-2 text-2xl font-bold">Inventory Projections - Ferguson Products</CardTitle>
+          <CardTitle className="mt-2 text-2xl font-bold">Inventory Projections - 7-Eleven Products</CardTitle>
 
           {/* Filter Controls */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">

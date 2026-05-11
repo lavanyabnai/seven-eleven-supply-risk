@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -21,7 +21,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson daily orders shipped — inbound (from suppliers) and outbound (to branches/jobsites)
+// 7-Eleven daily orders shipped — inbound (from suppliers) and outbound (to branches/jobsites)
 const chartData = [
   { month: "Mon", desktop: 4800, mobile: 3200 },
   { month: "Tue", desktop: 4500, mobile: 3100 },

@@ -1,11 +1,11 @@
-"use client"
+﻿"use client"
 
 import { ScatterChart, XAxis, YAxis, ZAxis, Scatter, Tooltip } from "recharts"
 import { ChartContainer } from "@/components/ui/chart"
 
-// Ferguson DC-to-Branch route cost analysis
+// 7-Eleven DC-to-Branch route cost analysis
 // Cost per ton-mile ($/mi/ton) vs distance for major distribution lanes
-// Based on Ferguson's 9 regional DCs, 5 MDCs serving 1,517 branches
+// Based on 7-Eleven's 9 regional DCs, 5 MDCs serving 1,517 branches
 const routeData = [
   // High impact routes (critical lanes with cost inefficiency)
   { x: 45, y: 3.8, z: 280, impact: "high", name: "Front Royal VA → DC Metro branches" },
@@ -72,15 +72,15 @@ const CustomTooltip = ({ active, payload }: any) => {
   return null
 }
 
-export default function FergusonRouteCostAnalysis() {
+export default function 7-ElevenRouteCostAnalysis() {
   return (
     <div className="w-full p-6 space-y-6">
 
       {/* Header */}
       <div className="border border-gray-200 rounded-lg p-4">
-        <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">Ferguson Route Cost Analysis: $/Mile/Ton vs Distance</h1>
+        <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">7-Eleven Route Cost Analysis: $/Mile/Ton vs Distance</h1>
         <p className="text-sm text-gray-500 mt-1">
-          DC-to-branch transportation cost efficiency across Ferguson&apos;s distribution network
+          DC-to-branch transportation cost efficiency across 7-Eleven&apos;s distribution network
         </p>
       </div>
 

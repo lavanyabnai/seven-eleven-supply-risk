@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -23,7 +23,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, Rectangle, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson DC zone slotting accuracy — plumbing, HVAC, waterworks, PVF, appliances
+// 7-Eleven DC zone slotting accuracy — plumbing, HVAC, waterworks, PVF, appliances
 const chartData = [
   { browser: "ZoneA", visitors: 98, fill: "hsl(var(--chart-1))" },
   { browser: "ZoneB", visitors: 95, fill: "hsl(var(--chart-2))" },

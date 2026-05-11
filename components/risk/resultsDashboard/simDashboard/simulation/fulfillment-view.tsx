@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import ChartCard from "./chart-card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
@@ -15,18 +15,18 @@ export default function FulfillmentView() {
 
   // Demand Received, Fulfillment Shipped data
   const demandReceivedData = [
-    { id: 1, statistic: "Demand Received (Daily)", object: "Ferguson DC - Newport News", product: "Residential Faucets" },
-    { id: 2, statistic: "Demand Received (Daily)", object: "Ferguson DC - Dallas", product: "PVC Pipe" },
-    { id: 3, statistic: "Demand Received (Daily)", object: "Ferguson DC - Atlanta", product: "HVAC Systems" },
-    { id: 4, statistic: "Demand Received (Daily)", object: "Ferguson DC - Chicago", product: "Water Heaters" },
-    { id: 5, statistic: "Demand Received (Daily)", object: "Ferguson DC - San Bernardino", product: "Faucets (Import)" },
+    { id: 1, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Newport News", product: "Residential Faucets" },
+    { id: 2, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Dallas", product: "PVC Pipe" },
+    { id: 3, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Atlanta", product: "HVAC Systems" },
+    { id: 4, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Chicago", product: "Water Heaters" },
+    { id: 5, statistic: "Demand Received (Daily)", object: "7-Eleven DC - San Bernardino", product: "Faucets (Import)" },
   ]
 
   // Demand Placed, Fulfillment Received (Accumulated, Per Object) data
   const demandPerObjectData = [
-    { id: 1, statistic: "Demand Placed (Accumulated)", object: "Ferguson Branch - New York", product: "Residential Faucets" },
-    { id: 2, statistic: "Demand Placed (Accumulated)", object: "Ferguson Branch - Houston", product: "PVC Pipe" },
-    { id: 3, statistic: "Demand Placed (Accumulated)", object: "Ferguson Branch - Los Angeles", product: "HVAC Systems" },
+    { id: 1, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - New York", product: "Residential Faucets" },
+    { id: 2, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - Houston", product: "PVC Pipe" },
+    { id: 3, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - Los Angeles", product: "HVAC Systems" },
   ]
 
   // Generate data for daily demand chart

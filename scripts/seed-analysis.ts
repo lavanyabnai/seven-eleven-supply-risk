@@ -1,4 +1,4 @@
-import { config } from "dotenv"
+﻿import { config } from "dotenv"
 import { drizzle } from "drizzle-orm/neon-http"
 import { neon } from "@neondatabase/serverless"
 import { eq } from "drizzle-orm"
@@ -31,7 +31,7 @@ const sql = neon(process.env.POSTGRES_URL!)
 const db = drizzle(sql)
 
 async function main() {
-  console.log("Seeding Ferguson analysis data (remaining tables)...")
+  console.log("Seeding 7-Eleven analysis data (remaining tables)...")
 
   // ── Fetch existing IDs from previously seeded tables ────────────────
   const allLocations = await db.select({ id: locations.id, name: locations.name, code: locations.code }).from(locations).execute()
@@ -79,7 +79,7 @@ async function main() {
   const vehByName = new Map(insertedVehicles.map((v) => [v.name, v.id]))
   console.log(`  Inserted ${VEHICLES.length} vehicle types`)
 
-  // ── 3. Customers (Ferguson branch locations + major contractor accounts) ──
+  // ── 3. Customers (7-Eleven branch locations + major contractor accounts) ──
   console.log("Inserting customers...")
   await db.delete(customers).execute()
 
@@ -111,26 +111,26 @@ async function main() {
   const custLocByCode = new Map(insertedCustLocs.map((l) => [l.code, l.id]))
 
   const CUSTOMERS = [
-    { name: "Ferguson Branch - New York", type: "Branch", locationId: custLocByCode.get("CUST-NYC")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Los Angeles", type: "Branch", locationId: custLocByCode.get("CUST-LA")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Houston", type: "Branch", locationId: custLocByCode.get("CUST-HOU")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Chicago", type: "Branch", locationId: custLocByCode.get("CUST-CHI")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Phoenix", type: "Branch", locationId: custLocByCode.get("CUST-PHX")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Philadelphia", type: "Branch", locationId: custLocByCode.get("CUST-PHI")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Dallas", type: "Branch", locationId: custLocByCode.get("CUST-DFW")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Atlanta", type: "Branch", locationId: custLocByCode.get("CUST-ATL")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Miami", type: "Branch", locationId: custLocByCode.get("CUST-MIA")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Denver", type: "Branch", locationId: custLocByCode.get("CUST-DEN")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Seattle", type: "Branch", locationId: custLocByCode.get("CUST-SEA")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Charlotte", type: "Branch", locationId: custLocByCode.get("CUST-CLT")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - San Francisco", type: "Branch", locationId: custLocByCode.get("CUST-SF")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Minneapolis", type: "Branch", locationId: custLocByCode.get("CUST-MSP")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Tampa", type: "Branch", locationId: custLocByCode.get("CUST-TPA")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Boston", type: "Branch", locationId: custLocByCode.get("CUST-BOS")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Indianapolis", type: "Branch", locationId: custLocByCode.get("CUST-IND")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Portland", type: "Branch", locationId: custLocByCode.get("CUST-PDX")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Las Vegas", type: "Branch", locationId: custLocByCode.get("CUST-LV")!, inclusionType: "Include" },
-    { name: "Ferguson Branch - Nashville", type: "Branch", locationId: custLocByCode.get("CUST-NSH")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - New York", type: "Branch", locationId: custLocByCode.get("CUST-NYC")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Los Angeles", type: "Branch", locationId: custLocByCode.get("CUST-LA")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Houston", type: "Branch", locationId: custLocByCode.get("CUST-HOU")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Chicago", type: "Branch", locationId: custLocByCode.get("CUST-CHI")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Phoenix", type: "Branch", locationId: custLocByCode.get("CUST-PHX")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Philadelphia", type: "Branch", locationId: custLocByCode.get("CUST-PHI")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Dallas", type: "Branch", locationId: custLocByCode.get("CUST-DFW")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Atlanta", type: "Branch", locationId: custLocByCode.get("CUST-ATL")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Miami", type: "Branch", locationId: custLocByCode.get("CUST-MIA")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Denver", type: "Branch", locationId: custLocByCode.get("CUST-DEN")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Seattle", type: "Branch", locationId: custLocByCode.get("CUST-SEA")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Charlotte", type: "Branch", locationId: custLocByCode.get("CUST-CLT")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - San Francisco", type: "Branch", locationId: custLocByCode.get("CUST-SF")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Minneapolis", type: "Branch", locationId: custLocByCode.get("CUST-MSP")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Tampa", type: "Branch", locationId: custLocByCode.get("CUST-TPA")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Boston", type: "Branch", locationId: custLocByCode.get("CUST-BOS")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Indianapolis", type: "Branch", locationId: custLocByCode.get("CUST-IND")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Portland", type: "Branch", locationId: custLocByCode.get("CUST-PDX")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Las Vegas", type: "Branch", locationId: custLocByCode.get("CUST-LV")!, inclusionType: "Include" },
+    { name: "7-Eleven Branch - Nashville", type: "Branch", locationId: custLocByCode.get("CUST-NSH")!, inclusionType: "Include" },
   ]
 
   const insertedCustomers = await db.insert(customers).values(CUSTOMERS).returning({ id: customers.id, name: customers.name }).execute()
@@ -188,35 +188,35 @@ async function main() {
 
   const PATHS = [
     // Domestic manufacturer-to-DC lanes
-    { name: "Kohler WI - Newport News", fromLocation: "Kohler HQ", toLocation: "Ferguson DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "1340", distanceUnit: "miles", transportationTime: "2.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Kohler WI - Chicago", fromLocation: "Kohler HQ", toLocation: "Ferguson DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "185", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Kohler SC - Atlanta", fromLocation: "Kohler Plant Spartanburg", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "260", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Moen NC - Newport News", fromLocation: "Moen Plant New Bern", toLocation: "Ferguson DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "310", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Moen NC - Charlotte", fromLocation: "Moen Plant New Bern", toLocation: "Ferguson DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "340", distanceUnit: "miles", transportationTime: "1.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Delta IN - Indianapolis", fromLocation: "Delta Faucet Plant Greensburg", toLocation: "Ferguson DC - Indianapolis", costCalculationPolicy: "Product&distance-based", distance: "85", distanceUnit: "miles", transportationTime: "0.25", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Delta IN - Chicago", fromLocation: "Delta Faucet Plant Greensburg", toLocation: "Ferguson DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "290", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "AO Smith TN - Atlanta", fromLocation: "A.O. Smith Plant Ashland City", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "350", distanceUnit: "miles", transportationTime: "1.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "AO Smith TN - Dallas", fromLocation: "A.O. Smith Plant Ashland City", toLocation: "Ferguson DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "780", distanceUnit: "miles", transportationTime: "1.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Charlotte Pipe - Atlanta", fromLocation: "Charlotte Pipe HQ", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "245", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
-    { name: "Charlotte Pipe - Charlotte", fromLocation: "Charlotte Pipe HQ", toLocation: "Ferguson DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "12", distanceUnit: "miles", transportationTime: "0.1", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
-    { name: "JM Eagle CA - San Bernardino", fromLocation: "JM Eagle HQ", toLocation: "Ferguson DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "65", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
-    { name: "JM Eagle TX - Dallas", fromLocation: "JM Eagle Plant Houston", toLocation: "Ferguson DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "240", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
-    { name: "Mueller AL - Atlanta", fromLocation: "Mueller Water Plant Albertville", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "180", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Rheem AL - Atlanta", fromLocation: "Rheem Plant Montgomery", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "260", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Trane SC - Charlotte", fromLocation: "Trane Plant Columbia", toLocation: "Ferguson DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "95", distanceUnit: "miles", transportationTime: "0.25", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Carrier IN - Chicago", fromLocation: "Carrier Plant Indianapolis", toLocation: "Ferguson DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "185", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Lennox IA - Chicago", fromLocation: "Lennox Plant Marshalltown", toLocation: "Ferguson DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "310", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "InSinkErator WI - Chicago", fromLocation: "InSinkErator HQ", toLocation: "Ferguson DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "75", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Rinnai GA - Atlanta", fromLocation: "Rinnai Plant Griffin", toLocation: "Ferguson DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "65", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Kohler WI - Newport News", fromLocation: "Kohler HQ", toLocation: "7-Eleven DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "1340", distanceUnit: "miles", transportationTime: "2.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Kohler WI - Chicago", fromLocation: "Kohler HQ", toLocation: "7-Eleven DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "185", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Kohler SC - Atlanta", fromLocation: "Kohler Plant Spartanburg", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "260", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Moen NC - Newport News", fromLocation: "Moen Plant New Bern", toLocation: "7-Eleven DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "310", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Moen NC - Charlotte", fromLocation: "Moen Plant New Bern", toLocation: "7-Eleven DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "340", distanceUnit: "miles", transportationTime: "1.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Delta IN - Indianapolis", fromLocation: "Delta Faucet Plant Greensburg", toLocation: "7-Eleven DC - Indianapolis", costCalculationPolicy: "Product&distance-based", distance: "85", distanceUnit: "miles", transportationTime: "0.25", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Delta IN - Chicago", fromLocation: "Delta Faucet Plant Greensburg", toLocation: "7-Eleven DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "290", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "AO Smith TN - Atlanta", fromLocation: "A.O. Smith Plant Ashland City", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "350", distanceUnit: "miles", transportationTime: "1.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "AO Smith TN - Dallas", fromLocation: "A.O. Smith Plant Ashland City", toLocation: "7-Eleven DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "780", distanceUnit: "miles", transportationTime: "1.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Charlotte Pipe - Atlanta", fromLocation: "Charlotte Pipe HQ", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "245", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
+    { name: "Charlotte Pipe - Charlotte", fromLocation: "Charlotte Pipe HQ", toLocation: "7-Eleven DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "12", distanceUnit: "miles", transportationTime: "0.1", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
+    { name: "JM Eagle CA - San Bernardino", fromLocation: "JM Eagle HQ", toLocation: "7-Eleven DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "65", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
+    { name: "JM Eagle TX - Dallas", fromLocation: "JM Eagle Plant Houston", toLocation: "7-Eleven DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "240", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: flatbedId, transportationPolicy: "FTL" },
+    { name: "Mueller AL - Atlanta", fromLocation: "Mueller Water Plant Albertville", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "180", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Rheem AL - Atlanta", fromLocation: "Rheem Plant Montgomery", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "260", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Trane SC - Charlotte", fromLocation: "Trane Plant Columbia", toLocation: "7-Eleven DC - Charlotte", costCalculationPolicy: "Product&distance-based", distance: "95", distanceUnit: "miles", transportationTime: "0.25", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Carrier IN - Chicago", fromLocation: "Carrier Plant Indianapolis", toLocation: "7-Eleven DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "185", distanceUnit: "miles", transportationTime: "0.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Lennox IA - Chicago", fromLocation: "Lennox Plant Marshalltown", toLocation: "7-Eleven DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "310", distanceUnit: "miles", transportationTime: "0.75", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "InSinkErator WI - Chicago", fromLocation: "InSinkErator HQ", toLocation: "7-Eleven DC - Chicago", costCalculationPolicy: "Product&distance-based", distance: "75", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Rinnai GA - Atlanta", fromLocation: "Rinnai Plant Griffin", toLocation: "7-Eleven DC - Atlanta", costCalculationPolicy: "Product&distance-based", distance: "65", distanceUnit: "miles", transportationTime: "0.2", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
     // International lanes
-    { name: "Kohler CN - San Bernardino (Ocean)", fromLocation: "Kohler Plant Foshan", toLocation: "Ferguson DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11200", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "Moen CN - San Bernardino (Ocean)", fromLocation: "Moen Plant Jiangmen", toLocation: "Ferguson DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11300", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "Delta CN - San Bernardino (Ocean)", fromLocation: "Delta Faucet Plant Zhuhai", toLocation: "Ferguson DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11100", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "TOTO JP - San Bernardino (Ocean)", fromLocation: "TOTO Plant Kitakyushu", toLocation: "Ferguson DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "8900", distanceUnit: "miles", transportationTime: "28", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "Grohe DE - Newport News (Ocean)", fromLocation: "Grohe HQ", toLocation: "Ferguson DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "6400", distanceUnit: "miles", transportationTime: "21", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "Navien KR - Sacramento (Ocean)", fromLocation: "Navien Plant Sejong", toLocation: "Ferguson DC - Sacramento", costCalculationPolicy: "Product&distance-based", distance: "9200", distanceUnit: "miles", transportationTime: "30", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
-    { name: "Am Std MX - Dallas", fromLocation: "American Standard Plant Monterrey", toLocation: "Ferguson DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "780", distanceUnit: "miles", transportationTime: "2.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
-    { name: "Rheem MX - Phoenix", fromLocation: "Rheem Plant Monterrey", toLocation: "Ferguson DC - Phoenix", costCalculationPolicy: "Product&distance-based", distance: "1150", distanceUnit: "miles", transportationTime: "2.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Kohler CN - San Bernardino (Ocean)", fromLocation: "Kohler Plant Foshan", toLocation: "7-Eleven DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11200", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "Moen CN - San Bernardino (Ocean)", fromLocation: "Moen Plant Jiangmen", toLocation: "7-Eleven DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11300", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "Delta CN - San Bernardino (Ocean)", fromLocation: "Delta Faucet Plant Zhuhai", toLocation: "7-Eleven DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "11100", distanceUnit: "miles", transportationTime: "35", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "TOTO JP - San Bernardino (Ocean)", fromLocation: "TOTO Plant Kitakyushu", toLocation: "7-Eleven DC - San Bernardino", costCalculationPolicy: "Product&distance-based", distance: "8900", distanceUnit: "miles", transportationTime: "28", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "Grohe DE - Newport News (Ocean)", fromLocation: "Grohe HQ", toLocation: "7-Eleven DC - Newport News", costCalculationPolicy: "Product&distance-based", distance: "6400", distanceUnit: "miles", transportationTime: "21", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "Navien KR - Sacramento (Ocean)", fromLocation: "Navien Plant Sejong", toLocation: "7-Eleven DC - Sacramento", costCalculationPolicy: "Product&distance-based", distance: "9200", distanceUnit: "miles", transportationTime: "30", timeUnit: "days", vehicleTypeId: oceanContId, transportationPolicy: "FTL" },
+    { name: "Am Std MX - Dallas", fromLocation: "American Standard Plant Monterrey", toLocation: "7-Eleven DC - Dallas", costCalculationPolicy: "Product&distance-based", distance: "780", distanceUnit: "miles", transportationTime: "2.0", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
+    { name: "Rheem MX - Phoenix", fromLocation: "Rheem Plant Monterrey", toLocation: "7-Eleven DC - Phoenix", costCalculationPolicy: "Product&distance-based", distance: "1150", distanceUnit: "miles", transportationTime: "2.5", timeUnit: "days", vehicleTypeId: dryVanId, transportationPolicy: "FTL" },
   ]
 
   const pathValues = PATHS.map((p) => ({ ...p, costPuPk: "2.50", currency: "USD", inclusionType: "Include" }))
@@ -257,7 +257,7 @@ async function main() {
 
   const expenseValues: any[] = []
   // DCs get facility costs and carrying costs
-  const dcNames = allFacilities.filter((f) => f.name.includes("Ferguson")).map((f) => f)
+  const dcNames = allFacilities.filter((f) => f.name.includes("7-Eleven")).map((f) => f)
   for (const dc of dcNames) {
     expenseValues.push(
       { facilityId: dc.id, expenseType: "Facility", value: String(Math.floor(Math.random() * 2000000 + 500000)), currency: "USD", timeUnit: "Month", timePeriodId: q1Id },
@@ -343,16 +343,16 @@ async function main() {
   await db.delete(sourcing).execute()
 
   const sourcingValues = [
-    { deliveryDestination: "Ferguson Master DC - Newport News", sources: ["Kohler Plant - Kohler WI", "Moen Plant - New Bern NC", "A.O. Smith Plant - Ashland City TN"], productId: prodByName.get("Residential Faucets - Kitchen")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Chicago", sources: ["Delta Faucet Plant - Greensburg IN", "Carrier Plant - Indianapolis IN", "Lennox Plant - Marshalltown IA"], productId: prodByName.get("Residential HVAC Systems")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Atlanta", sources: ["Rheem Plant - Montgomery AL", "Trane Plant - Columbia SC", "Rinnai Plant - Griffin GA"], productId: prodByName.get("Tankless Water Heaters")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - San Bernardino", sources: ["Kohler Plant - Foshan CN", "Moen Plant - Jiangmen CN", "Delta Faucet Plant - Zhuhai CN"], productId: prodByName.get("Residential Faucets - Kitchen")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Dallas", sources: ["JM Eagle Plant - Houston TX", "A.O. Smith Plant - Ashland City TN", "American Standard Plant - Monterrey MX"], productId: prodByName.get("PVC Pipe - Schedule 40")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Charlotte", sources: ["Charlotte Pipe Plant - Charlotte NC", "Trane Plant - Columbia SC", "Kohler Plant - Spartanburg SC"], productId: prodByName.get("Cast Iron Pipe")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Denver", sources: ["Lennox Plant - Marshalltown IA", "Carrier Plant - Indianapolis IN"], productId: prodByName.get("HVAC Air Handlers")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Sacramento", sources: ["Navien Plant - Sejong KR", "Noritz Plant - Akashi JP"], productId: prodByName.get("Tankless Water Heaters")!, type: "Fastest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Orlando", sources: ["Rheem Plant - Montgomery AL", "Charlotte Pipe Plant - Charlotte NC"], productId: prodByName.get("Tank Water Heaters - Residential")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
-    { deliveryDestination: "Ferguson Regional DC - Portland", sources: ["JM Eagle Plant - Los Angeles CA", "Uponor Plant - Nastola FI"], productId: prodByName.get("PEX Tubing")!, type: "Most Inventory", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Master DC - Newport News", sources: ["Kohler Plant - Kohler WI", "Moen Plant - New Bern NC", "A.O. Smith Plant - Ashland City TN"], productId: prodByName.get("Residential Faucets - Kitchen")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Chicago", sources: ["Delta Faucet Plant - Greensburg IN", "Carrier Plant - Indianapolis IN", "Lennox Plant - Marshalltown IA"], productId: prodByName.get("Residential HVAC Systems")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Atlanta", sources: ["Rheem Plant - Montgomery AL", "Trane Plant - Columbia SC", "Rinnai Plant - Griffin GA"], productId: prodByName.get("Tankless Water Heaters")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - San Bernardino", sources: ["Kohler Plant - Foshan CN", "Moen Plant - Jiangmen CN", "Delta Faucet Plant - Zhuhai CN"], productId: prodByName.get("Residential Faucets - Kitchen")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Dallas", sources: ["JM Eagle Plant - Houston TX", "A.O. Smith Plant - Ashland City TN", "American Standard Plant - Monterrey MX"], productId: prodByName.get("PVC Pipe - Schedule 40")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Charlotte", sources: ["Charlotte Pipe Plant - Charlotte NC", "Trane Plant - Columbia SC", "Kohler Plant - Spartanburg SC"], productId: prodByName.get("Cast Iron Pipe")!, type: "Closest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Denver", sources: ["Lennox Plant - Marshalltown IA", "Carrier Plant - Indianapolis IN"], productId: prodByName.get("HVAC Air Handlers")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Sacramento", sources: ["Navien Plant - Sejong KR", "Noritz Plant - Akashi JP"], productId: prodByName.get("Tankless Water Heaters")!, type: "Fastest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Orlando", sources: ["Rheem Plant - Montgomery AL", "Charlotte Pipe Plant - Charlotte NC"], productId: prodByName.get("Tank Water Heaters - Residential")!, type: "Cheapest", timePeriodId: q1Id, inclusionType: "Include" },
+    { deliveryDestination: "7-Eleven Regional DC - Portland", sources: ["JM Eagle Plant - Los Angeles CA", "Uponor Plant - Nastola FI"], productId: prodByName.get("PEX Tubing")!, type: "Most Inventory", timePeriodId: q1Id, inclusionType: "Include" },
   ]
 
   await db.insert(sourcing).values(sourcingValues).execute()
@@ -366,10 +366,10 @@ async function main() {
   await db.delete(groups).execute()
 
   const GROUPS = [
-    { name: "Southeast Region", description: "Ferguson branches and DCs serving the Southeast US" },
-    { name: "West Coast Region", description: "Ferguson branches and DCs serving the West Coast" },
-    { name: "Midwest Region", description: "Ferguson branches and DCs serving the Midwest" },
-    { name: "Northeast Region", description: "Ferguson branches and DCs serving the Northeast" },
+    { name: "Southeast Region", description: "7-Eleven branches and DCs serving the Southeast US" },
+    { name: "West Coast Region", description: "7-Eleven branches and DCs serving the West Coast" },
+    { name: "Midwest Region", description: "7-Eleven branches and DCs serving the Midwest" },
+    { name: "Northeast Region", description: "7-Eleven branches and DCs serving the Northeast" },
     { name: "Plumbing Fixtures Suppliers", description: "All suppliers of faucets, toilets, and bathing products" },
     { name: "HVAC Suppliers", description: "All HVAC system and component suppliers" },
     { name: "Pipe & Fittings Suppliers", description: "All pipe, tubing, and fitting suppliers" },
@@ -431,7 +431,7 @@ async function main() {
 
   console.log(`  Inserted group memberships: ${gcValues.length} customers, ${gsValues.length} sites, ${gspValues.length} suppliers`)
 
-  console.log("\nFerguson analysis data seed complete!")
+  console.log("\n7-Eleven analysis data seed complete!")
 }
 
 main().catch((err) => {

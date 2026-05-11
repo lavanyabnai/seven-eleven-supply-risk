@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import {
   Card,
   CardContent,
@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/chart"
 import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
-// Ferguson DC warehousing costs as % of total revenue ($31.3B) — approx 2.8-3.2%
+// 7-Eleven DC warehousing costs as % of total revenue ($31.3B) — approx 2.8-3.2%
 const chartData = [
   { month: "Q1'24", desktop: 2.9, mobile: 0.4 },
   { month: "Q2'24", desktop: 3.0, mobile: 0.5 },

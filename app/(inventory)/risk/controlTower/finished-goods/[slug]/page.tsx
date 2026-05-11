@@ -6,7 +6,7 @@ import { useParams } from "next/navigation"
 function getProductData(slug: string) {
   const finishedGoodsData = [
     {
-      distributionCenter: "Ferguson DC - Newport News, VA",
+      distributionCenter: "7-Eleven DC - Newport News, VA",
       productModel: "Bradford White 40-gal Water Heater",
       sku: "FRG-WH-4050",
       currentStock: 12450,
@@ -22,7 +22,7 @@ function getProductData(slug: string) {
       priority: "high",
     },
     {
-      distributionCenter: "Ferguson DC - Dallas, TX",
+      distributionCenter: "7-Eleven DC - Dallas, TX",
       productModel: "Rheem 50-gal Electric Water Heater",
       sku: "FRG-WH-5060E",
       currentStock: 8920,
@@ -38,7 +38,7 @@ function getProductData(slug: string) {
       priority: "normal",
     },
     {
-      distributionCenter: "Ferguson DC - Mocksville, NC",
+      distributionCenter: "7-Eleven DC - Mocksville, NC",
       productModel: "A.O. Smith Tankless Unit",
       sku: "FRG-WH-TNKLS",
       currentStock: 2340,
@@ -54,7 +54,7 @@ function getProductData(slug: string) {
       priority: "critical",
     },
     {
-      distributionCenter: "Ferguson DC - Denver, CO",
+      distributionCenter: "7-Eleven DC - Denver, CO",
       productModel: "Trane 15 SEER AC Condensing Unit",
       sku: "FRG-HV-SEER15",
       currentStock: 15680,
@@ -70,7 +70,7 @@ function getProductData(slug: string) {
       priority: "low",
     },
     {
-      distributionCenter: "Ferguson DC - Phoenix, AZ",
+      distributionCenter: "7-Eleven DC - Phoenix, AZ",
       productModel: "Carrier 3-Ton Heat Pump",
       sku: "FRG-HV-HP3T",
       currentStock: 4560,
@@ -86,7 +86,7 @@ function getProductData(slug: string) {
       priority: "high",
     },
     {
-      distributionCenter: "Ferguson DC - Chicago, IL",
+      distributionCenter: "7-Eleven DC - Chicago, IL",
       productModel: "6in Ductile Iron Gate Valve",
       sku: "FRG-WW-GV6",
       currentStock: 3420,
@@ -102,7 +102,7 @@ function getProductData(slug: string) {
       priority: "normal",
     },
     {
-      distributionCenter: "Ferguson DC - Atlanta, GA",
+      distributionCenter: "7-Eleven DC - Atlanta, GA",
       productModel: "1in Copper Press Fitting Kit",
       sku: "FRG-FIT-CU1KIT",
       currentStock: 1890,
@@ -118,7 +118,7 @@ function getProductData(slug: string) {
       priority: "high",
     },
     {
-      distributionCenter: "Ferguson DC - Sacramento, CA",
+      distributionCenter: "7-Eleven DC - Sacramento, CA",
       productModel: "Fire Sprinkler Head - Residential Pendent",
       sku: "FRG-FP-SPRNK12",
       currentStock: 7240,

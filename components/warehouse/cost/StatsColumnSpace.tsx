@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import {
   Card,
@@ -16,7 +16,7 @@ import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "r
 
 
 
-// Ferguson inbound lines received per day across all DCs — growing with branch expansion
+// 7-Eleven inbound lines received per day across all DCs — growing with branch expansion
 const chartData = [
   { month: "2022", desktop: 18500, },
   { month: "2023", desktop: 20200, },

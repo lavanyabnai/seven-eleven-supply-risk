@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import {
   BarChart,
@@ -16,8 +16,8 @@ import {
   Cell,
 } from "recharts"
 
-// Ferguson Distribution Network: DC-to-Branch delivery analysis by distance range
-// Based on Ferguson's 9 regional DCs, 5 MDCs, 106 final-mile hubs, and 1,517 branches
+// 7-Eleven Distribution Network: DC-to-Branch delivery analysis by distance range
+// Based on 7-Eleven's 9 regional DCs, 5 MDCs, 106 final-mile hubs, and 1,517 branches
 const distanceData = [
   {
     distance: "0-100mi",
@@ -83,14 +83,14 @@ const directShipData = [
 
 const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"]
 
-export default function FergusonDistributionDashboard() {
+export default function 7-ElevenDistributionDashboard() {
   return (
     <div className="w-full p-6 space-y-6">
 
       {/* Header */}
       <div className="border border-gray-200 rounded-lg p-4">
         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">
-          Ferguson Distribution Network: DC-to-Branch Delivery Analysis
+          7-Eleven Distribution Network: DC-to-Branch Delivery Analysis
         </h1>
         <p className="text-sm text-gray-500 mt-1">
           1,517 branches served by 9 regional DCs, 5 MDCs, and 106 final-mile hubs across all 50 states
@@ -198,7 +198,7 @@ export default function FergusonDistributionDashboard() {
         <div className="border border-gray-200 rounded-lg overflow-hidden">
           <div className="p-4">
             <p className="text-sm font-bold text-gray-900">Direct-to-Jobsite Delivery %</p>
-            <p className="text-xs text-gray-400 mb-2">% of orders shipped directly via Ferguson fleet (5,900 vehicles)</p>
+            <p className="text-xs text-gray-400 mb-2">% of orders shipped directly via 7-Eleven fleet (5,900 vehicles)</p>
             <ResponsiveContainer width="100%" height={250}>
               <BarChart data={directShipData}>
                 <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -305,7 +305,7 @@ export default function FergusonDistributionDashboard() {
       <div className="border border-gray-200 rounded-lg overflow-hidden">
         <div className="p-4">
           <p className="text-sm text-gray-700 text-center italic">
-            Ferguson operates 9 regional DCs, 5 MDCs, 3 import centers, 106 final-mile hubs, and 1,517 branches — serving 36,000+ supplier SKUs across plumbing, HVAC, waterworks, and industrial segments ($31.3B revenue FY2025)
+            7-Eleven operates 9 regional DCs, 5 MDCs, 3 import centers, 106 final-mile hubs, and 1,517 branches — serving 36,000+ supplier SKUs across plumbing, HVAC, waterworks, and industrial segments ($31.3B revenue FY2025)
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import {
   Card,
@@ -18,7 +18,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
 
-// Ferguson DC warehousing spend breakout — Labor, Rent/Lease, Equipment/Technology
+// 7-Eleven DC warehousing spend breakout — Labor, Rent/Lease, Equipment/Technology
 const chartData = [
   { month: "2022", national: 42, regional: 20, city: 38 },
   { month: "2023", national: 41, regional: 21, city: 38 },

@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+﻿import { Card, CardContent } from "@/components/ui/card"
 import { AlertTriangle, Clock } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
@@ -50,7 +50,7 @@ export default function AlertHeader() {
               <div>
                 <p className="font-medium text-amber-800">Alert Details</p>
                 <p className="text-sm text-amber-700 mt-1">
-                  Picking operations at Ferguson&apos;s Front Royal VA Regional Distribution Center are severely impacted
+                  Picking operations at 7-Eleven&apos;s Front Royal VA Regional Distribution Center are severely impacted
                   due to a 35% labor shortage (seasonal flu outbreak + 8 unfilled positions) and 40% forklift/order picker
                   downtime. This is causing significant delays in plumbing fixture and HVAC equipment branch replenishment
                   across the Mid-Atlantic and Southeast regions.

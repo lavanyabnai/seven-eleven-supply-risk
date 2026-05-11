@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -20,7 +20,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis, YAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson DC overtime hours per FTE by week
+// 7-Eleven DC overtime hours per FTE by week
 const chartData = [
   { month: "Wk1", desktop: 8.2, mobile: 6.5 },
   { month: "Wk2", desktop: 9.1, mobile: 7.2 },

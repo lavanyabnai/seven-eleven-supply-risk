@@ -1,4 +1,4 @@
-export interface ProductFlow {
+﻿export interface ProductFlow {
   id: string
   from: string
   to: string
@@ -13,13 +13,13 @@ export interface ProductFlow {
   destLng: number
 }
 
-// Ferguson Enterprises realistic supply chain product flows
-const fergusonProductFlows: ProductFlow[] = [
-  // ── Kohler → Ferguson DCs ─────────────────────────────────────────
+// 7-Eleven Enterprises realistic supply chain product flows
+const 7-elevenProductFlows: ProductFlow[] = [
+  // ── Kohler → 7-Eleven DCs ─────────────────────────────────────────
   {
     id: "flow-1",
     from: "Kohler Plant - Kohler, WI",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 8400,
@@ -33,7 +33,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-2",
     from: "Kohler Plant - Kohler, WI",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Toilets - Residential",
     periods: "Q1 2026",
     flow: 6200,
@@ -47,7 +47,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-3",
     from: "Kohler Plant - Kohler, WI",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Bathtubs and Showers",
     periods: "Q1 2026",
     flow: 3100,
@@ -61,7 +61,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-4",
     from: "Kohler Plant - Spartanburg, SC",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Toilets - Residential",
     periods: "Q1 2026",
     flow: 5800,
@@ -75,7 +75,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-5",
     from: "Kohler Plant - Spartanburg, SC",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "Vanities and Sinks",
     periods: "Q1 2026",
     flow: 4200,
@@ -89,7 +89,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-6",
     from: "Kohler Plant - Foshan, China",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 12500,
@@ -103,7 +103,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-7",
     from: "Kohler Plant - Foshan, China",
-    to: "Ferguson DC - Sacramento",
+    to: "7-Eleven DC - Sacramento",
     product: "Bathroom Accessories",
     periods: "Q1 2026",
     flow: 8800,
@@ -115,11 +115,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -121.4944,
   },
 
-  // ── Moen → Ferguson DCs ───────────────────────────────────────────
+  // ── Moen → 7-Eleven DCs ───────────────────────────────────────────
   {
     id: "flow-8",
     from: "Moen Plant - New Bern, NC",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 9200,
@@ -133,7 +133,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-9",
     from: "Moen Plant - New Bern, NC",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "Commercial Faucets",
     periods: "Q1 2026",
     flow: 5400,
@@ -147,7 +147,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-10",
     from: "Moen Plant - New Bern, NC",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 6800,
@@ -161,7 +161,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-11",
     from: "Moen Plant - Jiangmen, China",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 14200,
@@ -175,7 +175,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-12",
     from: "Moen Plant - Jiangmen, China",
-    to: "Ferguson DC - Sacramento",
+    to: "7-Eleven DC - Sacramento",
     product: "Garbage Disposals",
     periods: "Q1 2026",
     flow: 7600,
@@ -187,11 +187,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -121.4944,
   },
 
-  // ── Delta Faucet → Ferguson DCs ───────────────────────────────────
+  // ── Delta Faucet → 7-Eleven DCs ───────────────────────────────────
   {
     id: "flow-13",
     from: "Delta Faucet - Greensburg, IN",
-    to: "Ferguson DC - Indianapolis",
+    to: "7-Eleven DC - Indianapolis",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 7800,
@@ -205,7 +205,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-14",
     from: "Delta Faucet - Greensburg, IN",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Commercial Faucets",
     periods: "Q1 2026",
     flow: 5600,
@@ -219,7 +219,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-15",
     from: "Delta Faucet - Jackson, TN",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 6400,
@@ -233,7 +233,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-16",
     from: "Delta Faucet - Zhuhai, China",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Faucet Components",
     periods: "Q1 2026",
     flow: 18000,
@@ -245,11 +245,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -117.2898,
   },
 
-  // ── A.O. Smith → Ferguson DCs ─────────────────────────────────────
+  // ── A.O. Smith → 7-Eleven DCs ─────────────────────────────────────
   {
     id: "flow-17",
     from: "A.O. Smith - Ashland City, TN",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 4800,
@@ -263,7 +263,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-18",
     from: "A.O. Smith - Ashland City, TN",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 3900,
@@ -277,7 +277,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-19",
     from: "A.O. Smith - Ashland City, TN",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 2400,
@@ -291,7 +291,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-20",
     from: "A.O. Smith - Ashland City, TN",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Water Filtration Systems",
     periods: "Q1 2026",
     flow: 3200,
@@ -303,11 +303,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -87.6298,
   },
 
-  // ── Bradford White → Ferguson DCs ─────────────────────────────────
+  // ── Bradford White → 7-Eleven DCs ─────────────────────────────────
   {
     id: "flow-21",
     from: "Bradford White - Middleville, MI",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 3600,
@@ -321,7 +321,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-22",
     from: "Bradford White - Middleville, MI",
-    to: "Ferguson DC - Indianapolis",
+    to: "7-Eleven DC - Indianapolis",
     product: "Tank Water Heaters - Commercial",
     periods: "Q1 2026",
     flow: 1200,
@@ -333,11 +333,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -86.1581,
   },
 
-  // ── Charlotte Pipe → Ferguson DCs ─────────────────────────────────
+  // ── Charlotte Pipe → 7-Eleven DCs ─────────────────────────────────
   {
     id: "flow-23",
     from: "Charlotte Pipe - Charlotte, NC",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Cast Iron Pipe",
     periods: "Q1 2026",
     flow: 42000,
@@ -351,7 +351,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-24",
     from: "Charlotte Pipe - Charlotte, NC",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "PVC Pipe - Schedule 40",
     periods: "Q1 2026",
     flow: 65000,
@@ -365,7 +365,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-25",
     from: "Charlotte Pipe - Charlotte, NC",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "PVC Pipe - Schedule 80",
     periods: "Q1 2026",
     flow: 38000,
@@ -379,7 +379,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-26",
     from: "Charlotte Pipe - Charlotte, NC",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "PVC Fittings",
     periods: "Q1 2026",
     flow: 28000,
@@ -391,11 +391,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -81.3792,
   },
 
-  // ── JM Eagle → Ferguson DCs ───────────────────────────────────────
+  // ── JM Eagle → 7-Eleven DCs ───────────────────────────────────────
   {
     id: "flow-27",
     from: "JM Eagle - Los Angeles, CA",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "PVC Pipe - Schedule 40",
     periods: "Q1 2026",
     flow: 85000,
@@ -409,7 +409,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-28",
     from: "JM Eagle - Los Angeles, CA",
-    to: "Ferguson DC - Phoenix",
+    to: "7-Eleven DC - Phoenix",
     product: "HDPE Pipe - Waterworks",
     periods: "Q1 2026",
     flow: 52000,
@@ -423,7 +423,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-29",
     from: "JM Eagle - Los Angeles, CA",
-    to: "Ferguson DC - Sacramento",
+    to: "7-Eleven DC - Sacramento",
     product: "PVC Pipe - Schedule 40",
     periods: "Q1 2026",
     flow: 48000,
@@ -437,7 +437,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-30",
     from: "JM Eagle - Houston, TX",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "PVC Pipe - Schedule 40",
     periods: "Q1 2026",
     flow: 72000,
@@ -451,7 +451,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-31",
     from: "JM Eagle - Houston, TX",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "HDPE Pipe - Waterworks",
     periods: "Q1 2026",
     flow: 34000,
@@ -463,11 +463,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -81.3792,
   },
 
-  // ── Mueller Water → Ferguson DCs ──────────────────────────────────
+  // ── Mueller Water → 7-Eleven DCs ──────────────────────────────────
   {
     id: "flow-32",
     from: "Mueller Water - Albertville, AL",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Fire Hydrants",
     periods: "Q1 2026",
     flow: 1800,
@@ -481,7 +481,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-33",
     from: "Mueller Water - Albertville, AL",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Gate Valves - Waterworks",
     periods: "Q1 2026",
     flow: 2400,
@@ -495,7 +495,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-34",
     from: "Mueller Water - Albertville, AL",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "Backflow Preventers",
     periods: "Q1 2026",
     flow: 1600,
@@ -507,11 +507,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -80.8431,
   },
 
-  // ── Rheem → Ferguson DCs ──────────────────────────────────────────
+  // ── Rheem → 7-Eleven DCs ──────────────────────────────────────────
   {
     id: "flow-35",
     from: "Rheem - Montgomery, AL",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Residential HVAC Systems",
     periods: "Q1 2026",
     flow: 2200,
@@ -525,7 +525,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-36",
     from: "Rheem - Montgomery, AL",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 3400,
@@ -539,7 +539,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-37",
     from: "Rheem - Montgomery, AL",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "HVAC Condensers",
     periods: "Q1 2026",
     flow: 1800,
@@ -553,7 +553,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-38",
     from: "Rheem - Monterrey, MX",
-    to: "Ferguson DC - Phoenix",
+    to: "7-Eleven DC - Phoenix",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 2800,
@@ -567,7 +567,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-39",
     from: "Rheem - Monterrey, MX",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "HVAC Condensers",
     periods: "Q1 2026",
     flow: 2100,
@@ -579,11 +579,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -96.797,
   },
 
-  // ── Trane → Ferguson DCs ──────────────────────────────────────────
+  // ── Trane → 7-Eleven DCs ──────────────────────────────────────────
   {
     id: "flow-40",
     from: "Trane - Columbia, SC",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "Residential HVAC Systems",
     periods: "Q1 2026",
     flow: 1900,
@@ -597,7 +597,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-41",
     from: "Trane - Columbia, SC",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Commercial HVAC Systems",
     periods: "Q1 2026",
     flow: 680,
@@ -611,7 +611,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-42",
     from: "Trane - Columbia, SC",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "HVAC Air Handlers",
     periods: "Q1 2026",
     flow: 1400,
@@ -623,11 +623,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -76.473,
   },
 
-  // ── Carrier → Ferguson DCs ────────────────────────────────────────
+  // ── Carrier → 7-Eleven DCs ────────────────────────────────────────
   {
     id: "flow-43",
     from: "Carrier - Indianapolis, IN",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Residential HVAC Systems",
     periods: "Q1 2026",
     flow: 1600,
@@ -641,7 +641,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-44",
     from: "Carrier - Indianapolis, IN",
-    to: "Ferguson DC - Indianapolis",
+    to: "7-Eleven DC - Indianapolis",
     product: "HVAC Condensers",
     periods: "Q1 2026",
     flow: 2200,
@@ -655,7 +655,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-45",
     from: "Carrier - Indianapolis, IN",
-    to: "Ferguson DC - Denver",
+    to: "7-Eleven DC - Denver",
     product: "Commercial HVAC Systems",
     periods: "Q1 2026",
     flow: 520,
@@ -667,11 +667,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -104.9903,
   },
 
-  // ── Lennox → Ferguson DCs ─────────────────────────────────────────
+  // ── Lennox → 7-Eleven DCs ─────────────────────────────────────────
   {
     id: "flow-46",
     from: "Lennox - Marshalltown, IA",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Residential HVAC Systems",
     periods: "Q1 2026",
     flow: 1500,
@@ -685,7 +685,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-47",
     from: "Lennox - Marshalltown, IA",
-    to: "Ferguson DC - Denver",
+    to: "7-Eleven DC - Denver",
     product: "HVAC Air Handlers",
     periods: "Q1 2026",
     flow: 1100,
@@ -699,7 +699,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-48",
     from: "Lennox - Marshalltown, IA",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "HVAC Condensers",
     periods: "Q1 2026",
     flow: 1800,
@@ -711,11 +711,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -96.797,
   },
 
-  // ── American Standard / Monterrey → Ferguson DCs ──────────────────
+  // ── American Standard / Monterrey → 7-Eleven DCs ──────────────────
   {
     id: "flow-49",
     from: "American Standard - Monterrey, MX",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Toilets - Residential",
     periods: "Q1 2026",
     flow: 5200,
@@ -729,7 +729,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-50",
     from: "American Standard - Monterrey, MX",
-    to: "Ferguson DC - Phoenix",
+    to: "7-Eleven DC - Phoenix",
     product: "Toilets - Commercial",
     periods: "Q1 2026",
     flow: 2800,
@@ -743,7 +743,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-51",
     from: "American Standard - Monterrey, MX",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "Bathtubs and Showers",
     periods: "Q1 2026",
     flow: 1800,
@@ -755,11 +755,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -81.3792,
   },
 
-  // ── TOTO (Japan) → Ferguson DCs ───────────────────────────────────
+  // ── TOTO (Japan) → 7-Eleven DCs ───────────────────────────────────
   {
     id: "flow-52",
     from: "TOTO - Kitakyushu, Japan",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Toilets - Residential",
     periods: "Q1 2026",
     flow: 3800,
@@ -773,7 +773,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-53",
     from: "TOTO - Kitakyushu, Japan",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Toilets - Commercial",
     periods: "Q1 2026",
     flow: 2200,
@@ -785,11 +785,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -76.473,
   },
 
-  // ── Grohe (Germany) → Ferguson DCs ────────────────────────────────
+  // ── Grohe (Germany) → 7-Eleven DCs ────────────────────────────────
   {
     id: "flow-54",
     from: "Grohe - Hemer, Germany",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Commercial Faucets",
     periods: "Q1 2026",
     flow: 4600,
@@ -803,7 +803,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-55",
     from: "Grohe - Hemer, Germany",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 3200,
@@ -817,7 +817,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-56",
     from: "Grohe - Klaeng, Thailand",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 6200,
@@ -829,11 +829,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -117.2898,
   },
 
-  // ── Navien (South Korea) → Ferguson DCs ───────────────────────────
+  // ── Navien (South Korea) → 7-Eleven DCs ───────────────────────────
   {
     id: "flow-57",
     from: "Navien - Sejong, South Korea",
-    to: "Ferguson DC - Sacramento",
+    to: "7-Eleven DC - Sacramento",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 3400,
@@ -847,7 +847,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-58",
     from: "Navien - Sejong, South Korea",
-    to: "Ferguson DC - Portland",
+    to: "7-Eleven DC - Portland",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 2100,
@@ -859,11 +859,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -122.6784,
   },
 
-  // ── Rinnai → Ferguson DCs ─────────────────────────────────────────
+  // ── Rinnai → 7-Eleven DCs ─────────────────────────────────────────
   {
     id: "flow-59",
     from: "Rinnai - Griffin, GA",
-    to: "Ferguson DC - Atlanta",
+    to: "7-Eleven DC - Atlanta",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 2800,
@@ -877,7 +877,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-60",
     from: "Rinnai - Griffin, GA",
-    to: "Ferguson DC - Charlotte",
+    to: "7-Eleven DC - Charlotte",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 1900,
@@ -889,11 +889,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -80.8431,
   },
 
-  // ── Noritz (Japan) → Ferguson DCs ─────────────────────────────────
+  // ── Noritz (Japan) → 7-Eleven DCs ─────────────────────────────────
   {
     id: "flow-61",
     from: "Noritz - Akashi, Japan",
-    to: "Ferguson DC - San Bernardino",
+    to: "7-Eleven DC - San Bernardino",
     product: "Tankless Water Heaters",
     periods: "Q1 2026",
     flow: 2600,
@@ -905,11 +905,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -117.2898,
   },
 
-  // ── InSinkErator → Ferguson DCs ───────────────────────────────────
+  // ── InSinkErator → 7-Eleven DCs ───────────────────────────────────
   {
     id: "flow-62",
     from: "InSinkErator - Racine, WI",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Garbage Disposals",
     periods: "Q1 2026",
     flow: 8200,
@@ -923,7 +923,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-63",
     from: "InSinkErator - Racine, WI",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Garbage Disposals",
     periods: "Q1 2026",
     flow: 5400,
@@ -937,7 +937,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-64",
     from: "InSinkErator - Racine, WI",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Garbage Disposals",
     periods: "Q1 2026",
     flow: 4800,
@@ -949,11 +949,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -96.797,
   },
 
-  // ── Generac → Ferguson DCs ────────────────────────────────────────
+  // ── Generac → 7-Eleven DCs ────────────────────────────────────────
   {
     id: "flow-65",
     from: "Generac - Waukesha, WI",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Generators - Residential",
     periods: "Q1 2026",
     flow: 1200,
@@ -967,7 +967,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-66",
     from: "Generac - Waukesha, WI",
-    to: "Ferguson DC - Orlando",
+    to: "7-Eleven DC - Orlando",
     product: "Generators - Residential",
     periods: "Q1 2026",
     flow: 1800,
@@ -979,11 +979,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -81.3792,
   },
 
-  // ── Uponor → Ferguson DCs ────────────────────────────────────────
+  // ── Uponor → 7-Eleven DCs ────────────────────────────────────────
   {
     id: "flow-67",
     from: "Uponor - Apple Valley, MN",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "PEX Tubing",
     periods: "Q1 2026",
     flow: 120000,
@@ -997,7 +997,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-68",
     from: "Uponor - Apple Valley, MN",
-    to: "Ferguson DC - Denver",
+    to: "7-Eleven DC - Denver",
     product: "PEX Tubing",
     periods: "Q1 2026",
     flow: 85000,
@@ -1011,7 +1011,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-69",
     from: "Uponor - Nastola, Finland",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "PEX Tubing",
     periods: "Q1 2026",
     flow: 62000,
@@ -1023,11 +1023,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -76.473,
   },
 
-  // ── Viega → Ferguson DCs ──────────────────────────────────────────
+  // ── Viega → 7-Eleven DCs ──────────────────────────────────────────
   {
     id: "flow-70",
     from: "Viega - Attendorn, Germany",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Copper Fittings",
     periods: "Q1 2026",
     flow: 35000,
@@ -1041,7 +1041,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-71",
     from: "Viega - Wichita, KS",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "PEX Tubing",
     periods: "Q1 2026",
     flow: 58000,
@@ -1055,7 +1055,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-72",
     from: "Viega - Wichita, KS",
-    to: "Ferguson DC - Denver",
+    to: "7-Eleven DC - Denver",
     product: "Brass Fittings",
     periods: "Q1 2026",
     flow: 22000,
@@ -1067,11 +1067,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -104.9903,
   },
 
-  // ── Watts Water → Ferguson DCs ────────────────────────────────────
+  // ── Watts Water → 7-Eleven DCs ────────────────────────────────────
   {
     id: "flow-73",
     from: "Watts Water - North Andover, MA",
-    to: "Ferguson DC - Newport News",
+    to: "7-Eleven DC - Newport News",
     product: "Backflow Preventers",
     periods: "Q1 2026",
     flow: 3200,
@@ -1085,7 +1085,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-74",
     from: "Watts Water - North Andover, MA",
-    to: "Ferguson DC - Chicago",
+    to: "7-Eleven DC - Chicago",
     product: "Water Filtration Systems",
     periods: "Q1 2026",
     flow: 2400,
@@ -1097,11 +1097,11 @@ const fergusonProductFlows: ProductFlow[] = [
     destLng: -87.6298,
   },
 
-  // ── Resideo (Honeywell Home) → Ferguson DCs ──────────────────────
+  // ── Resideo (Honeywell Home) → 7-Eleven DCs ──────────────────────
   {
     id: "flow-75",
     from: "Resideo - Scottsdale, AZ",
-    to: "Ferguson DC - Phoenix",
+    to: "7-Eleven DC - Phoenix",
     product: "Thermostats - Smart",
     periods: "Q1 2026",
     flow: 6800,
@@ -1115,7 +1115,7 @@ const fergusonProductFlows: ProductFlow[] = [
   {
     id: "flow-76",
     from: "Resideo - Scottsdale, AZ",
-    to: "Ferguson DC - Dallas",
+    to: "7-Eleven DC - Dallas",
     product: "Thermostats - Smart",
     periods: "Q1 2026",
     flow: 5200,
@@ -1130,8 +1130,8 @@ const fergusonProductFlows: ProductFlow[] = [
   // ── DC-to-DC Redistribution Flows ─────────────────────────────────
   {
     id: "flow-77",
-    from: "Ferguson DC - Newport News",
-    to: "Ferguson DC - Orlando",
+    from: "7-Eleven DC - Newport News",
+    to: "7-Eleven DC - Orlando",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 4200,
@@ -1144,8 +1144,8 @@ const fergusonProductFlows: ProductFlow[] = [
   },
   {
     id: "flow-78",
-    from: "Ferguson DC - Newport News",
-    to: "Ferguson DC - Atlanta",
+    from: "7-Eleven DC - Newport News",
+    to: "7-Eleven DC - Atlanta",
     product: "Copper Fittings",
     periods: "Q1 2026",
     flow: 12000,
@@ -1158,8 +1158,8 @@ const fergusonProductFlows: ProductFlow[] = [
   },
   {
     id: "flow-79",
-    from: "Ferguson DC - San Bernardino",
-    to: "Ferguson DC - Portland",
+    from: "7-Eleven DC - San Bernardino",
+    to: "7-Eleven DC - Portland",
     product: "Residential Faucets",
     periods: "Q1 2026",
     flow: 3600,
@@ -1172,8 +1172,8 @@ const fergusonProductFlows: ProductFlow[] = [
   },
   {
     id: "flow-80",
-    from: "Ferguson DC - Chicago",
-    to: "Ferguson DC - Denver",
+    from: "7-Eleven DC - Chicago",
+    to: "7-Eleven DC - Denver",
     product: "Tank Water Heaters - Residential",
     periods: "Q1 2026",
     flow: 1800,
@@ -1186,11 +1186,11 @@ const fergusonProductFlows: ProductFlow[] = [
   },
 ]
 
-export const sampleProductFlows: ProductFlow[] = fergusonProductFlows
+export const sampleProductFlows: ProductFlow[] = 7-elevenProductFlows
 
 export async function loadProductFlowData(): Promise<ProductFlow[]> {
-  // Return Ferguson supply chain data directly
-  return fergusonProductFlows
+  // Return 7-Eleven supply chain data directly
+  return 7-elevenProductFlows
 }
 
 export function analyzeFlowData(flows: ProductFlow[]) {

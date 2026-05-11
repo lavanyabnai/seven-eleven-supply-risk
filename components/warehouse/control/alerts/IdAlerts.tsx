@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { Clock, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -15,7 +15,7 @@ export default function WarehouseAlertDashboard() {
       <header className="bg-white border-b">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
-            <h1 className="text-xl font-semibold text-blue-900">Ferguson DC Alert: Picking Operations Impact — Front Royal VA</h1>
+            <h1 className="text-xl font-semibold text-blue-900">7-Eleven DC Alert: Picking Operations Impact — Front Royal VA</h1>
           </div>
           <div className="flex items-center space-x-4">
             <div className="relative">

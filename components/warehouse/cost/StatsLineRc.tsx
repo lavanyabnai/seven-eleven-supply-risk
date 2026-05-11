@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import {
   Card,
   CardContent,
@@ -14,7 +14,7 @@ import {
 import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
 
-// Ferguson rent/lease cost as % of total DC warehousing cost
+// 7-Eleven rent/lease cost as % of total DC warehousing cost
 const chartData = [
   { month: "Q1'24", desktop: 18, mobile: 22 },
   { month: "Q2'24", desktop: 19, mobile: 23 },

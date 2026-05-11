@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -60,9 +60,9 @@ export default function USATransportCostingPage() {
       <div>
         {/* Header */}
         <div className="border border-gray-200 rounded-lg p-4 mb-6">
-          <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">Ferguson Domestic Freight Cost Calculator</h1>
+          <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">7-Eleven Domestic Freight Cost Calculator</h1>
           <p className="text-sm text-gray-600 mt-1">
-            Transportation cost analysis for Ferguson&apos;s US distribution network — DC-to-branch and direct-to-jobsite freight operations
+            Transportation cost analysis for 7-Eleven&apos;s US distribution network — DC-to-branch and direct-to-jobsite freight operations
           </p>
           <div className="flex gap-4 mt-3">
             <div className="bg-blue-100 px-3 py-1 rounded-full text-sm text-blue-800">ATRI 2024 Benchmarks</div>

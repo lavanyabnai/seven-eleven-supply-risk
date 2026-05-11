@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import {
   Card,
   CardContent,
@@ -14,7 +14,7 @@ import {
 import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
 
-// Ferguson warehousing spend as % of COGS — plumbing/HVAC distribution margin pressure
+// 7-Eleven warehousing spend as % of COGS — plumbing/HVAC distribution margin pressure
 const chartData = [
   { month: "Q1'23", desktop: 3.8, mobile: 0.6 },
   { month: "Q2'23", desktop: 3.9, mobile: 0.7 },

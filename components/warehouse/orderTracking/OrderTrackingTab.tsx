@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
@@ -18,7 +18,7 @@ export default function OrderTrackingTab() {
     <>
       <div className="bg-white rounded-lg border">
         <div className="flex items-center w-full justify-between border rounded-t-lg text-2xl text-blue-900 font-bold">
-          <div className="p-2">Ferguson Order Tracking & Analysis</div>
+          <div className="p-2">7-Eleven Order Tracking & Analysis</div>
         </div>
 
         <div className="flex justify-center">

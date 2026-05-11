@@ -1,11 +1,11 @@
-"use client"
+﻿"use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, AlertTriangle, TrendingDown } from "lucide-react"
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 
-// Ferguson Front Royal VA DC — staffing by zone
+// 7-Eleven Front Royal VA DC — staffing by zone
 const laborData = [
   { department: "Plumbing Pick", required: 48, current: 30 },
   { department: "HVAC Pick", required: 32, current: 24 },

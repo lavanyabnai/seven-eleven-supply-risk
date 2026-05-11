@@ -1,8 +1,8 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+﻿import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { Package, AlertTriangle, Clock } from "lucide-react"
 
-// Ferguson Front Royal VA DC — delayed branch replenishment and contractor orders
+// 7-Eleven Front Royal VA DC — delayed branch replenishment and contractor orders
 const orders = [
   {
     id: "FRG-28471",

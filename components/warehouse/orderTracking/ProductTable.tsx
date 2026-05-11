@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   Table,
@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/table'
 import { Progress } from '@/components/ui/progress'
 
-// Ferguson product catalog — plumbing, HVAC, waterworks, PVF, appliances
+// 7-Eleven product catalog — plumbing, HVAC, waterworks, PVF, appliances
 const product = [
   {
     ProductId: 'FRG-1001',
@@ -94,7 +94,7 @@ const product = [
   },
 ]
 
-// Ferguson contractor customers
+// 7-Eleven contractor customers
 const customer = [
   {
     Customer: 'Summit Plumbing Co.',
@@ -178,7 +178,7 @@ const customer = [
   },
 ]
 
-// Ferguson DC inventory — excess and deficit positions
+// 7-Eleven DC inventory — excess and deficit positions
 const inventory = [
   {
     title: 'FRG-1003 (Rheem Water Heater)',

@@ -1,4 +1,4 @@
-import type { MrpState } from "./types"
+﻿import type { MrpState } from "./types"
 
 export const initialMrpState: MrpState = {
   // Periods
@@ -7,7 +7,7 @@ export const initialMrpState: MrpState = {
   // Total system cost
   totalSystemCost: 91000,
 
-  // End Item - Residential Kitchen Faucet (sourced from Kohler to Ferguson DC)
+  // End Item - Residential Kitchen Faucet (sourced from Kohler to 7-Eleven DC)
   endItem: {
     leadTime: 3,
     setupCost: 4500,

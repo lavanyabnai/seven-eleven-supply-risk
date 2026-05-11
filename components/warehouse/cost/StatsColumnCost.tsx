@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import {
   Card,
@@ -15,7 +15,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
 
-// Ferguson DC warehousing cost per pallet (USD) — trending upward with labor & energy costs
+// 7-Eleven DC warehousing cost per pallet (USD) — trending upward with labor & energy costs
 const chartData = [
   { month: "2025", desktop: 9.45, },
   { month: "2024", desktop: 8.92, },

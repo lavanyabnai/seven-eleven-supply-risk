@@ -1,11 +1,11 @@
-"use client"
+﻿"use client"
 
 import { useEffect, useRef } from "react"
 import { Chart, registerables } from "chart.js"
 
 Chart.register(...registerables)
 
-const fergusonBranches = [
+const 7-elevenBranches = [
   "NYC Metro", "LA Metro", "Houston", "Chicago", "Phoenix", "Philadelphia",
   "DFW", "Atlanta", "Miami", "Denver", "Seattle", "Charlotte",
   "SF Bay Area", "Minneapolis", "Tampa Bay", "Boston", "Indianapolis",
@@ -19,7 +19,7 @@ const fergusonBranches = [
 ]
 
 const customerData = {
-  labels: fergusonBranches,
+  labels: 7-elevenBranches,
   datasets: [
     {
       data: [

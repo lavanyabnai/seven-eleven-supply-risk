@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react';
 import {
   Card,
@@ -16,7 +16,7 @@ import { Bar, BarChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "r
 
 
 
-// Ferguson total DC warehousing space available (M sq ft) — growing with new DC builds
+// 7-Eleven total DC warehousing space available (M sq ft) — growing with new DC builds
 const chartData = [
   { month: "2022", desktop: 8.5, },
   { month: "2023", desktop: 9.2, },

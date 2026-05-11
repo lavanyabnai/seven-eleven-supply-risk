@@ -1,4 +1,4 @@
-import type { ReverseLogisticsModel, OptimizationScenario } from "./types"
+﻿import type { ReverseLogisticsModel, OptimizationScenario } from "./types"
 
 export const initialReverseLogisticsModel: ReverseLogisticsModel = {
   costBreakdown: {
@@ -12,7 +12,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
   facilities: [
     {
       id: "recycling-1",
-      name: "Ferguson Returns Center - Newport News",
+      name: "7-Eleven Returns Center - Newport News",
       type: "recycling",
       varCost: 74.8,
       fixedCost: 4500,
@@ -22,7 +22,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
     {
       id: "recycling-2",
-      name: "Ferguson Returns Center - Dallas",
+      name: "7-Eleven Returns Center - Dallas",
       type: "recycling",
       varCost: 83.6,
       fixedCost: 3900,
@@ -32,7 +32,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
     {
       id: "regional-sorting",
-      name: "Ferguson Inspection & Sort Hub",
+      name: "7-Eleven Inspection & Sort Hub",
       type: "sorting",
       varCost: 5.4,
       fixedCost: 2100,
@@ -42,7 +42,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
     {
       id: "cp-1",
-      name: "Ferguson Branch Returns - Southeast",
+      name: "7-Eleven Branch Returns - Southeast",
       type: "sorting",
       varCost: 0,
       fixedCost: 0,
@@ -52,7 +52,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
     {
       id: "cp-2",
-      name: "Ferguson Branch Returns - Southwest",
+      name: "7-Eleven Branch Returns - Southwest",
       type: "sorting",
       varCost: 0,
       fixedCost: 0,
@@ -62,7 +62,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
     {
       id: "cp-3",
-      name: "Ferguson Branch Returns - Midwest",
+      name: "7-Eleven Branch Returns - Midwest",
       type: "sorting",
       varCost: 0,
       fixedCost: 0,
@@ -72,7 +72,7 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
     },
   ],
   flows: [
-    // From Ferguson Inspection & Sort Hub to Returns Centers
+    // From 7-Eleven Inspection & Sort Hub to Returns Centers
     { from: "regional-sorting", to: "recycling-1", quantity: 10500 },
     { from: "regional-sorting", to: "recycling-2", quantity: 3000 },
 
@@ -104,25 +104,25 @@ export const initialReverseLogisticsModel: ReverseLogisticsModel = {
   ],
   constraints: [
     {
-      name: "Ferguson Returns Center - Newport News Capacity",
+      name: "7-Eleven Returns Center - Newport News Capacity",
       value: 10500,
       operator: "<=",
       limit: 10500,
     },
     {
-      name: "Ferguson Returns Center - Dallas Capacity",
+      name: "7-Eleven Returns Center - Dallas Capacity",
       value: 7500,
       operator: "<=",
       limit: 9000,
     },
     {
-      name: "Ferguson Inspection & Sort Hub Capacity",
+      name: "7-Eleven Inspection & Sort Hub Capacity",
       value: 13500,
       operator: "<=",
       limit: 18000,
     },
     {
-      name: "Ferguson Inspection & Sort Hub Balance",
+      name: "7-Eleven Inspection & Sort Hub Balance",
       value: 0,
       operator: "=",
       limit: 0,
@@ -134,7 +134,7 @@ export const initialScenarios: OptimizationScenario[] = [
   {
     id: "scenario-1",
     name: "Base Case",
-    description: "Current Ferguson reverse logistics network for defective faucets, damaged water heaters, and warranty HVAC returns",
+    description: "Current 7-Eleven reverse logistics network for defective faucets, damaged water heaters, and warranty HVAC returns",
     createdAt: new Date(2025, 4, 20),
     totalCost: 2295000,
     model: initialReverseLogisticsModel,
@@ -142,7 +142,7 @@ export const initialScenarios: OptimizationScenario[] = [
   {
     id: "scenario-2",
     name: "Direct Transport",
-    description: "More direct transport from branch returns to Ferguson returns centers",
+    description: "More direct transport from branch returns to 7-Eleven returns centers",
     createdAt: new Date(2025, 4, 21),
     totalCost: 2227500,
     model: {
@@ -154,7 +154,7 @@ export const initialScenarios: OptimizationScenario[] = [
         cpRecyclingTransportCost: 758100,
       },
       flows: [
-        // From Ferguson Inspection & Sort Hub to Returns Centers
+        // From 7-Eleven Inspection & Sort Hub to Returns Centers
         { from: "regional-sorting", to: "recycling-1", quantity: 9000 },
         { from: "regional-sorting", to: "recycling-2", quantity: 0 },
 
@@ -172,7 +172,7 @@ export const initialScenarios: OptimizationScenario[] = [
   {
     id: "scenario-3",
     name: "Centralized Sorting",
-    description: "All branch returns route through Ferguson Inspection & Sort Hub",
+    description: "All branch returns route through 7-Eleven Inspection & Sort Hub",
     createdAt: new Date(2025, 4, 22),
     totalCost: 2340000,
     model: {
@@ -184,7 +184,7 @@ export const initialScenarios: OptimizationScenario[] = [
         cpRecyclingTransportCost: 822000,
       },
       flows: [
-        // From Ferguson Inspection & Sort Hub to Returns Centers
+        // From 7-Eleven Inspection & Sort Hub to Returns Centers
         { from: "regional-sorting", to: "recycling-1", quantity: 10500 },
         { from: "regional-sorting", to: "recycling-2", quantity: 7500 },
 

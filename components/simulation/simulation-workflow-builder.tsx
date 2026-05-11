@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import type React from "react"
 
@@ -213,7 +213,7 @@ const initialNodes: Node[] = [
         throughputTarget: 42000,
       },
       methods: {
-        onEnter: "// Ship to 1,700+ Ferguson branches",
+        onEnter: "// Ship to 1,700+ 7-Eleven branches",
         onExit: "// Track OTD, fill rate, OTIF",
       },
     },
@@ -251,13 +251,13 @@ const initialNodes: Node[] = [
       },
       methods: {
         onEnter: "// Track: dock-to-stock time, putaway rate, fill rate",
-        onExit: "// Report to Ferguson DC dashboard",
+        onExit: "// Report to 7-Eleven DC dashboard",
       },
     },
   },
 ]
 
-// Initial edges - Ferguson DC flow
+// Initial edges - 7-Eleven DC flow
 const initialEdges: Edge[] = [
   { id: "e1-2", source: "1", target: "2", animated: true },
   { id: "e2-3", source: "2", target: "3", animated: true },

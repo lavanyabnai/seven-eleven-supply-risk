@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -238,7 +238,7 @@ export default function LogisticsGanttRoute() {
       <div className="bg-blue-50  rounded-lg p-6 mb-4">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold text-blue-600">
-            Ferguson International Logistics & Vessel Timeline
+            7-Eleven International Logistics & Vessel Timeline
           </h1>
         </div>
       </div>
@@ -542,7 +542,7 @@ export default function LogisticsGanttRoute() {
                     </Select>
                     <Select defaultValue="san-bernardino">
                       <SelectTrigger className="h-8 text-xs">
-                        <SelectValue placeholder="Ferguson DC" />
+                        <SelectValue placeholder="7-Eleven DC" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="san-bernardino">San Bernardino DC</SelectItem>

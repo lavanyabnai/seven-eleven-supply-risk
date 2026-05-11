@@ -1,4 +1,4 @@
-import type { NetworkModel, OptimizationScenario } from "./types"
+﻿import type { NetworkModel, OptimizationScenario } from "./types"
 
 export const initialNetworkModel: NetworkModel = {
   costBreakdown: {
@@ -11,7 +11,7 @@ export const initialNetworkModel: NetworkModel = {
   },
   intermediateDepots: [
     {
-      id: "Ferguson Cross-Dock Southeast",
+      id: "7-Eleven Cross-Dock Southeast",
       varCost: 1.35,
       fixedCost: 1100,
       isOpen: false,
@@ -19,7 +19,7 @@ export const initialNetworkModel: NetworkModel = {
       transportCost: 2.4,
     },
     {
-      id: "Ferguson Cross-Dock West",
+      id: "7-Eleven Cross-Dock West",
       varCost: 1.6,
       fixedCost: 900,
       isOpen: true,
@@ -29,7 +29,7 @@ export const initialNetworkModel: NetworkModel = {
   ],
   channelFlows: [
     {
-      channelName: "Ferguson Branch (Walk-in)",
+      channelName: "7-Eleven Branch (Walk-in)",
       fromCDC: 27750,
       fromID1: 0,
       fromID2: 0,
@@ -47,7 +47,7 @@ export const initialNetworkModel: NetworkModel = {
       varCost: 0,
     },
     {
-      channelName: "Ferguson.com (Online)",
+      channelName: "7-Eleven.com (Online)",
       fromCDC: 0,
       fromID1: 0,
       fromID2: 6250,
@@ -73,21 +73,21 @@ export const initialNetworkModel: NetworkModel = {
   },
   transportCosts: [
     {
-      from: "Ferguson Master DC",
+      from: "7-Eleven Master DC",
       convStore: 6.6,
       retailStore: 5.85,
       aps: 6.25,
       home: 8.15,
     },
     {
-      from: "Ferguson Cross-Dock Southeast",
+      from: "7-Eleven Cross-Dock Southeast",
       convStore: 2.2,
       retailStore: 2.1,
       aps: 9999.0,
       home: 9999.0,
     },
     {
-      from: "Ferguson Cross-Dock West",
+      from: "7-Eleven Cross-Dock West",
       convStore: 9999.0,
       retailStore: 9999.0,
       aps: 1.05,
@@ -96,25 +96,25 @@ export const initialNetworkModel: NetworkModel = {
   ],
   constraints: [
     {
-      name: "Ferguson Cross-Dock Southeast Capacity",
+      name: "7-Eleven Cross-Dock Southeast Capacity",
       value: 0,
       operator: "<=",
       limit: 20000,
     },
     {
-      name: "Ferguson Cross-Dock West Capacity",
+      name: "7-Eleven Cross-Dock West Capacity",
       value: 19500,
       operator: "<=",
       limit: 5000,
     },
     {
-      name: "Ferguson Cross-Dock Southeast Balance",
+      name: "7-Eleven Cross-Dock Southeast Balance",
       value: 0,
       operator: "=",
       limit: 0,
     },
     {
-      name: "Ferguson Cross-Dock West Balance",
+      name: "7-Eleven Cross-Dock West Balance",
       value: 0,
       operator: "=",
       limit: 0,
@@ -133,8 +133,8 @@ export const initialScenarios: OptimizationScenario[] = [
   },
   {
     id: "scenario-2",
-    name: "Expanded Ferguson.com (Online)",
-    description: "Increased use of Ferguson.com online ordering channel",
+    name: "Expanded 7-Eleven.com (Online)",
+    description: "Increased use of 7-Eleven.com online ordering channel",
     createdAt: new Date(2025, 4, 21),
     totalCost: 142500,
     model: {
@@ -146,7 +146,7 @@ export const initialScenarios: OptimizationScenario[] = [
       },
       channelFlows: [
         {
-          channelName: "Ferguson Branch (Walk-in)",
+          channelName: "7-Eleven Branch (Walk-in)",
           fromCDC: 27750,
           fromID1: 0,
           fromID2: 0,
@@ -164,7 +164,7 @@ export const initialScenarios: OptimizationScenario[] = [
           varCost: 0,
         },
         {
-          channelName: "Ferguson.com (Online)",
+          channelName: "7-Eleven.com (Online)",
           fromCDC: 0,
           fromID1: 0,
           fromID2: 12500,
@@ -187,7 +187,7 @@ export const initialScenarios: OptimizationScenario[] = [
   {
     id: "scenario-3",
     name: "Both Cross-Docks Open",
-    description: "Operating both Ferguson cross-dock facilities",
+    description: "Operating both 7-Eleven cross-dock facilities",
     createdAt: new Date(2025, 4, 22),
     totalCost: 144800,
     model: {
@@ -200,7 +200,7 @@ export const initialScenarios: OptimizationScenario[] = [
       },
       intermediateDepots: [
         {
-          id: "Ferguson Cross-Dock Southeast",
+          id: "7-Eleven Cross-Dock Southeast",
           varCost: 1.35,
           fixedCost: 1100,
           isOpen: true,
@@ -208,7 +208,7 @@ export const initialScenarios: OptimizationScenario[] = [
           transportCost: 2.4,
         },
         {
-          id: "Ferguson Cross-Dock West",
+          id: "7-Eleven Cross-Dock West",
           varCost: 1.6,
           fixedCost: 900,
           isOpen: true,

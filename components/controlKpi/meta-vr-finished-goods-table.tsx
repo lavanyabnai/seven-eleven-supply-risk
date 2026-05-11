@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -10,7 +10,7 @@ import { MoreHorizontal, AlertTriangle, Search, TrendingUp, TrendingDown } from 
 
 const finishedGoodsData = [
   {
-    distributionCenter: "Ferguson DC - Newport News, VA",
+    distributionCenter: "7-Eleven DC - Newport News, VA",
     productModel: "Bradford White 40-gal Water Heater",
     sku: "FRG-WH-4050",
     currentStock: 12450,
@@ -26,7 +26,7 @@ const finishedGoodsData = [
     priority: "high",
   },
   {
-    distributionCenter: "Ferguson DC - Dallas, TX",
+    distributionCenter: "7-Eleven DC - Dallas, TX",
     productModel: "Rheem 50-gal Electric Water Heater",
     sku: "FRG-WH-5060E",
     currentStock: 8920,
@@ -42,7 +42,7 @@ const finishedGoodsData = [
     priority: "normal",
   },
   {
-    distributionCenter: "Ferguson DC - Mocksville, NC",
+    distributionCenter: "7-Eleven DC - Mocksville, NC",
     productModel: "A.O. Smith Tankless Unit",
     sku: "FRG-WH-TNKLS",
     currentStock: 2340,
@@ -58,7 +58,7 @@ const finishedGoodsData = [
     priority: "critical",
   },
   {
-    distributionCenter: "Ferguson DC - Denver, CO",
+    distributionCenter: "7-Eleven DC - Denver, CO",
     productModel: "Trane 15 SEER AC Condensing Unit",
     sku: "FRG-HV-SEER15",
     currentStock: 15680,
@@ -74,7 +74,7 @@ const finishedGoodsData = [
     priority: "low",
   },
   {
-    distributionCenter: "Ferguson DC - Phoenix, AZ",
+    distributionCenter: "7-Eleven DC - Phoenix, AZ",
     productModel: "Carrier 3-Ton Heat Pump",
     sku: "FRG-HV-HP3T",
     currentStock: 4560,
@@ -90,7 +90,7 @@ const finishedGoodsData = [
     priority: "high",
   },
   {
-    distributionCenter: "Ferguson DC - Chicago, IL",
+    distributionCenter: "7-Eleven DC - Chicago, IL",
     productModel: "6in Ductile Iron Gate Valve",
     sku: "FRG-WW-GV6",
     currentStock: 3420,
@@ -106,7 +106,7 @@ const finishedGoodsData = [
     priority: "normal",
   },
   {
-    distributionCenter: "Ferguson DC - Atlanta, GA",
+    distributionCenter: "7-Eleven DC - Atlanta, GA",
     productModel: "1in Copper Press Fitting Kit",
     sku: "FRG-FIT-CU1KIT",
     currentStock: 1890,
@@ -122,7 +122,7 @@ const finishedGoodsData = [
     priority: "high",
   },
   {
-    distributionCenter: "Ferguson DC - Sacramento, CA",
+    distributionCenter: "7-Eleven DC - Sacramento, CA",
     productModel: "Fire Sprinkler Head - Residential Pendent",
     sku: "FRG-FP-SPRNK12",
     currentStock: 7240,
@@ -190,7 +190,7 @@ export default function MetaVRFinishedGoodsTable() {
       <div className="flex items-center justify-between">
         <div>
 
-          <h1 className="mt-2 text-2xl font-bold">Ferguson Finished Goods Inventory</h1>
+          <h1 className="mt-2 text-2xl font-bold">7-Eleven Finished Goods Inventory</h1>
           <p className="text-muted-foreground">Monitor wholesale distribution and contractor account inventory levels</p>
         </div>
         <div className="text-right">

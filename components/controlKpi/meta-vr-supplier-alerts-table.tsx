@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -248,7 +248,7 @@ export default function MetaVRSupplierAlertsTable() {
               Back to Supply Chain Control Tower
             </Button>
           </Link>
-          <h1 className="mt-2 text-2xl font-bold">Ferguson Supplier OOS Alerts</h1>
+          <h1 className="mt-2 text-2xl font-bold">7-Eleven Supplier OOS Alerts</h1>
           <p className="text-muted-foreground">Monitor critical supplier shortages and out-of-stock situations</p>
         </div>
         <div className="flex items-center gap-4">

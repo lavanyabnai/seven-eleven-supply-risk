@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -22,7 +22,7 @@ import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from 
 import { TrendingUp } from 'lucide-react';
 import { useParams } from 'next/navigation';
 
-// Ferguson DC truck arrivals — inbound supplier deliveries vs outbound fleet dispatches
+// 7-Eleven DC truck arrivals — inbound supplier deliveries vs outbound fleet dispatches
 const chartData = [
   { month: "6AM", desktop: 8, mobile: 2 },
   { month: "8AM", desktop: 14, mobile: 4 },
@@ -38,7 +38,7 @@ const chartConfig = {
     color: "hsl(var(--chart-1))",
   },
   mobile: {
-    label: "Outbound (Ferguson Fleet)",
+    label: "Outbound (7-Eleven Fleet)",
     color: "hsl(var(--chart-2))",
   },
 };
@@ -150,7 +150,7 @@ export default function AreaChartTruck() {
       <CardFooter>
         <div className="grid gap-2 text-sm">
           <div className="flex items-center gap-2 font-medium leading-none">
-            Inbound supplier peaks 6-10 AM, Ferguson fleet dispatches peak 12-4 PM <TrendingUp className="h-4 w-4" />
+            Inbound supplier peaks 6-10 AM, 7-Eleven fleet dispatches peak 12-4 PM <TrendingUp className="h-4 w-4" />
           </div>
           <div className="flex items-center gap-2 leading-none text-muted-foreground">
             Jan 08 - Jan 13

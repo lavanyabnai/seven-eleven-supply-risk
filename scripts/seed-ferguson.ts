@@ -1,4 +1,4 @@
-import { config } from "dotenv"
+﻿import { config } from "dotenv"
 import { drizzle } from "drizzle-orm/neon-http"
 import { neon } from "@neondatabase/serverless"
 import {
@@ -18,19 +18,19 @@ const db = drizzle(sql)
 
 // ── Locations ───────────────────────────────────────────────────────
 const LOCATIONS = [
-  // Ferguson DCs
-  { code: "FDC-01", name: "Ferguson DC - Newport News", city: "Newport News", region: "Virginia", country: "US", latitude: 37.0871, longitude: -76.473 },
-  { code: "FDC-02", name: "Ferguson DC - Dallas", city: "Dallas", region: "Texas", country: "US", latitude: 32.7767, longitude: -96.797 },
-  { code: "FDC-03", name: "Ferguson DC - Atlanta", city: "Atlanta", region: "Georgia", country: "US", latitude: 33.749, longitude: -84.388 },
-  { code: "FDC-04", name: "Ferguson DC - Denver", city: "Denver", region: "Colorado", country: "US", latitude: 39.7392, longitude: -104.9903 },
-  { code: "FDC-05", name: "Ferguson DC - Phoenix", city: "Phoenix", region: "Arizona", country: "US", latitude: 33.4484, longitude: -112.074 },
-  { code: "FDC-06", name: "Ferguson DC - Chicago", city: "Chicago", region: "Illinois", country: "US", latitude: 41.8781, longitude: -87.6298 },
-  { code: "FDC-07", name: "Ferguson DC - Sacramento", city: "Sacramento", region: "California", country: "US", latitude: 38.5816, longitude: -121.4944 },
-  { code: "FDC-08", name: "Ferguson DC - Orlando", city: "Orlando", region: "Florida", country: "US", latitude: 28.5383, longitude: -81.3792 },
-  { code: "FDC-09", name: "Ferguson DC - San Bernardino", city: "San Bernardino", region: "California", country: "US", latitude: 34.1083, longitude: -117.2898 },
-  { code: "FDC-10", name: "Ferguson DC - Indianapolis", city: "Indianapolis", region: "Indiana", country: "US", latitude: 39.7684, longitude: -86.1581 },
-  { code: "FDC-11", name: "Ferguson DC - Charlotte", city: "Charlotte", region: "North Carolina", country: "US", latitude: 35.2271, longitude: -80.8431 },
-  { code: "FDC-12", name: "Ferguson DC - Portland", city: "Portland", region: "Oregon", country: "US", latitude: 45.5152, longitude: -122.6784 },
+  // 7-Eleven DCs
+  { code: "FDC-01", name: "7-Eleven DC - Newport News", city: "Newport News", region: "Virginia", country: "US", latitude: 37.0871, longitude: -76.473 },
+  { code: "FDC-02", name: "7-Eleven DC - Dallas", city: "Dallas", region: "Texas", country: "US", latitude: 32.7767, longitude: -96.797 },
+  { code: "FDC-03", name: "7-Eleven DC - Atlanta", city: "Atlanta", region: "Georgia", country: "US", latitude: 33.749, longitude: -84.388 },
+  { code: "FDC-04", name: "7-Eleven DC - Denver", city: "Denver", region: "Colorado", country: "US", latitude: 39.7392, longitude: -104.9903 },
+  { code: "FDC-05", name: "7-Eleven DC - Phoenix", city: "Phoenix", region: "Arizona", country: "US", latitude: 33.4484, longitude: -112.074 },
+  { code: "FDC-06", name: "7-Eleven DC - Chicago", city: "Chicago", region: "Illinois", country: "US", latitude: 41.8781, longitude: -87.6298 },
+  { code: "FDC-07", name: "7-Eleven DC - Sacramento", city: "Sacramento", region: "California", country: "US", latitude: 38.5816, longitude: -121.4944 },
+  { code: "FDC-08", name: "7-Eleven DC - Orlando", city: "Orlando", region: "Florida", country: "US", latitude: 28.5383, longitude: -81.3792 },
+  { code: "FDC-09", name: "7-Eleven DC - San Bernardino", city: "San Bernardino", region: "California", country: "US", latitude: 34.1083, longitude: -117.2898 },
+  { code: "FDC-10", name: "7-Eleven DC - Indianapolis", city: "Indianapolis", region: "Indiana", country: "US", latitude: 39.7684, longitude: -86.1581 },
+  { code: "FDC-11", name: "7-Eleven DC - Charlotte", city: "Charlotte", region: "North Carolina", country: "US", latitude: 35.2271, longitude: -80.8431 },
+  { code: "FDC-12", name: "7-Eleven DC - Portland", city: "Portland", region: "Oregon", country: "US", latitude: 45.5152, longitude: -122.6784 },
   // Supplier/Manufacturer HQs & Plants
   { code: "SUP-KOH", name: "Kohler HQ", city: "Kohler", region: "Wisconsin", country: "US", latitude: 43.7394, longitude: -87.7818 },
   { code: "MFG-KOH-SC", name: "Kohler Plant Spartanburg", city: "Spartanburg", region: "South Carolina", country: "US", latitude: 34.9496, longitude: -81.932 },
@@ -151,19 +151,19 @@ const SUPPLIERS_DATA = [
 // ── Facilities ──────────────────────────────────────────────────────
 // Format: { name, type, locCode, capacity, capacityUnit }
 const FACILITIES_DATA = [
-  // Ferguson DCs
-  { name: "Ferguson Master DC - Newport News", type: "DC", locCode: "FDC-01", capacity: 850000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Dallas", type: "DC", locCode: "FDC-02", capacity: 425000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Atlanta", type: "DC", locCode: "FDC-03", capacity: 380000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Denver", type: "DC", locCode: "FDC-04", capacity: 310000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Phoenix", type: "DC", locCode: "FDC-05", capacity: 295000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Chicago", type: "DC", locCode: "FDC-06", capacity: 400000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Sacramento", type: "DC", locCode: "FDC-07", capacity: 275000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Orlando", type: "DC", locCode: "FDC-08", capacity: 320000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - San Bernardino", type: "DC", locCode: "FDC-09", capacity: 350000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Indianapolis", type: "DC", locCode: "FDC-10", capacity: 290000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Charlotte", type: "DC", locCode: "FDC-11", capacity: 265000, capacityUnit: "sqft" },
-  { name: "Ferguson Regional DC - Portland", type: "DC", locCode: "FDC-12", capacity: 240000, capacityUnit: "sqft" },
+  // 7-Eleven DCs
+  { name: "7-Eleven Master DC - Newport News", type: "DC", locCode: "FDC-01", capacity: 850000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Dallas", type: "DC", locCode: "FDC-02", capacity: 425000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Atlanta", type: "DC", locCode: "FDC-03", capacity: 380000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Denver", type: "DC", locCode: "FDC-04", capacity: 310000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Phoenix", type: "DC", locCode: "FDC-05", capacity: 295000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Chicago", type: "DC", locCode: "FDC-06", capacity: 400000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Sacramento", type: "DC", locCode: "FDC-07", capacity: 275000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Orlando", type: "DC", locCode: "FDC-08", capacity: 320000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - San Bernardino", type: "DC", locCode: "FDC-09", capacity: 350000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Indianapolis", type: "DC", locCode: "FDC-10", capacity: 290000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Charlotte", type: "DC", locCode: "FDC-11", capacity: 265000, capacityUnit: "sqft" },
+  { name: "7-Eleven Regional DC - Portland", type: "DC", locCode: "FDC-12", capacity: 240000, capacityUnit: "sqft" },
   // Manufacturing Plants
   { name: "Kohler Plant - Kohler WI", type: "Plant", locCode: "SUP-KOH", capacity: 15000, capacityUnit: "units/day" },
   { name: "Kohler Plant - Spartanburg SC", type: "Plant", locCode: "MFG-KOH-SC", capacity: 8000, capacityUnit: "units/day" },
@@ -202,46 +202,46 @@ const FACILITIES_DATA = [
 // ── Product Flows (key routes) ──────────────────────────────────────
 // { label, sourceFacility, destFacility, product, minThroughput, maxThroughput }
 const FLOWS_DATA = [
-  { label: "Kohler WI to Newport News", src: "Kohler Plant - Kohler WI", dest: "Ferguson Master DC - Newport News", product: "Residential Faucets - Kitchen", min: "5000", max: "12000" },
-  { label: "Kohler WI to Chicago", src: "Kohler Plant - Kohler WI", dest: "Ferguson Regional DC - Chicago", product: "Toilets - Residential", min: "3000", max: "8000" },
-  { label: "Kohler SC to Atlanta", src: "Kohler Plant - Spartanburg SC", dest: "Ferguson Regional DC - Atlanta", product: "Toilets - Residential", min: "3000", max: "7000" },
-  { label: "Kohler SC to Charlotte", src: "Kohler Plant - Spartanburg SC", dest: "Ferguson Regional DC - Charlotte", product: "Vanities and Sinks", min: "2000", max: "6000" },
-  { label: "Kohler Foshan to San Bernardino", src: "Kohler Plant - Foshan CN", dest: "Ferguson Regional DC - San Bernardino", product: "Residential Faucets - Kitchen", min: "8000", max: "18000" },
-  { label: "Moen New Bern to Newport News", src: "Moen Plant - New Bern NC", dest: "Ferguson Master DC - Newport News", product: "Residential Faucets - Kitchen", min: "5000", max: "12000" },
-  { label: "Moen New Bern to Charlotte", src: "Moen Plant - New Bern NC", dest: "Ferguson Regional DC - Charlotte", product: "Commercial Faucets", min: "3000", max: "7000" },
-  { label: "Moen Jiangmen to San Bernardino", src: "Moen Plant - Jiangmen CN", dest: "Ferguson Regional DC - San Bernardino", product: "Residential Faucets - Bathroom", min: "8000", max: "20000" },
-  { label: "Delta Greensburg to Indianapolis", src: "Delta Faucet Plant - Greensburg IN", dest: "Ferguson Regional DC - Indianapolis", product: "Residential Faucets - Kitchen", min: "4000", max: "10000" },
-  { label: "Delta Greensburg to Chicago", src: "Delta Faucet Plant - Greensburg IN", dest: "Ferguson Regional DC - Chicago", product: "Commercial Faucets", min: "3000", max: "7000" },
-  { label: "Delta Jackson to Atlanta", src: "Delta Faucet Plant - Jackson TN", dest: "Ferguson Regional DC - Atlanta", product: "Residential Faucets - Bathroom", min: "3000", max: "8000" },
-  { label: "Delta Zhuhai to San Bernardino", src: "Delta Faucet Plant - Zhuhai CN", dest: "Ferguson Regional DC - San Bernardino", product: "Residential Faucets - Kitchen", min: "10000", max: "22000" },
-  { label: "AO Smith to Atlanta", src: "A.O. Smith Plant - Ashland City TN", dest: "Ferguson Regional DC - Atlanta", product: "Tank Water Heaters - Residential", min: "2500", max: "6000" },
-  { label: "AO Smith to Dallas", src: "A.O. Smith Plant - Ashland City TN", dest: "Ferguson Regional DC - Dallas", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
-  { label: "AO Smith to Newport News", src: "A.O. Smith Plant - Ashland City TN", dest: "Ferguson Master DC - Newport News", product: "Tankless Water Heaters", min: "1200", max: "3500" },
-  { label: "Bradford White to Chicago", src: "Bradford White Plant - Middleville MI", dest: "Ferguson Regional DC - Chicago", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
-  { label: "Charlotte Pipe to Atlanta", src: "Charlotte Pipe Plant - Charlotte NC", dest: "Ferguson Regional DC - Atlanta", product: "Cast Iron Pipe", min: "25000", max: "60000" },
-  { label: "Charlotte Pipe to Charlotte", src: "Charlotte Pipe Plant - Charlotte NC", dest: "Ferguson Regional DC - Charlotte", product: "PVC Pipe - Schedule 40", min: "40000", max: "90000" },
-  { label: "JM Eagle LA to San Bernardino", src: "JM Eagle Plant - Los Angeles CA", dest: "Ferguson Regional DC - San Bernardino", product: "PVC Pipe - Schedule 40", min: "50000", max: "120000" },
-  { label: "JM Eagle LA to Phoenix", src: "JM Eagle Plant - Los Angeles CA", dest: "Ferguson Regional DC - Phoenix", product: "HDPE Pipe - Waterworks", min: "30000", max: "70000" },
-  { label: "JM Eagle Houston to Dallas", src: "JM Eagle Plant - Houston TX", dest: "Ferguson Regional DC - Dallas", product: "PVC Pipe - Schedule 40", min: "40000", max: "100000" },
-  { label: "Mueller to Atlanta", src: "Mueller Water Plant - Albertville AL", dest: "Ferguson Regional DC - Atlanta", product: "Fire Hydrants", min: "1000", max: "3000" },
-  { label: "Rheem Montgomery to Atlanta", src: "Rheem Plant - Montgomery AL", dest: "Ferguson Regional DC - Atlanta", product: "Residential HVAC Systems", min: "1200", max: "3000" },
-  { label: "Rheem Montgomery to Dallas", src: "Rheem Plant - Montgomery AL", dest: "Ferguson Regional DC - Dallas", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
-  { label: "Rheem Monterrey to Phoenix", src: "Rheem Plant - Monterrey MX", dest: "Ferguson Regional DC - Phoenix", product: "Tank Water Heaters - Residential", min: "1500", max: "4000" },
-  { label: "Trane Columbia to Charlotte", src: "Trane Plant - Columbia SC", dest: "Ferguson Regional DC - Charlotte", product: "Residential HVAC Systems", min: "1000", max: "2500" },
-  { label: "Trane Columbia to Atlanta", src: "Trane Plant - Columbia SC", dest: "Ferguson Regional DC - Atlanta", product: "Commercial HVAC Systems", min: "300", max: "900" },
-  { label: "Carrier Indy to Chicago", src: "Carrier Plant - Indianapolis IN", dest: "Ferguson Regional DC - Chicago", product: "Residential HVAC Systems", min: "800", max: "2200" },
-  { label: "Lennox Marshalltown to Chicago", src: "Lennox Plant - Marshalltown IA", dest: "Ferguson Regional DC - Chicago", product: "Residential HVAC Systems", min: "800", max: "2000" },
-  { label: "Lennox Marshalltown to Denver", src: "Lennox Plant - Marshalltown IA", dest: "Ferguson Regional DC - Denver", product: "HVAC Air Handlers", min: "600", max: "1500" },
-  { label: "American Std Monterrey to Dallas", src: "American Standard Plant - Monterrey MX", dest: "Ferguson Regional DC - Dallas", product: "Toilets - Residential", min: "3000", max: "7000" },
-  { label: "TOTO Kitakyushu to San Bernardino", src: "TOTO Plant - Kitakyushu JP", dest: "Ferguson Regional DC - San Bernardino", product: "Toilets - Residential", min: "2000", max: "5000" },
-  { label: "Grohe Hemer to Newport News", src: "Grohe Plant - Hemer DE", dest: "Ferguson Master DC - Newport News", product: "Commercial Faucets", min: "2500", max: "6000" },
-  { label: "Navien Sejong to Sacramento", src: "Navien Plant - Sejong KR", dest: "Ferguson Regional DC - Sacramento", product: "Tankless Water Heaters", min: "1800", max: "4500" },
-  { label: "Rinnai Griffin to Atlanta", src: "Rinnai Plant - Griffin GA", dest: "Ferguson Regional DC - Atlanta", product: "Tankless Water Heaters", min: "1500", max: "3500" },
-  { label: "InSinkErator to Chicago", src: "InSinkErator Plant - Racine WI", dest: "Ferguson Regional DC - Chicago", product: "Garbage Disposals", min: "5000", max: "12000" },
-  { label: "InSinkErator to Newport News", src: "InSinkErator Plant - Racine WI", dest: "Ferguson Master DC - Newport News", product: "Garbage Disposals", min: "3000", max: "8000" },
-  { label: "Generac to Chicago", src: "Generac Plant - Waukesha WI", dest: "Ferguson Regional DC - Chicago", product: "Generators - Residential", min: "600", max: "1800" },
-  { label: "Uponor to Chicago", src: "Uponor Plant - Nastola FI", dest: "Ferguson Regional DC - Chicago", product: "PEX Tubing", min: "60000", max: "150000" },
-  { label: "Viega Attendorn to Newport News", src: "Viega Plant - Attendorn DE", dest: "Ferguson Master DC - Newport News", product: "Copper Fittings", min: "20000", max: "50000" },
+  { label: "Kohler WI to Newport News", src: "Kohler Plant - Kohler WI", dest: "7-Eleven Master DC - Newport News", product: "Residential Faucets - Kitchen", min: "5000", max: "12000" },
+  { label: "Kohler WI to Chicago", src: "Kohler Plant - Kohler WI", dest: "7-Eleven Regional DC - Chicago", product: "Toilets - Residential", min: "3000", max: "8000" },
+  { label: "Kohler SC to Atlanta", src: "Kohler Plant - Spartanburg SC", dest: "7-Eleven Regional DC - Atlanta", product: "Toilets - Residential", min: "3000", max: "7000" },
+  { label: "Kohler SC to Charlotte", src: "Kohler Plant - Spartanburg SC", dest: "7-Eleven Regional DC - Charlotte", product: "Vanities and Sinks", min: "2000", max: "6000" },
+  { label: "Kohler Foshan to San Bernardino", src: "Kohler Plant - Foshan CN", dest: "7-Eleven Regional DC - San Bernardino", product: "Residential Faucets - Kitchen", min: "8000", max: "18000" },
+  { label: "Moen New Bern to Newport News", src: "Moen Plant - New Bern NC", dest: "7-Eleven Master DC - Newport News", product: "Residential Faucets - Kitchen", min: "5000", max: "12000" },
+  { label: "Moen New Bern to Charlotte", src: "Moen Plant - New Bern NC", dest: "7-Eleven Regional DC - Charlotte", product: "Commercial Faucets", min: "3000", max: "7000" },
+  { label: "Moen Jiangmen to San Bernardino", src: "Moen Plant - Jiangmen CN", dest: "7-Eleven Regional DC - San Bernardino", product: "Residential Faucets - Bathroom", min: "8000", max: "20000" },
+  { label: "Delta Greensburg to Indianapolis", src: "Delta Faucet Plant - Greensburg IN", dest: "7-Eleven Regional DC - Indianapolis", product: "Residential Faucets - Kitchen", min: "4000", max: "10000" },
+  { label: "Delta Greensburg to Chicago", src: "Delta Faucet Plant - Greensburg IN", dest: "7-Eleven Regional DC - Chicago", product: "Commercial Faucets", min: "3000", max: "7000" },
+  { label: "Delta Jackson to Atlanta", src: "Delta Faucet Plant - Jackson TN", dest: "7-Eleven Regional DC - Atlanta", product: "Residential Faucets - Bathroom", min: "3000", max: "8000" },
+  { label: "Delta Zhuhai to San Bernardino", src: "Delta Faucet Plant - Zhuhai CN", dest: "7-Eleven Regional DC - San Bernardino", product: "Residential Faucets - Kitchen", min: "10000", max: "22000" },
+  { label: "AO Smith to Atlanta", src: "A.O. Smith Plant - Ashland City TN", dest: "7-Eleven Regional DC - Atlanta", product: "Tank Water Heaters - Residential", min: "2500", max: "6000" },
+  { label: "AO Smith to Dallas", src: "A.O. Smith Plant - Ashland City TN", dest: "7-Eleven Regional DC - Dallas", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
+  { label: "AO Smith to Newport News", src: "A.O. Smith Plant - Ashland City TN", dest: "7-Eleven Master DC - Newport News", product: "Tankless Water Heaters", min: "1200", max: "3500" },
+  { label: "Bradford White to Chicago", src: "Bradford White Plant - Middleville MI", dest: "7-Eleven Regional DC - Chicago", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
+  { label: "Charlotte Pipe to Atlanta", src: "Charlotte Pipe Plant - Charlotte NC", dest: "7-Eleven Regional DC - Atlanta", product: "Cast Iron Pipe", min: "25000", max: "60000" },
+  { label: "Charlotte Pipe to Charlotte", src: "Charlotte Pipe Plant - Charlotte NC", dest: "7-Eleven Regional DC - Charlotte", product: "PVC Pipe - Schedule 40", min: "40000", max: "90000" },
+  { label: "JM Eagle LA to San Bernardino", src: "JM Eagle Plant - Los Angeles CA", dest: "7-Eleven Regional DC - San Bernardino", product: "PVC Pipe - Schedule 40", min: "50000", max: "120000" },
+  { label: "JM Eagle LA to Phoenix", src: "JM Eagle Plant - Los Angeles CA", dest: "7-Eleven Regional DC - Phoenix", product: "HDPE Pipe - Waterworks", min: "30000", max: "70000" },
+  { label: "JM Eagle Houston to Dallas", src: "JM Eagle Plant - Houston TX", dest: "7-Eleven Regional DC - Dallas", product: "PVC Pipe - Schedule 40", min: "40000", max: "100000" },
+  { label: "Mueller to Atlanta", src: "Mueller Water Plant - Albertville AL", dest: "7-Eleven Regional DC - Atlanta", product: "Fire Hydrants", min: "1000", max: "3000" },
+  { label: "Rheem Montgomery to Atlanta", src: "Rheem Plant - Montgomery AL", dest: "7-Eleven Regional DC - Atlanta", product: "Residential HVAC Systems", min: "1200", max: "3000" },
+  { label: "Rheem Montgomery to Dallas", src: "Rheem Plant - Montgomery AL", dest: "7-Eleven Regional DC - Dallas", product: "Tank Water Heaters - Residential", min: "2000", max: "5000" },
+  { label: "Rheem Monterrey to Phoenix", src: "Rheem Plant - Monterrey MX", dest: "7-Eleven Regional DC - Phoenix", product: "Tank Water Heaters - Residential", min: "1500", max: "4000" },
+  { label: "Trane Columbia to Charlotte", src: "Trane Plant - Columbia SC", dest: "7-Eleven Regional DC - Charlotte", product: "Residential HVAC Systems", min: "1000", max: "2500" },
+  { label: "Trane Columbia to Atlanta", src: "Trane Plant - Columbia SC", dest: "7-Eleven Regional DC - Atlanta", product: "Commercial HVAC Systems", min: "300", max: "900" },
+  { label: "Carrier Indy to Chicago", src: "Carrier Plant - Indianapolis IN", dest: "7-Eleven Regional DC - Chicago", product: "Residential HVAC Systems", min: "800", max: "2200" },
+  { label: "Lennox Marshalltown to Chicago", src: "Lennox Plant - Marshalltown IA", dest: "7-Eleven Regional DC - Chicago", product: "Residential HVAC Systems", min: "800", max: "2000" },
+  { label: "Lennox Marshalltown to Denver", src: "Lennox Plant - Marshalltown IA", dest: "7-Eleven Regional DC - Denver", product: "HVAC Air Handlers", min: "600", max: "1500" },
+  { label: "American Std Monterrey to Dallas", src: "American Standard Plant - Monterrey MX", dest: "7-Eleven Regional DC - Dallas", product: "Toilets - Residential", min: "3000", max: "7000" },
+  { label: "TOTO Kitakyushu to San Bernardino", src: "TOTO Plant - Kitakyushu JP", dest: "7-Eleven Regional DC - San Bernardino", product: "Toilets - Residential", min: "2000", max: "5000" },
+  { label: "Grohe Hemer to Newport News", src: "Grohe Plant - Hemer DE", dest: "7-Eleven Master DC - Newport News", product: "Commercial Faucets", min: "2500", max: "6000" },
+  { label: "Navien Sejong to Sacramento", src: "Navien Plant - Sejong KR", dest: "7-Eleven Regional DC - Sacramento", product: "Tankless Water Heaters", min: "1800", max: "4500" },
+  { label: "Rinnai Griffin to Atlanta", src: "Rinnai Plant - Griffin GA", dest: "7-Eleven Regional DC - Atlanta", product: "Tankless Water Heaters", min: "1500", max: "3500" },
+  { label: "InSinkErator to Chicago", src: "InSinkErator Plant - Racine WI", dest: "7-Eleven Regional DC - Chicago", product: "Garbage Disposals", min: "5000", max: "12000" },
+  { label: "InSinkErator to Newport News", src: "InSinkErator Plant - Racine WI", dest: "7-Eleven Master DC - Newport News", product: "Garbage Disposals", min: "3000", max: "8000" },
+  { label: "Generac to Chicago", src: "Generac Plant - Waukesha WI", dest: "7-Eleven Regional DC - Chicago", product: "Generators - Residential", min: "600", max: "1800" },
+  { label: "Uponor to Chicago", src: "Uponor Plant - Nastola FI", dest: "7-Eleven Regional DC - Chicago", product: "PEX Tubing", min: "60000", max: "150000" },
+  { label: "Viega Attendorn to Newport News", src: "Viega Plant - Attendorn DE", dest: "7-Eleven Master DC - Newport News", product: "Copper Fittings", min: "20000", max: "50000" },
 ]
 
 const PERIODS_DATA = [
@@ -252,7 +252,7 @@ const PERIODS_DATA = [
 ]
 
 async function main() {
-  console.log("Seeding Ferguson supply chain data...")
+  console.log("Seeding 7-Eleven supply chain data...")
 
   try {
     // 1. Clear existing data (in dependency order)
@@ -379,7 +379,7 @@ async function main() {
     }
     console.log(`  Inserted ${flowValues.length} product flows`)
 
-    console.log("\nFerguson supply chain seed complete!")
+    console.log("\n7-Eleven supply chain seed complete!")
   } catch (error) {
     console.error("Error during seed:", error)
     process.exit(1)

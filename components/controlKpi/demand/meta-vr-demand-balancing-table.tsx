@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -218,7 +218,7 @@ export default function MetaVRDemandBalancingTable() {
               Back to Supply Chain Control Tower
             </Button>
           </Link>
-          <h1 className="mt-2 text-2xl font-bold">Ferguson Supply & Demand Balancing</h1>
+          <h1 className="mt-2 text-2xl font-bold">7-Eleven Supply & Demand Balancing</h1>
           <p className="text-muted-foreground">Monitor and manage inventory transfers and demand forecasting</p>
         </div>
         <div className="flex items-center gap-4">

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+﻿/* eslint-disable react/prop-types */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -21,7 +21,7 @@ import {
 import { CartesianGrid, LabelList, Line, LineChart, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// Ferguson OTIF % by channel — Branch Replenishment, Direct-to-Jobsite, Contractor Will-Call
+// 7-Eleven OTIF % by channel — Branch Replenishment, Direct-to-Jobsite, Contractor Will-Call
 const chartData = [
   { month: "Mon", desktop: 97.2, mobile: 94.5, tv: 98.1 },
   { month: "Tue", desktop: 96.8, mobile: 93.8, tv: 97.5 },

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Play, Pause, Square, BarChart3, Settings, Save, Upload, Download } from "lucide-react"
 
@@ -6,7 +6,7 @@ export function SimulationToolbar() {
   return (
     <div className="bg-white border-b p-3 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <div className="font-semibold text-gray-700">Ferguson DC Simulation</div>
+        <div className="font-semibold text-gray-700">7-Eleven DC Simulation</div>
         <div className="flex items-center gap-1 bg-blue-100 rounded px-3 py-1">
           <span className="text-sm font-medium text-blue-800">Newport News DC - Inbound Receiving</span>
         </div>

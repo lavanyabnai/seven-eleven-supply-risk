@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -11,7 +11,7 @@ const equipmentData = [
   { name: "Broken", value: 15, color: "#ef4444" },
 ]
 
-// Ferguson Front Royal VA DC material handling equipment
+// 7-Eleven Front Royal VA DC material handling equipment
 const equipmentList = [
   { type: "Reach Forklifts", total: 16, available: 10, status: "critical" },
   { type: "Electric Pallet Jacks", total: 30, available: 18, status: "warning" },

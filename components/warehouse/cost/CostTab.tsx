@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import StatsColumnCost from '@/components/warehouse/cost/StatsColumnCost';
 import StatsColumnSpace from '@/components/warehouse/cost/StatsColumnSpace';
@@ -14,7 +14,7 @@ export default function CostTab() {
 
             <div className="mt-2 w-100 flex justify-between p-4 rounded-lg border bg-white">
                 <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">
-                    Ferguson DC Cost Management Metrics
+                    7-Eleven DC Cost Management Metrics
                 </h2>
 
                 <div className="flex items-center justify-end">

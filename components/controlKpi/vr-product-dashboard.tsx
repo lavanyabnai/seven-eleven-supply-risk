@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import {
   ArrowLeft,
@@ -64,10 +64,10 @@ export default function VRProductDashboard({ productData }: VRProductDashboardPr
   ]
 
   const regionalBreakdown = [
-    { store: "Ferguson Branch - Richmond, VA", stock: 450, sales: 89 },
-    { store: "Ferguson Branch - Virginia Beach, VA", stock: 320, sales: 76 },
-    { store: "Ferguson Branch - Raleigh, NC", stock: 280, sales: 65 },
-    { store: "Ferguson Branch - Charlotte, NC", stock: 190, sales: 43 },
+    { store: "7-Eleven Branch - Richmond, VA", stock: 450, sales: 89 },
+    { store: "7-Eleven Branch - Virginia Beach, VA", stock: 320, sales: 76 },
+    { store: "7-Eleven Branch - Raleigh, NC", stock: 280, sales: 65 },
+    { store: "7-Eleven Branch - Charlotte, NC", stock: 190, sales: 43 },
   ]
 
   const [isExpediteDialogOpen, setIsExpediteDialogOpen] = useState(false)
