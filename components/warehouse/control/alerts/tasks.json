@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ALT001",
+    "warehouseId": "FRONT ROYAL VA DC",
+    "risk": "High",
+    "sitesAffected": "Plumbing Zone B",
+    "projectedLoss": "15%",
+    "resolution": "Rebalance pick slots and add temporary labor for plumbing fixtures backlog",
+    "description": "Productivity decline in plumbing fixtures picking zone — order backlog growing",
+    "status": "In-Progress",
+    "severity": "High"
+  },
+  {
+    "id": "ALT002",
+    "warehouseId": "AURORA CO MDC",
+    "risk": "Medium",
+    "sitesAffected": "HVAC Zone A",
+    "projectedLoss": "8%",
+    "resolution": "Schedule forklift maintenance and retrain operators on HVAC pallet handling",
+    "description": "Forklift malfunction affecting HVAC equipment sorting efficiency",
+    "status": "Pending",
+    "severity": "Medium"
+  },
+  {
+    "id": "ALT003",
+    "warehouseId": "NASHVILLE MDC",
+    "risk": "Low",
+    "sitesAffected": "PVF Zone C",
+    "projectedLoss": "3%",
+    "resolution": "Reconcile pipe valve & fittings inventory with WMS cycle count",
+    "description": "Minor PVF inventory discrepancies detected during cycle count",
+    "status": "Completed",
+    "severity": "Low"
+  },
+  {
+    "id": "ALT004",
+    "warehouseId": "HOUSTON MDC",
+    "risk": "High",
+    "sitesAffected": "Waterworks Zone D, Receiving Dock E",
+    "projectedLoss": "20%",
+    "resolution": "Activate backup generators and reroute inbound waterworks shipments to Dallas MDC",
+    "description": "Power outage from Gulf Coast storm affecting multiple zones and receiving docks",
+    "status": "Backlog",
+    "severity": "High"
+  },
+  {
+    "id": "ALT005",
+    "warehouseId": "FROSTPROOF FL DC",
+    "risk": "Medium",
+    "sitesAffected": "Outbound Shipping Zone F",
+    "projectedLoss": "10%",
+    "resolution": "Extend shift overlap and cross-train receiving staff for outbound operations",
+    "description": "Staff shortage during peak shipping hours — Florida branch replenishment delayed",
+    "status": "In-Progress",
+    "severity": "Medium"
+  },
+  {
+    "id": "ALT006",
+    "warehouseId": "RICHLAND WA DC",
+    "risk": "High",
+    "sitesAffected": "All Zones",
+    "projectedLoss": "25%",
+    "resolution": "Upgrade WMS security protocols and restore access controls after system update",
+    "description": "WMS access control malfunction after system upgrade — all zone scans failing",
+    "status": "Backlog",
+    "severity": "High"
+  },
+  {
+    "id": "ALT007",
+    "warehouseId": "DALLAS MDC",
+    "risk": "Low",
+    "sitesAffected": "Appliance Zone G",
+    "projectedLoss": "5%",
+    "resolution": "Calibrate climate control in appliance storage area to prevent humidity damage",
+    "description": "Temperature fluctuations in appliance storage — risk of moisture damage to units",
+    "status": "In-Progress",
+    "severity": "Low"
+  },
+  {
+    "id": "ALT008",
+    "warehouseId": "FORT PAYNE AL DC",
+    "risk": "Medium",
+    "sitesAffected": "Conveyor Zone H",
+    "projectedLoss": "12%",
+    "resolution": "Replace worn conveyor belts on main sortation line serving Southeast branches",
+    "description": "Conveyor belt wear causing jams on plumbing parts sortation line",
+    "status": "Completed",
+    "severity": "Medium"
+  },
+  {
+    "id": "ALT009",
+    "warehouseId": "MCGREGOR TX DC",
+    "risk": "High",
+    "sitesAffected": "Bulk Storage Zone I, Loading Dock J",
+    "projectedLoss": "18%",
+    "resolution": "Deploy sandbags at dock doors and elevate waterworks pipe inventory to upper racks",
+    "description": "Flash flood risk — heavy rainfall threatening bulk waterworks pipe storage area",
+    "status": "Backlog",
+    "severity": "High"
+  },
+  {
+    "id": "ALT010",
+    "warehouseId": "PHOENIX MDC",
+    "risk": "Medium",
+    "sitesAffected": "Pick Module Zone K",
+    "projectedLoss": "7%",
+    "resolution": "Install supplemental cooling units in pick module to maintain safe work conditions",
+    "description": "Excessive heat in pick module during summer peak — affecting worker productivity",
+    "status": "In-Progress",
+    "severity": "Medium"
+  }
+]

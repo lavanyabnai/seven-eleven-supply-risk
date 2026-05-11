@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(diff:*)",
+      "Bash(find:*)",
+      "Bash(npx drizzle-kit push:*)",
+      "Bash(node -e:*)",
+      "Bash(node _check_db.mjs:*)",
+      "Bash(del \"c:\\\\Users\\\\lavan\\\\Desktop\\\\desktop\\\\withNode\\\\risk-all-table\\\\_check_db.mjs\")",
+      "Bash(git checkout:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

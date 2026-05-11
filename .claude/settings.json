@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel --prod --yes)",
+      "Bash(vercel inspect supply-chain-risk-n6p6ac90b-lavs-projects-3366b3ee.vercel.app --logs)",
+      "Bash(vercel alias set supply-chain-risk-n6p6ac90b-lavs-projects-3366b3ee.vercel.app integrated-planning.vercel.app)",
+      "Bash(git push origin main)"
+    ]
+  }
+}
