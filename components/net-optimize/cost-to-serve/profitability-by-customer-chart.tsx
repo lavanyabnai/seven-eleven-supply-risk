@@ -5,7 +5,7 @@ import { Chart, registerables } from "chart.js"
 
 Chart.register(...registerables)
 
-const 7-elevenBranches = [
+const sevenElevenBranches = [
   "NYC Metro", "LA Metro", "Houston", "Chicago", "Phoenix", "Philadelphia",
   "DFW", "Atlanta", "Miami", "Denver", "Seattle", "Charlotte",
   "SF Bay Area", "Minneapolis", "Tampa Bay", "Boston", "Indianapolis",
@@ -19,7 +19,7 @@ const 7-elevenBranches = [
 ]
 
 const customerData = {
-  labels: 7-elevenBranches,
+  labels: sevenElevenBranches,
   datasets: [
     {
       data: [

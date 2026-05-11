@@ -72,7 +72,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   return null
 }
 
-export default function 7-ElevenRouteCostAnalysis() {
+export default function SevenElevenRouteCostAnalysis() {
   return (
     <div className="w-full p-6 space-y-6">
 

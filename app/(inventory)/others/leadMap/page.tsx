@@ -83,7 +83,7 @@ const directShipData = [
 
 const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"]
 
-export default function 7-ElevenDistributionDashboard() {
+export default function SevenElevenDistributionDashboard() {
   return (
     <div className="w-full p-6 space-y-6">
 

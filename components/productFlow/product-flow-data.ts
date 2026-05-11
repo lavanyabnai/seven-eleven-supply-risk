@@ -14,7 +14,7 @@
 }
 
 // 7-Eleven Enterprises realistic supply chain product flows
-const 7-elevenProductFlows: ProductFlow[] = [
+const sevenElevenProductFlows: ProductFlow[] = [
   // ── Kohler → 7-Eleven DCs ─────────────────────────────────────────
   {
     id: "flow-1",
@@ -1186,11 +1186,11 @@ const 7-elevenProductFlows: ProductFlow[] = [
   },
 ]
 
-export const sampleProductFlows: ProductFlow[] = 7-elevenProductFlows
+export const sampleProductFlows: ProductFlow[] = sevenElevenProductFlows
 
 export async function loadProductFlowData(): Promise<ProductFlow[]> {
   // Return 7-Eleven supply chain data directly
-  return 7-elevenProductFlows
+  return sevenElevenProductFlows
 }
 
 export function analyzeFlowData(flows: ProductFlow[]) {

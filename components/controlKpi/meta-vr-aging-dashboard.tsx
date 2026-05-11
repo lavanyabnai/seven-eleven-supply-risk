@@ -77,7 +77,7 @@ interface InventoryKPI {
 }
 
 // 7-Eleven Enterprises slow-moving inventory aging data
-const 7-elevenInventoryData: SlowMovingInventoryItem[] = [
+const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
   {
     id: "FRG-1001",
     sku: "FRG-WH-4050",
@@ -683,7 +683,7 @@ export default function MetaVRAgingDashboard() {
   }
 
   // Filter and sort data
-  const filteredAndSortedData = [...7-elevenInventoryData]
+  const filteredAndSortedData = [...sevenElevenInventoryData]
     .filter((item) => {
       const matchesSearch =
         item.sku.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -724,7 +724,7 @@ export default function MetaVRAgingDashboard() {
   const highTechRiskItems = filteredAndSortedData.filter((item) => item.techObsolescenceRisk === "high").length
 
   // Get unique categories for filter
-  const categories = Array.from(new Set(7-elevenInventoryData.map((item) => item.category)))
+  const categories = Array.from(new Set(sevenElevenInventoryData.map((item) => item.category)))
 
   return (
     <div className="w-full space-y-4">

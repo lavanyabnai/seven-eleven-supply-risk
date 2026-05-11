@@ -8,7 +8,7 @@ import AnalyticsTab from "@/components/china-vr-transport-costing/analytics-tab"
 import OptimizationTab from "@/components/china-vr-transport-costing/optimization-tab"
 import { useTransportCalculations } from "@/hooks/use-transport-calculations"
 
-export default function 7-ElevenImportSourcingPage() {
+export default function SevenElevenImportSourcingPage() {
   // State management
   const [selectedRoute, setSelectedRoute] = useState("Qingdao-QingdaoPort")
   const [selectedTruck, setSelectedTruck] = useState("medium")

@@ -22,7 +22,7 @@ interface CustomerData {
 }
 
 // 7-Eleven branch locations with realistic coordinates and profitability
-const 7-elevenBranchData: { city: string; lat: number; lng: number; baseProfit: number }[] = [
+const sevenElevenBranchData: { city: string; lat: number; lng: number; baseProfit: number }[] = [
   { city: "New York", lat: 40.71, lng: -74.01, baseProfit: 820000 },
   { city: "Los Angeles", lat: 34.05, lng: -118.24, baseProfit: 680000 },
   { city: "Houston", lat: 29.76, lng: -95.37, baseProfit: 540000 },
@@ -51,7 +51,7 @@ const generateCustomerData = (): CustomerData[] => {
   const customers: CustomerData[] = []
 
   // Add main 7-Eleven branch locations
-  7-elevenBranchData.forEach((branch, i) => {
+  sevenElevenBranchData.forEach((branch, i) => {
     customers.push({
       id: `branch_${i}`,
       name: `FRG_Branch_${branch.city.replace(/\s/g, "")}`,
