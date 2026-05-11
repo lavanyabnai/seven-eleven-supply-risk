@@ -72,11 +72,6 @@ const app = new Hono()
     async (c) => {
       const values = c.req.valid('json');
   
-      if (!'demo-user') {
-        console.error('❌ Unauthorized');
-        return c.json({ error: 'Unauthorized' }, 401);
-      }
-  
       try {
         console.log('✅ Values received:', values); // Log received values for debugging
   

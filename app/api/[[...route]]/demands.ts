@@ -287,11 +287,7 @@ const app = new Hono()
   //  //       const { id } = c.req.valid('param');
   //       const values = c.req.valid('json');
 
-  //       if (!'demo-user') {
-  //         throw new Error('Unauthorized');
-  //       }
-
-  //       const [data] = await db
+  //  //       const [data] = await db
   //         .update(customers)
   //         .set(values)
   //         .where(eq(customers.id, parseInt(id)))
