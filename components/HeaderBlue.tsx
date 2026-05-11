@@ -66,7 +66,7 @@ export const HeaderBlue = () => {
         {
           name: "Control Tower",
           description: "Monitor and manage your end-to-end supply chain",
-          to: "/control-tower",
+          to: "/risk/controlTower",
           icon: Radio,
           iconBackground: "bg-orange-100",
           iconForeground: "text-orange-700",

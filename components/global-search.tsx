@@ -24,7 +24,7 @@ const recentSearches = [
 
 const quickLinks = [
   { id: "dashboard", title: "Dashboard", icon: Calculator },
-  { id: "control-tower", title: "Control Tower", icon: Settings },
+  { id: "risk/controlTower", title: "Control Tower", icon: Settings },
   { id: "order-management", title: "Order Management", icon: Package },
   { id: "track-trace", title: "Track & Trace", icon: Truck },
   { id: "order-fulfillment", title: "Order Fulfillment", icon: Package },
