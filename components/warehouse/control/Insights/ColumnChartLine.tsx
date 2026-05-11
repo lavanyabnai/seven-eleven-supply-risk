@@ -34,11 +34,11 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: "Plumbing/HVAC Lines",
+    label: "Beverages/Snacks Lines",
     color: "hsl(var(--chart-1))",
   },
   mobile: {
-    label: "Waterworks/PVF Lines",
+    label: "Tobacco/General Merchandise Lines",
     color: "hsl(var(--chart-2))",
   },
 };

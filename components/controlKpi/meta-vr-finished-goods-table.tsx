@@ -10,12 +10,12 @@ import { MoreHorizontal, AlertTriangle, Search, TrendingUp, TrendingDown } from 
 
 const finishedGoodsData = [
   {
-    distributionCenter: "7-Eleven DC - Newport News, VA",
-    productModel: "Bradford White 40-gal Water Heater",
-    sku: "FRG-WH-4050",
+    distributionCenter: "7-Eleven DC - Dallas, TX",
+    productModel: "Coca-Cola 12pk Variety Pack",
+    sku: "CC-001",
     currentStock: 12450,
     forecastDemand: 18000,
-    retailPartner: "Plumbing Contractor Accounts",
+    retailPartner: "Store Manager Accounts",
     region: "Mid-Atlantic",
     alertType: "Stock Shortage",
     daysOfInventory: 23,
@@ -27,11 +27,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Dallas, TX",
-    productModel: "Rheem 50-gal Electric Water Heater",
-    sku: "FRG-WH-5060E",
+    productModel: "PepsiCo Variety Pack",
+    sku: "PC-001",
     currentStock: 8920,
     forecastDemand: 7500,
-    retailPartner: "HVAC Contractor Accounts",
+    retailPartner: "Franchise Operator Accounts",
     region: "South Central",
     alertType: "Optimal Stock",
     daysOfInventory: 47,
@@ -43,11 +43,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Mocksville, NC",
-    productModel: "A.O. Smith Tankless Unit",
-    sku: "FRG-WH-TNKLS",
+    productModel: "Hershey Snack Assortment",
+    sku: "HS-001",
     currentStock: 2340,
     forecastDemand: 8500,
-    retailPartner: "General Contractor Accounts",
+    retailPartner: "Store Associate Accounts",
     region: "Southeast",
     alertType: "Critical Shortage",
     daysOfInventory: 12,
@@ -59,11 +59,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Denver, CO",
-    productModel: "Trane 15 SEER AC Condensing Unit",
-    sku: "FRG-HV-SEER15",
+    productModel: "7-Select Hot Coffee Blend",
+    sku: "7S-COF-001",
     currentStock: 15680,
     forecastDemand: 12000,
-    retailPartner: "HVAC Contractor Accounts",
+    retailPartner: "Franchise Operator Accounts",
     region: "Mountain West",
     alertType: "Overstock",
     daysOfInventory: 65,
@@ -75,11 +75,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Phoenix, AZ",
-    productModel: "Carrier 3-Ton Heat Pump",
-    sku: "FRG-HV-HP3T",
+    productModel: "Monster / Red Bull Energy Drinks",
+    sku: "ED-001",
     currentStock: 4560,
     forecastDemand: 9200,
-    retailPartner: "HVAC Contractor Accounts",
+    retailPartner: "Franchise Operator Accounts",
     region: "Southwest",
     alertType: "Stock Shortage",
     daysOfInventory: 18,
@@ -91,11 +91,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Chicago, IL",
-    productModel: "6in Ductile Iron Gate Valve",
-    sku: "FRG-WW-GV6",
+    productModel: "Marlboro Cigarettes Carton",
+    sku: "TC-001",
     currentStock: 3420,
     forecastDemand: 4500,
-    retailPartner: "Municipal Water Departments",
+    retailPartner: "Core-Mark Distribution",
     region: "Midwest",
     alertType: "Low Stock",
     daysOfInventory: 28,
@@ -107,11 +107,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Atlanta, GA",
-    productModel: "1in Copper Press Fitting Kit",
-    sku: "FRG-FIT-CU1KIT",
+    productModel: "Mondelēz Snack Variety",
+    sku: "MDZ-001",
     currentStock: 1890,
     forecastDemand: 2800,
-    retailPartner: "Plumbing Contractor Accounts",
+    retailPartner: "Store Manager Accounts",
     region: "Southeast",
     alertType: "Stock Shortage",
     daysOfInventory: 24,
@@ -123,11 +123,11 @@ const finishedGoodsData = [
   },
   {
     distributionCenter: "7-Eleven DC - Sacramento, CA",
-    productModel: "Fire Sprinkler Head - Residential Pendent",
-    sku: "FRG-FP-SPRNK12",
+    productModel: "Frozen Treats Variety Pack",
+    sku: "FZ-001",
     currentStock: 7240,
     forecastDemand: 6800,
-    retailPartner: "Fire Protection Contractors",
+    retailPartner: "Franchise Operator Accounts",
     region: "West Coast",
     alertType: "Optimal Stock",
     daysOfInventory: 42,
@@ -191,7 +191,7 @@ export default function MetaVRFinishedGoodsTable() {
         <div>
 
           <h1 className="mt-2 text-2xl font-bold">7-Eleven Finished Goods Inventory</h1>
-          <p className="text-muted-foreground">Monitor wholesale distribution and contractor account inventory levels</p>
+          <p className="text-muted-foreground">Monitor convenience store distribution and franchise operator inventory levels</p>
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold">{totalUnits.toLocaleString()}</div>

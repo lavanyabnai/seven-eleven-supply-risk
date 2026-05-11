@@ -1,4 +1,4 @@
-﻿import type { MrpState } from "./types"
+import type { MrpState } from "./types"
 
 export const initialMrpState: MrpState = {
   // Periods
@@ -7,7 +7,7 @@ export const initialMrpState: MrpState = {
   // Total system cost
   totalSystemCost: 91000,
 
-  // End Item - Residential Kitchen Faucet (sourced from Kohler to 7-Eleven DC)
+  // End Item - 7-Select Energy Drink 16oz (distributed from Core-Mark DC to 7-Eleven stores)
   endItem: {
     leadTime: 3,
     setupCost: 4500,
@@ -21,7 +21,7 @@ export const initialMrpState: MrpState = {
     totalCost: 74000,
   },
 
-  // Component - Ceramic Cartridge Valve (imported from Guangdong, China)
+  // Component - Concentrate Base (imported from supplier)
   component: {
     leadTime: 5,
     qtyPerEndItem: 1,

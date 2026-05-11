@@ -7,8 +7,8 @@ import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAx
 
 // 7-Eleven Front Royal VA DC — staffing by zone
 const laborData = [
-  { department: "Plumbing Pick", required: 48, current: 30 },
-  { department: "HVAC Pick", required: 32, current: 24 },
+  { department: "Beverages Pick", required: 48, current: 30 },
+  { department: "Snacks Pick", required: 32, current: 24 },
   { department: "Receiving Dock", required: 28, current: 20 },
   { department: "Outbound Ship", required: 22, current: 16 },
 ]
@@ -63,7 +63,7 @@ export default function LaborShortage() {
         <div className="border rounded-md p-3 mt-4">
           <div className="text-sm font-medium">Labor Shortage Details</div>
           <p className="text-sm text-gray-600 mt-1">
-            Seasonal flu outbreak affecting 14 DC associates across plumbing and HVAC pick zones. 8 open positions unfilled
+            Seasonal flu outbreak affecting 14 DC associates across beverages and snacks pick zones. 8 open positions unfilled
             for 30+ days (tight Virginia labor market). Staffing agency can provide 18 trained warehouse workers with
             24-hour notice at 1.5x standard rate ($32.25/hr vs $21.50/hr base).
           </p>

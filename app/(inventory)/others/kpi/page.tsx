@@ -56,7 +56,7 @@ export default function WarehouseCostingApp() {
         <div className="border border-gray-200 rounded-lg p-4">
           <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-700 to-blue-700 font-display">7-Eleven DC Costing & Analytics Platform</h1>
           <p className="text-sm text-gray-500 mt-1">
-            Distribution center cost modeling for 7-Eleven&apos;s 9 regional DCs and 5 MDCs — plumbing, HVAC, waterworks & PVF operations
+            Distribution center cost modeling for 7-Eleven&apos;s 9 regional DCs and 5 MDCs — beverages, snacks, fresh food & tobacco operations
           </p>
         </div>
 

@@ -67,7 +67,7 @@ export default function SafetyStockDashboard() {
     return [
       {
         id: 1,
-        product: "Residential Faucets - Kitchen",
+        product: "Packaged Beverages - Coca-Cola",
         currentStock: 18500,
         safetyStock: 12000,
         reorderPoint: 15000,
@@ -76,7 +76,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 2,
-        product: "Toilets - Residential",
+        product: "Packaged Beverages - PepsiCo",
         currentStock: 8200,
         safetyStock: 6000,
         reorderPoint: 7500,
@@ -85,7 +85,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 3,
-        product: "Tank Water Heaters",
+        product: "Coffee & Hot Beverages",
         currentStock: 4800,
         safetyStock: 5000,
         reorderPoint: 6200,
@@ -94,7 +94,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 4,
-        product: "PVC Pipe - Schedule 40",
+        product: "Tobacco Products - Cigarettes",
         currentStock: 85000,
         safetyStock: 45000,
         reorderPoint: 60000,
@@ -103,7 +103,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 5,
-        product: "Residential HVAC Systems",
+        product: "Packaged Snacks & Candy",
         currentStock: 2100,
         safetyStock: 2400,
         reorderPoint: 3000,
@@ -112,7 +112,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 6,
-        product: "PEX Tubing",
+        product: "Beer & Wine",
         currentStock: 62000,
         safetyStock: 35000,
         reorderPoint: 48000,
@@ -121,7 +121,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 7,
-        product: "Garbage Disposals",
+        product: "Fresh Food - Sandwiches",
         currentStock: 6800,
         safetyStock: 4500,
         reorderPoint: 5800,
@@ -130,7 +130,7 @@ export default function SafetyStockDashboard() {
       },
       {
         id: 8,
-        product: "Tankless Water Heaters",
+        product: "Energy Drinks Import",
         currentStock: 1800,
         safetyStock: 2200,
         reorderPoint: 2800,
@@ -273,22 +273,22 @@ export default function SafetyStockDashboard() {
             <div className="text-xs font-medium text-gray-500 mb-2">Recent Alerts</div>
             <div className="flex flex-col gap-2">
               <div className="border rounded-md p-2 bg-red-50 text-xs">
-                <div className="font-medium text-red-800">Tankless Water Heaters below safety</div>
+                <div className="font-medium text-red-800">Energy Drinks Import below safety</div>
                 <div className="text-gray-600 mt-1">Current: 1,800 | Safety: 2,200</div>
                 <div className="text-gray-500 mt-1">2 hours ago</div>
               </div>
               <div className="border rounded-md p-2 bg-red-50 text-xs">
-                <div className="font-medium text-red-800">HVAC Systems below safety stock</div>
+                <div className="font-medium text-red-800">Packaged Snacks & Candy below safety stock</div>
                 <div className="text-gray-600 mt-1">Current: 2,100 | Safety: 2,400</div>
                 <div className="text-gray-500 mt-1">4 hours ago</div>
               </div>
               <div className="border rounded-md p-2 bg-yellow-50 text-xs">
-                <div className="font-medium text-yellow-800">Tank Water Heaters near threshold</div>
+                <div className="font-medium text-yellow-800">Coffee & Hot Beverages near threshold</div>
                 <div className="text-gray-600 mt-1">Current: 4,800 | Reorder: 6,200</div>
                 <div className="text-gray-500 mt-1">6 hours ago</div>
               </div>
               <div className="border rounded-md p-2 bg-blue-50 text-xs">
-                <div className="font-medium text-blue-800">Navien import lead time increased</div>
+                <div className="font-medium text-blue-800">Red Bull import lead time increased</div>
                 <div className="text-gray-600 mt-1">Previous: 30 days, Current: 38 days</div>
                 <div className="text-gray-500 mt-1">1 day ago</div>
               </div>

@@ -30,11 +30,11 @@ interface FilterState {
 
 // SKU definitions
 const skuData: SKUData[] = [
-  { id: "frg-wh-3200", name: "50-Gal Electric Water Heater", price: 649, category: "Water Heaters" },
-  { id: "frg-wh-8000", name: "Rheem 80-Gal Commercial Water Heater", price: 2450, category: "Water Heaters" },
-  { id: "frg-px-4410", name: "1/2in PEX Tubing 100ft", price: 89, category: "Pipe & Fittings" },
-  { id: "frg-hv-5000", name: "Trane 5-Ton Rooftop Unit", price: 8750, category: "HVAC" },
-  { id: "frg-fp-2200", name: "Viking Fire Sprinkler Head", price: 18, category: "Fire Protection" },
+  { id: "7s-cof-001", name: "7-Select Hot Coffee Blend 12oz", price: 649, category: "Coffee & Hot Beverages" },
+  { id: "cc-001", name: "Coca-Cola 12pk Variety Pack", price: 2450, category: "Packaged Beverages" },
+  { id: "tc-001", name: "Marlboro Cigarettes Carton", price: 89, category: "Tobacco Products" },
+  { id: "ed-001", name: "Monster / Red Bull Energy Drinks", price: 8750, category: "Energy Drinks" },
+  { id: "fz-001", name: "Frozen Treats Variety Pack", price: 18, category: "Frozen Treats / Ice Cream" },
 ]
 
 const regions = [
@@ -255,7 +255,7 @@ const getWeekHeaders = (): string[] => {
 export default function MetaQuestInventory() {
 
   const [filters, setFilters] = useState<FilterState>({
-    sku: "frg-wh-3200",
+    sku: "7s-cof-001",
     region: "global",
     scenario: "base",
   })

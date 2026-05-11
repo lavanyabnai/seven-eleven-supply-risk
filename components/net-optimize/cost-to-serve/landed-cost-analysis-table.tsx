@@ -7,7 +7,7 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 
 const tableData = [
   {
-    productname: "Import Faucets (China - Kohler/Moen/Delta)",
+    productname: "Import Packaged Snacks (China - Core-Mark/Mondelēz/Frito-Lay)",
     profit: -68400000,
     perunitrevenu: 285000000,
     perunitcost: 353400000,
@@ -17,7 +17,7 @@ const tableData = [
     perunittranspo: 117500000,
   },
   {
-    productname: "HVAC Systems (Rheem/Trane/Carrier)",
+    productname: "Coffee & Hot Beverages (Core-Mark/7-Select)",
     profit: 124800000,
     perunitrevenu: 892000000,
     perunitcost: 767200000,
@@ -27,7 +27,7 @@ const tableData = [
     perunittranspo: 93000000,
   },
   {
-    productname: "Pipe & Fittings (Charlotte Pipe/JM Eagle)",
+    productname: "Tobacco Products (Altria/Reynolds American)",
     profit: 186500000,
     perunitrevenu: 1240000000,
     perunitcost: 1053500000,
@@ -37,7 +37,7 @@ const tableData = [
     perunittranspo: 150000000,
   },
   {
-    productname: "Water Heaters (A.O. Smith/Bradford White)",
+    productname: "Packaged Snacks & Candy (Hershey/Mondelēz)",
     profit: 98200000,
     perunitrevenu: 645000000,
     perunitcost: 546800000,
@@ -47,7 +47,7 @@ const tableData = [
     perunittranspo: 68700000,
   },
   {
-    productname: "Tankless Water Heaters (Navien/Rinnai Import)",
+    productname: "Energy Drinks Import (Red Bull/Monster - Asia)",
     profit: -31500000,
     perunitrevenu: 218000000,
     perunitcost: 249500000,
@@ -57,7 +57,7 @@ const tableData = [
     perunittranspo: 53500000,
   },
   {
-    productname: "Waterworks (Mueller/Fire Hydrants/Valves)",
+    productname: "Beer & Wine (AB InBev/Molson Coors)",
     profit: 62400000,
     perunitrevenu: 384000000,
     perunitcost: 321600000,

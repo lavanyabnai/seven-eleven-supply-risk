@@ -32,7 +32,7 @@ export default function CostToServeDashboard() {
                   className="appearance-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                   <option value="Sc0_Baseline">Sc0_Current Network</option>
-                  <option value="Sc1_Alternative">Sc1_Nearshore China Faucets</option>
+                  <option value="Sc1_Alternative">Sc1_Nearshore China Snacks</option>
                   <option value="Sc2_Optimized">Sc2_Optimized DC Consolidation</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -50,11 +50,11 @@ export default function CostToServeDashboard() {
                   className="appearance-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                   <option value="All">All Products</option>
-                  <option value="Plumbing_Fixtures">Plumbing Fixtures</option>
-                  <option value="HVAC_Systems">HVAC Systems</option>
-                  <option value="Pipe_Fittings">Pipe & Fittings</option>
-                  <option value="Water_Heaters">Water Heaters</option>
-                  <option value="Waterworks">Waterworks</option>
+                  <option value="Packaged_Beverages">Packaged Beverages</option>
+                  <option value="Coffee_Hot_Beverages">Coffee & Hot Beverages</option>
+                  <option value="Tobacco_Products">Tobacco Products</option>
+                  <option value="Packaged_Snacks">Packaged Snacks & Candy</option>
+                  <option value="Beer_Wine">Beer & Wine</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <ChevronDown className="w-4 h-4" />

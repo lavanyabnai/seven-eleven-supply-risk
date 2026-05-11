@@ -65,12 +65,12 @@ export const kpiDataArray: KPIData[] = [
     chartType: "pie",
    type: "monotone",
     chartData: [
-      { category: "Plumbing", data: 3400 },
-      { category: "HVAC", data: 2100 },
-      { category: "Waterworks", data: 1200 },
-      { category: "PVF", data: 950 },
-      { category: "Appliances", data: 550 },
-      { category: "Lighting", data: 300 },
+      { category: "Beverages", data: 3400 },
+      { category: "Snacks", data: 2100 },
+      { category: "Tobacco", data: 1200 },
+      { category: "Fresh Food", data: 950 },
+      { category: "Coffee", data: 550 },
+      { category: "General Merchandise", data: 300 },
     ],
   },
 ]

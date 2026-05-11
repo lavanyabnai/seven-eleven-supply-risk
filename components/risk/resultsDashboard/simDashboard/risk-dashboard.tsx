@@ -89,17 +89,17 @@ export default function RiskDashboard() {
     { id: 1, replication: "Replication 3", event: "China Section 301 Tariff +25%", date: "1/15/2026" },
     { id: 2, replication: "Replication 3", event: "West Coast Port Congestion", date: "3/08/2026" },
     { id: 3, replication: "Replication 3", event: "Gulf Coast Hurricane Cat 3", date: "8/22/2026" },
-    { id: 4, replication: "Replication 3", event: "PVC Resin Shortage", date: "9/05/2026" },
-    { id: 5, replication: "Replication 3", event: "Kohler Foshan Plant Shutdown", date: "10/12/2026" },
+    { id: 4, replication: "Replication 3", event: "Tobacco Leaf Shortage", date: "9/05/2026" },
+    { id: 5, replication: "Replication 3", event: "Core-Mark Guangzhou Plant Shutdown", date: "10/12/2026" },
   ]
 
   // Generate recovery time data
   const recoveryTimeData = [
-    { id: 1, replication: "Replication 3", product: "Residential Faucets", startDate: "42" },
-    { id: 2, replication: "Replication 1", product: "PVC Pipe", startDate: "28" },
-    { id: 3, replication: "Replication 4", product: "Water Heaters", startDate: "No failure" },
-    { id: 4, replication: "Replication 2", product: "HVAC Systems", startDate: "No failure" },
-    { id: 5, replication: "Replication 5", product: "Residential Faucets", startDate: "35" },
+    { id: 1, replication: "Replication 3", product: "Packaged Beverages", startDate: "42" },
+    { id: 2, replication: "Replication 1", product: "Tobacco Products", startDate: "28" },
+    { id: 3, replication: "Replication 4", product: "Coffee & Hot Beverages", startDate: "No failure" },
+    { id: 4, replication: "Replication 2", product: "Packaged Snacks & Candy", startDate: "No failure" },
+    { id: 5, replication: "Replication 5", product: "Packaged Beverages", startDate: "35" },
   ]
 
   // Generate data for total time to recover chart

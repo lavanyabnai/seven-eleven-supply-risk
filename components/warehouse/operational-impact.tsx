@@ -113,7 +113,7 @@ export default function OperationalImpact() {
           <div className="mt-3 space-y-3">
             <div className="flex">
               <div className="w-24 flex-shrink-0 text-sm font-medium">3 days ago</div>
-              <div className="text-sm">Flu outbreak: 6 DC associates called out in plumbing picking zone</div>
+              <div className="text-sm">Flu outbreak: 6 DC associates called out in beverages picking zone</div>
             </div>
             <div className="flex">
               <div className="w-24 flex-shrink-0 text-sm font-medium">2 days ago</div>

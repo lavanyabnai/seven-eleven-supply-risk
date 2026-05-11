@@ -89,7 +89,7 @@ const SingleRawMaterialChart = () => {
         <ChartContainer
           config={{
             value: {
-              label: "Raw material shipping (PVC resin, copper, steel)",
+              label: "Raw material shipping (coffee beans, sugar, tobacco leaf)",
               color: "hsl(200, 100%, 60%)",
             },
           }}
@@ -131,7 +131,7 @@ const SingleRawMaterialChart = () => {
         </ChartContainer>
         <div className="flex items-center gap-2 mt-4">
           <div className="w-3 h-3 rounded-full bg-blue-400"></div>
-          <span className="text-blue-600 text-sm">Raw material shipping (PVC resin, copper, steel)</span>
+          <span className="text-blue-600 text-sm">Raw material shipping (coffee beans, sugar, tobacco leaf)</span>
         </div>
       </CardContent>
     </Card>
@@ -209,7 +209,7 @@ const SupplyChainDashboard = () => {
   return (
     <div className="m-4 grid grid-cols-2 gap-4">
       <ChartCard
-        title="Manufacturer production (Kohler/Moen/Delta)"
+        title="Supplier production (Core-Mark/McLane/Warabeya)"
         data={generateChartData("inProduction")}
         color="hsl(0, 80%, 60%)"
         type="bar"
@@ -230,14 +230,14 @@ const SupplyChainDashboard = () => {
         maxValue={150}
       />
       <ChartCard
-        title="Branch backlog (contractor orders)"
+        title="Store backlog (franchise operator orders)"
         data={generateChartData("backlogRetailers")}
         color="hsl(0, 80%, 60%)"
         type="line"
         maxValue={1}
       />
       <ChartCard
-        title="Branch inventory (plumbing/HVAC/pipe)"
+        title="Store inventory (beverages/snacks/tobacco)"
         data={generateChartData("retailersStorage")}
         color="hsl(120, 70%, 50%)"
         type="area"
@@ -258,7 +258,7 @@ const SupplyChainDashboard = () => {
         maxValue={500}
       />
       <ChartCard
-        title="Raw material storage (PVC resin/copper/steel)"
+        title="Raw material storage (coffee beans/sugar/tobacco leaf)"
         data={generateChartData("producersStorageRaw")}
         color="hsl(200, 50%, 60%)"
         type="area"
@@ -323,7 +323,7 @@ export default function SupplyChain() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                Kohler Plant [Kohler, WI] Production
+                Core-Mark DC [Westlake, TX] Distribution
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -336,7 +336,7 @@ export default function SupplyChain() {
               </div>
               <div className="space-y-2">
                 <div className="flex justify-between text-xs">
-                  <span>Cost per unit (faucets)</span>
+                  <span>Cost per unit (snacks)</span>
                   <span>$142</span>
                 </div>
                 <Slider defaultValue={[60]} max={100} step={1} className="w-full" />
@@ -362,7 +362,7 @@ export default function SupplyChain() {
             <CardContent className="space-y-3">
               <div className="space-y-2">
                 <div className="flex justify-between text-xs">
-                  <span>Weekly demand (faucets)</span>
+                  <span>Weekly demand (beverages)</span>
                   <span>8,400</span>
                 </div>
                 <Slider defaultValue={[70]} max={100} step={1} className="w-full" />
@@ -382,7 +382,7 @@ export default function SupplyChain() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                7-Eleven DC [Newport News, VA] Hub
+                7-Eleven DC [Dallas, TX] Hub
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -415,7 +415,7 @@ export default function SupplyChain() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-medium flex items-center gap-2">
                 <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                Kohler Foshan [China] Import
+                Core-Mark China [Guangzhou] Import
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -458,7 +458,7 @@ export default function SupplyChain() {
         <ChartContainer
           config={{
             rawMaterialShipping: {
-              label: "Raw Materials to Manufacturers (PVC/Copper/Steel)",
+              label: "Raw Materials to Suppliers (coffee beans/sugar/tobacco leaf)",
               color: "hsl(210, 100%, 50%)",
             },
             producersStorage: {
@@ -466,7 +466,7 @@ export default function SupplyChain() {
               color: "hsl(0, 70%, 45%)",
             },
             inProduction: {
-              label: "In Production (Kohler/Moen/Rheem/Charlotte Pipe)",
+              label: "In Production (Coca-Cola/PepsiCo/Hershey/Mondelēz)",
               color: "hsl(25, 85%, 55%)",
             },
             producersStorageFinal: {

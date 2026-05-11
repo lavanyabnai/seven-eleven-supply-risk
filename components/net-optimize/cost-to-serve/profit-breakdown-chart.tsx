@@ -4,12 +4,12 @@ import { Pie, PieChart } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
 const pieData = [
-  { segment: "segmentA", name: "Plumbing Fixtures", value: 34.2, fill: "var(--color-segmentA)" },
-  { segment: "segmentB", name: "HVAC Systems", value: 24.8, fill: "var(--color-segmentB)" },
-  { segment: "segmentC", name: "Pipe & Fittings", value: 18.5, fill: "var(--color-segmentC)" },
-  { segment: "segmentD", name: "Water Heaters", value: 12.1, fill: "var(--color-segmentD)" },
-  { segment: "segmentE", name: "Waterworks", value: 6.8, fill: "var(--color-segmentE)" },
-  { segment: "segmentF", name: "Other (Generators, Controls)", value: 3.6, fill: "var(--color-segmentF)" },
+  { segment: "segmentA", name: "Packaged Beverages", value: 34.2, fill: "var(--color-segmentA)" },
+  { segment: "segmentB", name: "Coffee & Hot Beverages", value: 24.8, fill: "var(--color-segmentB)" },
+  { segment: "segmentC", name: "Tobacco Products", value: 18.5, fill: "var(--color-segmentC)" },
+  { segment: "segmentD", name: "Packaged Snacks & Candy", value: 12.1, fill: "var(--color-segmentD)" },
+  { segment: "segmentE", name: "Beer & Wine", value: 6.8, fill: "var(--color-segmentE)" },
+  { segment: "segmentF", name: "Other (General Merchandise, Fresh Food)", value: 3.6, fill: "var(--color-segmentF)" },
 ]
 
 const chartConfig = {
@@ -17,27 +17,27 @@ const chartConfig = {
     label: "Percentage",
   },
   segmentA: {
-    label: "Plumbing Fixtures",
+    label: "Packaged Beverages",
     color: "hsl(var(--chart-1))",
   },
   segmentB: {
-    label: "HVAC Systems",
+    label: "Coffee & Hot Beverages",
     color: "hsl(var(--chart-2))",
   },
   segmentC: {
-    label: "Pipe & Fittings",
+    label: "Tobacco Products",
     color: "hsl(var(--chart-3))",
   },
   segmentD: {
-    label: "Water Heaters",
+    label: "Packaged Snacks & Candy",
     color: "hsl(var(--chart-4))",
   },
   segmentE: {
-    label: "Waterworks",
+    label: "Beer & Wine",
     color: "hsl(var(--chart-5))",
   },
   segmentF: {
-    label: "Other (Generators, Controls)",
+    label: "Other (General Merchandise, Fresh Food)",
     color: "#8D6E63",
   },
 }

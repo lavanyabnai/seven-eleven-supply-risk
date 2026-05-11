@@ -23,7 +23,7 @@ import {
 import { Bar, BarChart, CartesianGrid, LabelList, Rectangle, ReferenceLine, XAxis } from "recharts"
 import { useParams } from 'next/navigation';
 
-// 7-Eleven DC zone slotting accuracy — plumbing, HVAC, waterworks, PVF, appliances
+// 7-Eleven DC zone slotting accuracy — beverages, snacks, tobacco, fresh food, coffee
 const chartData = [
   { browser: "ZoneA", visitors: 98, fill: "hsl(var(--chart-1))" },
   { browser: "ZoneB", visitors: 95, fill: "hsl(var(--chart-2))" },
@@ -36,23 +36,23 @@ const chartConfig = {
     label: "Accuracy %",
   },
   ZoneA: {
-    label: "Plumbing",
+    label: "Beverages",
     color: "hsl(var(--chart-1))",
   },
   ZoneB: {
-    label: "HVAC",
+    label: "Snacks",
     color: "hsl(var(--chart-2))",
   },
   ZoneC: {
-    label: "Waterworks",
+    label: "Tobacco",
     color: "hsl(var(--chart-3))",
   },
   ZoneD: {
-    label: "PVF",
+    label: "Fresh Food",
     color: "hsl(var(--chart-4))",
   },
   ZoneE: {
-    label: "Appliances",
+    label: "Coffee",
     color: "hsl(var(--chart-5))",
   },
 } satisfies ChartConfig
@@ -138,7 +138,7 @@ export default function ColumnChartSort() {
       <CardFooter>
         <div className="grid gap-2 text-sm">
           <div className="flex items-center font-medium ">
-            PVF zone slotting accuracy trailing — pipe fittings need reslot
+            Fresh Food zone slotting accuracy trailing — perishables need reslot
           </div>
           <div className="flex items-center gap-x-2 leading-none text-muted-foreground">
             January - June 2024

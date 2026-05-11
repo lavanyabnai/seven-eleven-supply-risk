@@ -38,7 +38,7 @@ const modules = [
   },
   {
     name: "DC Costing",
-    description: "Distribution center cost modeling for 7-Eleven's plumbing, HVAC, and waterworks warehouse operations.",
+    description: "Distribution center cost modeling for 7-Eleven's beverages, snacks, fresh food & tobacco warehouse operations.",
     icon: Warehouse,
     href: "/others/kpi",
     color: "from-amber-500 to-amber-600",
@@ -60,7 +60,7 @@ const modules = [
   },
   {
     name: "Domestic Freight",
-    description: "7-Eleven US freight cost calculator with ATRI benchmarks for DC-to-branch and jobsite delivery.",
+    description: "7-Eleven US freight cost calculator with ATRI benchmarks for DC-to-branch and store delivery.",
     icon: Truck,
     href: "/others/transportCost",
     color: "from-rose-500 to-rose-600",
@@ -71,7 +71,7 @@ const modules = [
   },
   {
     name: "International Sourcing",
-    description: "China import logistics for plumbing fixtures and PVF products — factory to 7-Eleven import centers.",
+    description: "China import logistics for packaged snacks, beverages, and general merchandise — factory to 7-Eleven import centers.",
     icon: Globe,
     href: "/others/chinavr",
     color: "from-cyan-500 to-cyan-600",

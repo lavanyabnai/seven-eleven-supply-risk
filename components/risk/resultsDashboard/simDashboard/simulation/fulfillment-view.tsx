@@ -7,26 +7,26 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 export default function FulfillmentView() {
   // Demand Placed, Fulfillment Received (Accumulated) data
   const demandFulfillmentData = [
-    { id: 1, statistic: "Demand Placed (Accumulated)", product: "Residential Faucets", value: "1,245,000" },
-    { id: 2, statistic: "Demand Placed (Percentage)", product: "Residential Faucets", value: "94.2%" },
-    { id: 3, statistic: "Fulfillment Received (Accumulated)", product: "Tank Water Heaters", value: "892,400" },
-    { id: 4, statistic: "Fulfillment Received (Percentage)", product: "Tank Water Heaters", value: "96.8%" },
+    { id: 1, statistic: "Demand Placed (Accumulated)", product: "Packaged Beverages", value: "1,245,000" },
+    { id: 2, statistic: "Demand Placed (Percentage)", product: "Packaged Beverages", value: "94.2%" },
+    { id: 3, statistic: "Fulfillment Received (Accumulated)", product: "Coffee & Hot Beverages", value: "892,400" },
+    { id: 4, statistic: "Fulfillment Received (Percentage)", product: "Coffee & Hot Beverages", value: "96.8%" },
   ]
 
   // Demand Received, Fulfillment Shipped data
   const demandReceivedData = [
-    { id: 1, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Newport News", product: "Residential Faucets" },
-    { id: 2, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Dallas", product: "PVC Pipe" },
-    { id: 3, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Atlanta", product: "HVAC Systems" },
-    { id: 4, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Chicago", product: "Water Heaters" },
-    { id: 5, statistic: "Demand Received (Daily)", object: "7-Eleven DC - San Bernardino", product: "Faucets (Import)" },
+    { id: 1, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Westlake TX", product: "Packaged Beverages" },
+    { id: 2, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Dallas", product: "Tobacco Products" },
+    { id: 3, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Atlanta", product: "Packaged Snacks & Candy" },
+    { id: 4, statistic: "Demand Received (Daily)", object: "7-Eleven DC - Chicago", product: "Coffee & Hot Beverages" },
+    { id: 5, statistic: "Demand Received (Daily)", object: "7-Eleven DC - San Bernardino", product: "Energy Drinks (Import)" },
   ]
 
   // Demand Placed, Fulfillment Received (Accumulated, Per Object) data
   const demandPerObjectData = [
-    { id: 1, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - New York", product: "Residential Faucets" },
-    { id: 2, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - Houston", product: "PVC Pipe" },
-    { id: 3, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Branch - Los Angeles", product: "HVAC Systems" },
+    { id: 1, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Store - New York", product: "Packaged Beverages" },
+    { id: 2, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Store - Houston", product: "Tobacco Products" },
+    { id: 3, statistic: "Demand Placed (Accumulated)", object: "7-Eleven Store - Los Angeles", product: "Packaged Snacks & Candy" },
   ]
 
   // Generate data for daily demand chart

@@ -1,11 +1,11 @@
-﻿import type { NetworkData, WarehouseKpis } from "./types"
+import type { NetworkData, WarehouseKpis } from "./types"
 
 export const initialNetworkData: NetworkData = {
   plant: {
-    name: "Kohler Plant - Kohler, WI",
+    name: "Core-Mark Distribution - Westlake, TX",
   },
   centralWarehouse: {
-    name: "7-Eleven Master DC - Newport News, VA",
+    name: "7-Eleven Master DC - Dallas, TX",
     orderQuantity: 12000,
     safetyStock: 2000,
     leadTime: 2,
@@ -98,7 +98,7 @@ export const initialNetworkData: NetworkData = {
       orderQuantity: 4500,
       safetyStock: 800,
       leadTime: 1,
-      retailers: ["7-Eleven Branch - Charlotte", "7-Eleven Branch - Orlando", "7-Eleven Branch - Miami"],
+      retailers: ["7-Eleven Store - Charlotte", "7-Eleven Store - Orlando", "7-Eleven Store - Miami"],
       periods: [
         {
           periodUsage: 25,
@@ -187,7 +187,7 @@ export const initialNetworkData: NetworkData = {
       orderQuantity: 3200,
       safetyStock: 600,
       leadTime: 1,
-      retailers: ["7-Eleven Branch - Houston", "7-Eleven Branch - San Antonio", "7-Eleven Branch - Austin"],
+      retailers: ["7-Eleven Store - Houston", "7-Eleven Store - San Antonio", "7-Eleven Store - Austin"],
       periods: [
         {
           periodUsage: 10,
@@ -276,7 +276,7 @@ export const initialNetworkData: NetworkData = {
       orderQuantity: 2800,
       safetyStock: 500,
       leadTime: 1,
-      retailers: ["7-Eleven Branch - Milwaukee", "7-Eleven Branch - Indianapolis", "7-Eleven Branch - Minneapolis"],
+      retailers: ["7-Eleven Store - Milwaukee", "7-Eleven Store - Indianapolis", "7-Eleven Store - Minneapolis"],
       periods: [
         {
           periodUsage: 5,
@@ -364,7 +364,7 @@ export const initialNetworkData: NetworkData = {
 }
 
 export const initialKpis: WarehouseKpis = {
-  "7-Eleven Master DC - Newport News, VA": {
+  "7-Eleven Master DC - Dallas, TX": {
     serviceLevel: 98.5,
     inventoryTurnover: 3.2,
     averageInventory: 8926.25,

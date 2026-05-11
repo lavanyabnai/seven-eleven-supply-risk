@@ -2,11 +2,11 @@
 import { Badge } from "@/components/ui/badge"
 import { Package, AlertTriangle, Clock } from "lucide-react"
 
-// 7-Eleven Front Royal VA DC — delayed branch replenishment and contractor orders
+// 7-Eleven Front Royal VA DC — delayed store replenishment and franchise operator orders
 const orders = [
   {
-    id: "FRG-28471",
-    customer: "Summit Plumbing Co. (Richmond Branch)",
+    id: "7S-28471",
+    customer: "7-Eleven Store Manager (Richmond Area)",
     items: 34,
     priority: "Critical",
     status: "Delayed",
@@ -14,8 +14,8 @@ const orders = [
     delay: "1 day",
   },
   {
-    id: "FRG-28485",
-    customer: "Metro HVAC Services (DC Metro Branch)",
+    id: "7S-28485",
+    customer: "Franchise Operator (DC Metro Area)",
     items: 22,
     priority: "Critical",
     status: "Delayed",
@@ -23,8 +23,8 @@ const orders = [
     delay: "1 day",
   },
   {
-    id: "FRG-28502",
-    customer: "City of Arlington — Waterworks PO",
+    id: "7S-28502",
+    customer: "Core-Mark Distribution (Arlington VA Order)",
     items: 48,
     priority: "High",
     status: "Delayed",
@@ -32,8 +32,8 @@ const orders = [
     delay: "Expected",
   },
   {
-    id: "FRG-28519",
-    customer: "Coastal Mechanical (Norfolk Branch)",
+    id: "7S-28519",
+    customer: "Franchise Operator (Norfolk Area)",
     items: 16,
     priority: "High",
     status: "Delayed",
@@ -41,8 +41,8 @@ const orders = [
     delay: "Expected",
   },
   {
-    id: "FRG-28538",
-    customer: "Atlas Fire Protection (Charlotte Branch)",
+    id: "7S-28538",
+    customer: "Store Manager Account (Charlotte Area)",
     items: 29,
     priority: "Medium",
     status: "At Risk",

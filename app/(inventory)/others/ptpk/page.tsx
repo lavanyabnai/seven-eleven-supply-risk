@@ -15,7 +15,7 @@ const routeData = [
   { x: 560, y: 0.95, z: 160, impact: "high", name: "Stockton CA → Phoenix branches" },
   { x: 720, y: 0.82, z: 140, impact: "high", name: "Richland WA → Boise branches" },
 
-  // Regular routes — plumbing/HVAC/waterworks distribution lanes
+  // Regular routes — beverages/snacks/tobacco distribution lanes
   { x: 30, y: 4.5, z: 90, impact: "normal", name: "Nashville MDC → Local branches" },
   { x: 55, y: 3.2, z: 110, impact: "normal", name: "Houston MDC → Houston Metro" },
   { x: 75, y: 2.6, z: 150, impact: "normal", name: "Dallas MDC → DFW branches" },
@@ -33,10 +33,10 @@ const routeData = [
   { x: 650, y: 0.72, z: 50, impact: "normal", name: "Frostproof FL → Miami branches" },
   { x: 750, y: 0.68, z: 45, impact: "normal", name: "Stockton CA → Portland branches" },
 
-  // Small volume / specialty routes (waterworks, PVF)
-  { x: 90, y: 5.2, z: 30, impact: "normal", name: "Import Center → Regional DC (specialty PVF)" },
-  { x: 250, y: 1.8, z: 35, impact: "normal", name: "Waterworks hub → Municipal project site" },
-  { x: 360, y: 2.1, z: 25, impact: "normal", name: "HVAC equipment → Rural branch (LTL)" },
+  // Small volume / specialty routes (general merchandise, beverage concentrate)
+  { x: 90, y: 5.2, z: 30, impact: "normal", name: "Import Center → Regional DC (specialty beverage concentrate)" },
+  { x: 250, y: 1.8, z: 35, impact: "normal", name: "Core-Mark hub → Store location (general merchandise)" },
+  { x: 360, y: 2.1, z: 25, impact: "normal", name: "Coffee & snacks → Rural store location (LTL)" },
 ]
 
 const highImpactRoutes = routeData.filter((route) => route.impact === "high")
@@ -201,8 +201,8 @@ export default function SevenElevenRouteCostAnalysis() {
               <ul className="text-sm space-y-1 text-gray-700">
                 <li>• Short-haul MDC routes (30-100mi) cost $2.20-$4.50/mi/ton</li>
                 <li>• Long-haul DC lanes (500mi+) achieve $0.68-$0.95/mi/ton</li>
-                <li>• Plumbing fixtures (heavy/dense) drive short-haul cost spikes</li>
-                <li>• LTL shipments to rural branches show highest per-unit cost</li>
+                <li>• Packaged beverages and snacks (high-frequency) drive short-haul cost spikes</li>
+                <li>• LTL shipments to rural store locations show highest per-unit cost</li>
               </ul>
             </div>
             <div>

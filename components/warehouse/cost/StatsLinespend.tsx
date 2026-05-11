@@ -14,7 +14,7 @@ import {
 import { Area, AreaChart, CartesianGrid, LabelList, ReferenceLine, XAxis } from "recharts"
 
 
-// 7-Eleven warehousing spend as % of COGS — plumbing/HVAC distribution margin pressure
+// 7-Eleven warehousing spend as % of COGS — beverages/snacks distribution margin pressure
 const chartData = [
   { month: "Q1'23", desktop: 3.8, mobile: 0.6 },
   { month: "Q2'23", desktop: 3.9, mobile: 0.7 },

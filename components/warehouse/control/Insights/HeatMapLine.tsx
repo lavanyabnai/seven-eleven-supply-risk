@@ -18,11 +18,11 @@ const data = [
   {
     name: "axis",
     children: [
-      { name: "Plumbing", size: 3400 },
-      { name: "HVAC", size: 2100 },
-      { name: "Waterworks", size: 1200 },
-      { name: "PVF", size: 950 },
-      { name: "Appliances", size: 850 },
+      { name: "Beverages", size: 3400 },
+      { name: "Snacks", size: 2100 },
+      { name: "Tobacco", size: 1200 },
+      { name: "Fresh Food", size: 950 },
+      { name: "Coffee", size: 850 },
     ],
   },
 

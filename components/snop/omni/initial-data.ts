@@ -1,4 +1,4 @@
-﻿import type { NetworkModel, OptimizationScenario } from "./types"
+import type { NetworkModel, OptimizationScenario } from "./types"
 
 export const initialNetworkModel: NetworkModel = {
   costBreakdown: {
@@ -29,7 +29,7 @@ export const initialNetworkModel: NetworkModel = {
   ],
   channelFlows: [
     {
-      channelName: "7-Eleven Branch (Walk-in)",
+      channelName: "7-Eleven Store (Walk-in)",
       fromCDC: 27750,
       fromID1: 0,
       fromID2: 0,
@@ -38,7 +38,7 @@ export const initialNetworkModel: NetworkModel = {
       varCost: 0.5,
     },
     {
-      channelName: "Contractor Direct (Job Site)",
+      channelName: "7NOW Delivery (App)",
       fromCDC: 92250,
       fromID1: 0,
       fromID2: 0,
@@ -56,7 +56,7 @@ export const initialNetworkModel: NetworkModel = {
       varCost: 0.75,
     },
     {
-      channelName: "Will-Call / Delivery",
+      channelName: "Corporate Account Orders",
       fromCDC: 0,
       fromID1: 0,
       fromID2: 18750,
@@ -146,7 +146,7 @@ export const initialScenarios: OptimizationScenario[] = [
       },
       channelFlows: [
         {
-          channelName: "7-Eleven Branch (Walk-in)",
+          channelName: "7-Eleven Store (Walk-in)",
           fromCDC: 27750,
           fromID1: 0,
           fromID2: 0,
@@ -155,7 +155,7 @@ export const initialScenarios: OptimizationScenario[] = [
           varCost: 0.5,
         },
         {
-          channelName: "Contractor Direct (Job Site)",
+          channelName: "7NOW Delivery (App)",
           fromCDC: 92250,
           fromID1: 0,
           fromID2: 0,
@@ -173,7 +173,7 @@ export const initialScenarios: OptimizationScenario[] = [
           varCost: 0.75,
         },
         {
-          channelName: "Will-Call / Delivery",
+          channelName: "Corporate Account Orders",
           fromCDC: 0,
           fromID1: 0,
           fromID2: 12500,

@@ -14,7 +14,7 @@ export default function WarehouseAnalysisPage() {
           7-Eleven DC Operations & Analytics
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          Distribution center performance across 9 regional DCs, 5 MDCs, and 106 final-mile hubs — plumbing, HVAC, waterworks & PVF operations
+          Distribution center performance across 9 regional DCs, 5 MDCs, and 106 final-mile hubs — beverages, snacks, fresh food & tobacco operations
         </p>
       </div>
       <Tabs defaultValue="controlTower">

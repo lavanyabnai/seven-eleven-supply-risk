@@ -9,7 +9,7 @@ export default function AlertHeader() {
         <div className="flex rounded-t-lg bg-red-500 items-center text-white p-4">
           <AlertTriangle className="h-8 w-8 mr-2" />
           <span className="font-medium text-base">
-            CRITICAL ALERT: Plumbing Fixtures Picking Severely Impacted — Labor & Forklift Shortage at Front Royal VA DC
+            CRITICAL ALERT: Packaged Beverages & Snacks Picking Severely Impacted — Labor & Forklift Shortage at Front Royal VA DC
           </span>
         </div>
 
@@ -52,7 +52,7 @@ export default function AlertHeader() {
                 <p className="text-sm text-amber-700 mt-1">
                   Picking operations at 7-Eleven&apos;s Front Royal VA Regional Distribution Center are severely impacted
                   due to a 35% labor shortage (seasonal flu outbreak + 8 unfilled positions) and 40% forklift/order picker
-                  downtime. This is causing significant delays in plumbing fixture and HVAC equipment branch replenishment
+                  downtime. This is causing significant delays in packaged beverages and snack store replenishment
                   across the Mid-Atlantic and Southeast regions.
                 </p>
               </div>

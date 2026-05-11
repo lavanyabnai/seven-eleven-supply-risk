@@ -125,7 +125,7 @@ export default function SevenElevenDistributionDashboard() {
           <div className="p-4">
             <div className="text-2xl font-bold text-red-600">31%</div>
             <div className="text-sm text-gray-600">Max Direct-to-Jobsite</div>
-            <div className="text-xs text-gray-400 mt-1">0-100mi range via 5,900 fleet</div>
+            <div className="text-xs text-gray-400 mt-1">0-100mi range via 5,900 vehicle fleet</div>
           </div>
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function SevenElevenDistributionDashboard() {
         <div className="border border-gray-200 rounded-lg overflow-hidden">
           <div className="p-4">
             <p className="text-sm font-bold text-gray-900">SKU Volume Distribution</p>
-            <p className="text-xs text-gray-400 mb-2">% of total plumbing/HVAC/waterworks volume shipped</p>
+            <p className="text-xs text-gray-400 mb-2">% of total beverages/snacks/tobacco volume shipped</p>
             <ResponsiveContainer width="100%" height={250}>
               <PieChart>
                 <Pie
@@ -197,8 +197,8 @@ export default function SevenElevenDistributionDashboard() {
         {/* Direct Ship Chart */}
         <div className="border border-gray-200 rounded-lg overflow-hidden">
           <div className="p-4">
-            <p className="text-sm font-bold text-gray-900">Direct-to-Jobsite Delivery %</p>
-            <p className="text-xs text-gray-400 mb-2">% of orders shipped directly via 7-Eleven fleet (5,900 vehicles)</p>
+            <p className="text-sm font-bold text-gray-900">Direct-to-Store Delivery %</p>
+            <p className="text-xs text-gray-400 mb-2">% of orders shipped directly to store via 7-Eleven fleet (5,900 vehicles)</p>
             <ResponsiveContainer width="100%" height={250}>
               <BarChart data={directShipData}>
                 <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -274,9 +274,9 @@ export default function SevenElevenDistributionDashboard() {
               <h4 className="font-semibold text-green-600 mb-2 text-sm">Volume Distribution</h4>
               <ul className="text-sm space-y-1 text-gray-700">
                 <li>• 71% of volume ships within 250 miles of a DC or MDC</li>
-                <li>• Plumbing fixtures (heavy/bulky) dominate short-haul lanes</li>
-                <li>• HVAC equipment drives mid-distance (100-250mi) shipments</li>
-                <li>• PVF and waterworks products account for long-haul 500mi+ lanes</li>
+                <li>• Packaged beverages and snacks dominate short-haul lanes</li>
+                <li>• Coffee and hot beverages drive mid-distance (100-250mi) shipments</li>
+                <li>• Tobacco products and general merchandise account for long-haul 500mi+ lanes</li>
               </ul>
             </div>
             <div>
@@ -293,7 +293,7 @@ export default function SevenElevenDistributionDashboard() {
               <ul className="text-sm space-y-1 text-gray-700">
                 <li>• 5,900 fleet vehicles enable 31% direct delivery in short range</li>
                 <li>• Direct ship rate declines to 18% beyond 500mi (3PL handoff)</li>
-                <li>• Contractor jobsite delivery is key differentiator vs. Home Depot/Lowes</li>
+                <li>• Direct store delivery is key differentiator vs. warehouse club retailers</li>
                 <li>• Fleet utilization highest in Sun Belt and Northeast corridors</li>
               </ul>
             </div>
@@ -305,7 +305,7 @@ export default function SevenElevenDistributionDashboard() {
       <div className="border border-gray-200 rounded-lg overflow-hidden">
         <div className="p-4">
           <p className="text-sm text-gray-700 text-center italic">
-            7-Eleven operates 9 regional DCs, 5 MDCs, 3 import centers, 106 final-mile hubs, and 1,517 branches — serving 36,000+ supplier SKUs across plumbing, HVAC, waterworks, and industrial segments ($31.3B revenue FY2025)
+            7-Eleven operates 9 regional DCs, 5 MDCs, 3 import centers, 106 final-mile hubs, and 1,517 branches — serving 36,000+ supplier SKUs across beverages, snacks, fresh food, tobacco, and general merchandise segments ($31.3B revenue FY2025)
           </p>
         </div>
       </div>

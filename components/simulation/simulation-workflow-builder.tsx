@@ -79,7 +79,7 @@ const initialNodes: Node[] = [
         priority: 1,
       },
       methods: {
-        onArrival: "// FTL from Kohler WI, Moen NC, A.O. Smith TN",
+        onArrival: "// FTL from Core-Mark TX, Coca-Cola GA, Hershey PA",
         validation: "return entity.type === 'inbound_shipment';",
       },
     },
@@ -137,7 +137,7 @@ const initialNodes: Node[] = [
         falseProbability: 0.03,
       },
       methods: {
-        onEnter: "// QC inspection: faucets, water heaters, HVAC",
+        onEnter: "// QC inspection: beverages, snacks, tobacco",
         onExit: "// Route to putaway or returns",
       },
     },
@@ -172,11 +172,11 @@ const initialNodes: Node[] = [
       properties: {
         capacity: 850000,
         processingTime: 0,
-        resourceName: "NewportNewsDC",
+        resourceName: "DallasDC",
         cost: 1.25,
       },
       methods: {
-        onEnter: "// Stock added: faucets, pipe, water heaters, HVAC",
+        onEnter: "// Stock added: beverages, snacks, tobacco, coffee",
         onExit: "// Pick triggered by branch order",
       },
     },

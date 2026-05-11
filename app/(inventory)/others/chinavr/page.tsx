@@ -54,7 +54,7 @@ export default function SevenElevenImportSourcingPage() {
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">7-Eleven International Sourcing — China Import Logistics</h1>
           <p className="text-lg text-gray-600">
-            Inbound transportation cost analysis for plumbing fixtures, faucets, and PVF products sourced from China to 7-Eleven import centers
+            Inbound transportation cost analysis for packaged snacks, beverages, and general merchandise sourced from China to 7-Eleven import centers
           </p>
           <div className="flex gap-3 mt-3">
             <div className="bg-blue-100 px-3 py-1 rounded-full text-sm text-blue-800">3 Import Centers</div>

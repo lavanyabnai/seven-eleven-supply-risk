@@ -16,10 +16,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const ganttData = [
   {
     id: 1,
-    vessel: "Kohler Faucets (Foshan)",
-    route: "Foshan → Long Beach → San Bernardino DC",
+    vessel: "Core-Mark Snacks (Guangzhou)",
+    route: "Guangzhou → Long Beach → San Bernardino DC",
     timeline: [
-      { start: 13350, end: 13355, type: "service", status: "Loading at Foshan port" },
+      { start: 13350, end: 13355, type: "service", status: "Loading at Guangzhou port" },
       { start: 13355, end: 13365, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13365, end: 13368, type: "storm", status: "Typhoon delay - South China Sea" },
       { start: 13368, end: 13385, type: "sailing", status: "Sailing (normal conditions)" },
@@ -29,10 +29,10 @@ const ganttData = [
   },
   {
     id: 2,
-    vessel: "Moen Faucets (Jiangmen)",
-    route: "Jiangmen → Long Beach → Sacramento DC",
+    vessel: "Coca-Cola Beverages (Dongguan)",
+    route: "Dongguan → Long Beach → Sacramento DC",
     timeline: [
-      { start: 13352, end: 13357, type: "service", status: "Loading at Jiangmen port" },
+      { start: 13352, end: 13357, type: "service", status: "Loading at Dongguan port" },
       { start: 13357, end: 13370, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13370, end: 13375, type: "storm", status: "Pacific storm delay" },
       { start: 13375, end: 13392, type: "sailing", status: "Sailing (normal conditions)" },
@@ -42,7 +42,7 @@ const ganttData = [
   },
   {
     id: 3,
-    vessel: "Delta Faucet Components (Zhuhai)",
+    vessel: "Mondelēz Snacks (Zhuhai)",
     route: "Zhuhai → Los Angeles → San Bernardino DC",
     timeline: [
       { start: 13348, end: 13353, type: "service", status: "Loading at Zhuhai FTZ" },
@@ -55,7 +55,7 @@ const ganttData = [
   },
   {
     id: 4,
-    vessel: "TOTO Toilets (Kitakyushu)",
+    vessel: "Warabeya Nichiyo Fresh Food (Kitakyushu)",
     route: "Kitakyushu → Long Beach → San Bernardino DC",
     timeline: [
       { start: 13351, end: 13356, type: "service", status: "Loading at Kitakyushu port" },
@@ -68,7 +68,7 @@ const ganttData = [
   },
   {
     id: 5,
-    vessel: "Navien Tankless WH (Sejong)",
+    vessel: "Hershey Confections (Sejong)",
     route: "Busan → Oakland → Sacramento DC",
     timeline: [
       { start: 13349, end: 13354, type: "service", status: "Loading at Busan port" },
@@ -81,33 +81,33 @@ const ganttData = [
   },
   {
     id: 6,
-    vessel: "Grohe Faucets (Hemer, DE)",
-    route: "Hamburg → Norfolk → Newport News DC",
+    vessel: "AB InBev Beverages (Brussels)",
+    route: "Hamburg → Norfolk → Core-Mark DC - Westlake TX",
     timeline: [
       { start: 13350, end: 13355, type: "service", status: "Loading at Hamburg port" },
       { start: 13355, end: 13371, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13371, end: 13375, type: "storm", status: "North Atlantic storm" },
       { start: 13375, end: 13389, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13389, end: 13393, type: "service", status: "Port of Norfolk - unloading" },
-      { start: 13393, end: 13396, type: "sailing", status: "Truck to Newport News DC" },
+      { start: 13393, end: 13396, type: "sailing", status: "Truck to Core-Mark DC - Westlake TX" },
     ],
   },
   {
     id: 7,
-    vessel: "Viega Fittings (Attendorn, DE)",
-    route: "Hamburg → Savannah → Newport News DC",
+    vessel: "Altria Tobacco (Hamburg)",
+    route: "Hamburg → Savannah → Core-Mark DC - Westlake TX",
     timeline: [
       { start: 13352, end: 13357, type: "service", status: "Loading at Hamburg port" },
       { start: 13357, end: 13377, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13377, end: 13380, type: "storm", status: "Atlantic weather delay" },
       { start: 13380, end: 13395, type: "sailing", status: "Sailing (normal conditions)" },
       { start: 13395, end: 13400, type: "service", status: "Port of Savannah - unloading" },
-      { start: 13400, end: 13408, type: "sailing", status: "Rail to Newport News DC" },
+      { start: 13400, end: 13408, type: "sailing", status: "Rail to Core-Mark DC - Westlake TX" },
     ],
   },
   {
     id: 8,
-    vessel: "Grohe Thailand (Klaeng)",
+    vessel: "McLane Merchandise (Laem Chabang)",
     route: "Laem Chabang → Long Beach → San Bernardino DC",
     timeline: [
       { start: 13348, end: 13353, type: "service", status: "Loading at Laem Chabang" },
@@ -325,18 +325,18 @@ export default function LogisticsGanttRoute() {
                         </SelectItem>
                       </SelectContent>
                     </Select>
-                    <Select defaultValue="foshan">
+                    <Select defaultValue="guangzhou">
                       <SelectTrigger className="h-8 text-xs">
                         <SelectValue placeholder="City" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="foshan">Foshan (Kohler)</SelectItem>
-                        <SelectItem value="jiangmen">Jiangmen (Moen)</SelectItem>
-                        <SelectItem value="zhuhai">Zhuhai (Delta)</SelectItem>
-                        <SelectItem value="kitakyushu">Kitakyushu (TOTO)</SelectItem>
-                        <SelectItem value="sejong">Sejong (Navien)</SelectItem>
-                        <SelectItem value="hemer">Hemer (Grohe)</SelectItem>
-                        <SelectItem value="monterrey">Monterrey (Am. Std.)</SelectItem>
+                        <SelectItem value="guangzhou">Guangzhou (Core-Mark)</SelectItem>
+                        <SelectItem value="dongguan">Dongguan (Coca-Cola)</SelectItem>
+                        <SelectItem value="zhuhai">Zhuhai (Mondelēz)</SelectItem>
+                        <SelectItem value="kitakyushu">Kitakyushu (Warabeya Nichiyo)</SelectItem>
+                        <SelectItem value="sejong">Sejong (Hershey)</SelectItem>
+                        <SelectItem value="brussels">Brussels (AB InBev)</SelectItem>
+                        <SelectItem value="laem-chabang">Laem Chabang (McLane)</SelectItem>
                       </SelectContent>
                     </Select>
                     <Select defaultValue="nansha">
@@ -546,7 +546,7 @@ export default function LogisticsGanttRoute() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="san-bernardino">San Bernardino DC</SelectItem>
-                        <SelectItem value="newport-news">Newport News DC</SelectItem>
+                        <SelectItem value="westlake-tx">Core-Mark DC - Westlake TX</SelectItem>
                         <SelectItem value="sacramento">Sacramento DC</SelectItem>
                         <SelectItem value="dallas">Dallas DC</SelectItem>
                         <SelectItem value="atlanta">Atlanta DC</SelectItem>

@@ -79,11 +79,11 @@ interface InventoryKPI {
 // 7-Eleven Enterprises slow-moving inventory aging data
 const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
   {
-    id: "FRG-1001",
-    sku: "FRG-WH-4050",
-    description: "Bradford White 40-gal Water Heater (Discontinued Model)",
+    id: "7S-COF-001",
+    sku: "7S-COF-001",
+    description: "7-Select Hot Coffee Blend 12oz (Slow-Moving Inventory)",
     category: "Slow-Moving Inventory",
-    location: "7-Eleven DC - Newport News, VA",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 245,
     unitCost: 199.99,
     totalValue: 48997.55,
@@ -95,36 +95,36 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     nextGenReleaseDate: "2024-10-15",
     recommendations: [
       {
-        id: "rec-frg1001-1",
-        type: "Contractor Clearance",
-        action: "Offer 25% discount to contractor accounts for discontinued water heater clearance",
-        impact: "Move 70% of inventory within 45 days before new efficiency model launch",
+        id: "rec-7scof-1",
+        type: "Franchise Operator Clearance",
+        action: "Offer 25% discount to franchise operator accounts for slow-moving coffee blend clearance",
+        impact: "Move 70% of inventory within 45 days before new blend launch",
         priority: "high",
         potentialSavings: 12249.39,
         timeframe: "30-45 days",
       },
       {
-        id: "rec-frg1001-2",
-        type: "Bundle Strategy",
-        action: "Create water heater install kits bundled with expansion tanks and connectors",
-        impact: "Increase perceived value while clearing aging water heater inventory",
+        id: "rec-7scof-2",
+        type: "Combo Pack Bundle",
+        action: "Create coffee combo packs bundled with creamers and sweeteners",
+        impact: "Increase perceived value while clearing aging coffee blend inventory",
         priority: "high",
         potentialSavings: 9799.51,
         timeframe: "60 days",
       },
       {
-        id: "rec-frg1001-3",
-        type: "Property Management Sales",
-        action: "Target property management companies and multi-family housing for bulk purchases",
-        impact: "Leverage lower price point for volume replacement buyers",
+        id: "rec-7scof-3",
+        type: "Core-Mark Distribution Push",
+        action: "Offer to Core-Mark distribution for bulk purchases to regional stores",
+        impact: "Leverage lower price point for volume buyers",
         priority: "medium",
         timeframe: "90 days",
       },
       {
-        id: "rec-frg1001-4",
-        type: "Trade-Up Program",
-        action: "Offer trade-up credit toward high-efficiency models when purchasing remaining stock",
-        impact: "Drive new model sales while clearing discontinued inventory",
+        id: "rec-7scof-4",
+        type: "Upgrade Program",
+        action: "Offer upgrade credit toward premium blends when purchasing remaining stock",
+        impact: "Drive new blend sales while clearing slower inventory",
         priority: "medium",
         potentialSavings: 7349.63,
         timeframe: "120 days",
@@ -141,9 +141,9 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "high",
   },
   {
-    id: "FRG-1002",
-    sku: "FRG-WH-4050-LP",
-    description: "Bradford White 40-gal Water Heater LP (Discontinued Model)",
+    id: "7S-SLR-001",
+    sku: "7S-SLR-001",
+    description: "Slurpee Mix Concentrate (Slow-Moving Inventory)",
     category: "Slow-Moving Inventory",
     location: "7-Eleven DC - Mocksville, NC",
     quantity: 156,
@@ -157,18 +157,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     nextGenReleaseDate: "2024-10-15",
     recommendations: [
       {
-        id: "rec-frg1002-1",
-        type: "Rural Market Push",
-        action: "Target LP water heater demand in rural and off-grid contractor territories",
-        impact: "Position as value option for LP-dependent markets",
+        id: "rec-7sslr-1",
+        type: "Store Promotion Push",
+        action: "Target Slurpee Mix Concentrate demand in rural and underserved store territories",
+        impact: "Position as value option for high-traffic summer markets",
         priority: "high",
         potentialSavings: 9359.69,
         timeframe: "45 days",
       },
       {
-        id: "rec-frg1002-2",
+        id: "rec-7sslr-2",
         type: "Regional Pricing",
-        action: "Apply region-specific discounts in slower-moving branch territories",
+        action: "Apply region-specific discounts in slower-moving store territories",
         impact: "Optimize pricing by region to accelerate movement",
         priority: "medium",
         timeframe: "60 days",
@@ -185,11 +185,11 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "high",
   },
   {
-    id: "FRG-1003",
-    sku: "FRG-HV-SEER13",
-    description: "13 SEER AC Condensing Unit 3-Ton (Being Replaced by 15 SEER Min)",
+    id: "ED-RBL-001",
+    sku: "ED-RBL-001",
+    description: "Red Bull Energy Drink Case (Slow-Moving Inventory)",
     category: "Slow-Moving Inventory",
-    location: "7-Eleven DC - Newport News, VA",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 89,
     unitCost: 399.99,
     totalValue: 35599.11,
@@ -200,18 +200,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2023-10-10",
     recommendations: [
       {
-        id: "rec-frg1003-1",
-        type: "Regulatory Deadline Push",
-        action: "Promote 13 SEER units to contractors before DOE minimum efficiency change takes effect",
-        impact: "Leverage remaining installation window to move current inventory",
+        id: "rec-edrbl-1",
+        type: "Seasonal Promotion Push",
+        action: "Promote Red Bull energy drink cases ahead of summer peak demand window",
+        impact: "Leverage seasonal demand window to move current inventory",
         priority: "medium",
         timeframe: "30 days",
       },
       {
-        id: "rec-frg1003-2",
-        type: "Replacement Market Bundle",
-        action: "Create HVAC install kits bundled with line sets, thermostats, and pads",
-        impact: "Increase value proposition for replacement-market contractors",
+        id: "rec-edrbl-2",
+        type: "Combo Pack Bundle",
+        action: "Create energy drink bundles with snack packs and convenience items",
+        impact: "Increase value proposition for high-traffic store locations",
         priority: "medium",
         timeframe: "45 days",
       },
@@ -227,9 +227,9 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "medium",
   },
   {
-    id: "FRG-1004",
-    sku: "FRG-HV-SEER13-5T",
-    description: "13 SEER AC Condensing Unit 5-Ton (Being Replaced by 15 SEER Min)",
+    id: "ED-MON-001",
+    sku: "ED-MON-001",
+    description: "Monster Energy Drink Case (Slow-Moving Inventory)",
     category: "Slow-Moving Inventory",
     location: "7-Eleven DC - Dallas, TX",
     quantity: 67,
@@ -242,18 +242,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2023-10-10",
     recommendations: [
       {
-        id: "rec-frg1004-1",
-        type: "Commercial HVAC Push",
-        action: "Target commercial contractors and light commercial projects needing budget HVAC",
-        impact: "Target cost-sensitive commercial customer segments",
+        id: "rec-edmon-1",
+        type: "High-Volume Store Push",
+        action: "Target high-traffic franchise operators and store managers needing bulk energy drink supply",
+        impact: "Target cost-sensitive high-volume store segments",
         priority: "medium",
         timeframe: "60 days",
       },
       {
-        id: "rec-frg1004-2",
-        type: "Builder Program",
-        action: "Offer volume discounts to home builders for spec-home installations",
-        impact: "Move volume through builder channel before regulation change",
+        id: "rec-edmon-2",
+        type: "Core-Mark Bulk Program",
+        action: "Offer volume discounts through Core-Mark distribution for store clusters",
+        impact: "Move volume through distribution channel before season change",
         priority: "low",
         timeframe: "90 days",
       },
@@ -269,11 +269,11 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "low",
   },
   {
-    id: "FRG-1005",
-    sku: "FRG-PV-2040",
-    description: "2in PVC Sch.40 Union - Slow Moving",
+    id: "TC-MRL-001",
+    sku: "TC-MRL-001",
+    description: "Marlboro Cigarettes Carton (Slow-Moving Inventory)",
     category: "Slow-Moving Inventory",
-    location: "7-Eleven DC - Newport News, VA",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 34,
     unitCost: 999.99,
     totalValue: 33999.66,
@@ -284,28 +284,28 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2022-10-25",
     recommendations: [
       {
-        id: "rec-frg1005-1",
-        type: "Branch Redistribution",
-        action: "Redistribute to branches with higher plumbing repair demand in older housing markets",
-        impact: "Target branches serving aging infrastructure areas with higher fitting demand",
+        id: "rec-tcmrl-1",
+        type: "Store Redistribution",
+        action: "Redistribute to stores with higher tobacco demand in established markets",
+        impact: "Target stores serving high-frequency tobacco buyers",
         priority: "high",
         potentialSavings: 10199.9,
         timeframe: "90 days",
       },
       {
-        id: "rec-frg1005-2",
-        type: "Contractor Discount",
-        action: "Apply 40% discount for contractor account bulk purchases",
-        impact: "Aggressive pricing to clear slow-moving fitting inventory",
+        id: "rec-tcmrl-2",
+        type: "Franchise Operator Discount",
+        action: "Apply 40% discount for franchise operator bulk purchases",
+        impact: "Aggressive pricing to clear slow-moving tobacco inventory",
         priority: "high",
         potentialSavings: 13599.86,
         timeframe: "60 days",
       },
       {
-        id: "rec-frg1005-3",
-        type: "Municipal Projects",
-        action: "Offer to municipal water/sewer departments for maintenance stock",
-        impact: "Move inventory to government accounts with steady demand",
+        id: "rec-tcmrl-3",
+        type: "Core-Mark Distribution",
+        action: "Offer to Core-Mark Distribution for redistribution to high-demand stores",
+        impact: "Move inventory to Core-Mark accounts with steady demand",
         priority: "medium",
         timeframe: "120 days",
       },
@@ -321,11 +321,11 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "high",
   },
   {
-    id: "FRG-2001",
-    sku: "FRG-FIT-CU34",
-    description: "3/4in Copper Press Fitting Tee - Overstock",
-    category: "Plumbing Fittings",
-    location: "7-Eleven DC - Newport News, VA",
+    id: "MDZ-CHI-001",
+    sku: "MDZ-CHI-001",
+    description: "Mondelēz Chips Ahoy Cookies - Overstock",
+    category: "Packaged Snacks & Candy",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 312,
     unitCost: 49.99,
     totalValue: 15596.88,
@@ -336,18 +336,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2020-10-13",
     recommendations: [
       {
-        id: "rec-frg2001-1",
+        id: "rec-mdzchi-1",
         type: "Bundle Inclusion",
-        action: "Include in plumbing rough-in kits for new construction projects",
-        impact: "Move fitting inventory while enhancing project kit value proposition",
+        action: "Include in snack variety packs and combo deals for store promotions",
+        impact: "Move snack inventory while enhancing combo pack value proposition",
         priority: "high",
         timeframe: "45 days",
       },
       {
-        id: "rec-frg2001-2",
-        type: "Counter Sales Push",
-        action: "Feature at branch counter displays with promotional pricing for walk-in contractors",
-        impact: "Target walk-in contractor traffic for accessory sales",
+        id: "rec-mdzchi-2",
+        type: "In-Store Display Push",
+        action: "Feature at store counter displays with promotional pricing for in-store traffic",
+        impact: "Target walk-in store traffic for snack sales",
         priority: "medium",
         timeframe: "60 days",
       },
@@ -362,10 +362,10 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "low",
   },
   {
-    id: "FRG-2002",
-    sku: "FRG-VLV-PRV34",
-    description: "3/4in Pressure Reducing Valve - Watts LF25AUB",
-    category: "Plumbing Valves",
+    id: "BV-CNT-001",
+    sku: "BV-CNT-001",
+    description: "Beverage Concentrate Syrup - Overstock",
+    category: "Beverage Concentrate",
     location: "7-Eleven DC - Mocksville, NC",
     quantity: 189,
     unitCost: 79.99,
@@ -377,18 +377,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2020-10-13",
     recommendations: [
       {
-        id: "rec-frg2002-1",
-        type: "Code Compliance Kit",
-        action: "Bundle PRV with expansion tanks for code-compliant water heater install kits",
-        impact: "Target contractors needing code-compliant install packages",
+        id: "rec-bvcnt-1",
+        type: "Slurpee Mix Bundle",
+        action: "Bundle Beverage Concentrate with Slurpee machines for store operator packages",
+        impact: "Target franchise operators needing bundled beverage solutions",
         priority: "medium",
         timeframe: "60 days",
       },
       {
-        id: "rec-frg2002-2",
-        type: "Municipal/Commercial",
-        action: "Market to commercial plumbing contractors for building maintenance",
-        impact: "Position for commercial building valve replacement projects",
+        id: "rec-bvcnt-2",
+        type: "Core-Mark Commercial",
+        action: "Market to Core-Mark commercial accounts for large store distribution",
+        impact: "Position for large volume convenience store distribution",
         priority: "low",
         timeframe: "90 days",
       },
@@ -403,10 +403,10 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "medium",
   },
   {
-    id: "FRG-2003",
-    sku: "FRG-FP-SPRNK12",
-    description: "1/2in Fire Sprinkler Head - Residential Pendent",
-    category: "Fire Protection",
+    id: "FZ-ICE-001",
+    sku: "FZ-ICE-001",
+    description: "Ice Cream Novelty Pack - Slow-Moving Inventory",
+    category: "Frozen Treats / Ice Cream",
     location: "7-Eleven DC - Dallas, TX",
     quantity: 267,
     unitCost: 39.99,
@@ -418,18 +418,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2020-10-13",
     recommendations: [
       {
-        id: "rec-frg2003-1",
-        type: "Fire Protection Bundle",
-        action: "Create fire sprinkler kits for residential new-construction projects",
-        impact: "Target builders and fire protection contractors with bundled solutions",
+        id: "rec-fzice-1",
+        type: "Frozen Treats Bundle",
+        action: "Create frozen treat variety packs for high-traffic summer store promotions",
+        impact: "Target franchise operators and store managers with bundled frozen solutions",
         priority: "medium",
         timeframe: "45 days",
       },
       {
-        id: "rec-frg2003-2",
-        type: "Retrofit Market",
-        action: "Promote to fire protection contractors serving retrofit and remodel markets",
-        impact: "Move inventory through retrofit channel with growing code adoption",
+        id: "rec-fzice-2",
+        type: "Seasonal Market Push",
+        action: "Promote to franchise operators serving high-traffic summer store locations",
+        impact: "Move inventory through seasonal channel with growing summer demand",
         priority: "low",
         timeframe: "60 days",
       },
@@ -444,11 +444,11 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "low",
   },
   {
-    id: "FRG-3001",
-    sku: "FRG-WW-GV6",
-    description: "6in Ductile Iron Gate Valve - Waterworks",
-    category: "Waterworks",
-    location: "7-Eleven DC - Newport News, VA",
+    id: "BW-BUD-001",
+    sku: "BW-BUD-001",
+    description: "Budweiser Beer 24pk - Beer & Wine",
+    category: "Beer & Wine",
+    location: "7-Eleven DC - Dallas, TX",
     quantity: 78,
     unitCost: 129.99,
     totalValue: 10139.22,
@@ -459,18 +459,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2023-10-10",
     recommendations: [
       {
-        id: "rec-frg3001-1",
-        type: "Municipal Sales",
-        action: "Target municipal water departments for infrastructure replacement programs",
-        impact: "Serve municipal replacement and upgrade market",
+        id: "rec-bwbud-1",
+        type: "AB InBev Distribution Push",
+        action: "Target AB InBev distribution accounts for high-volume store replenishment",
+        impact: "Serve high-volume beer & wine store market",
         priority: "medium",
         timeframe: "60 days",
       },
       {
-        id: "rec-frg3001-2",
-        type: "Utility Contractor Push",
-        action: "Promote to utility contractors with active waterworks projects",
-        impact: "Move inventory through active project pipeline",
+        id: "rec-bwbud-2",
+        type: "Franchise Operator Push",
+        action: "Promote to franchise operators with active beer & wine store sales",
+        impact: "Move inventory through active store pipeline",
         priority: "low",
         timeframe: "90 days",
       },
@@ -485,10 +485,10 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     techObsolescenceRisk: "low",
   },
   {
-    id: "FRG-4001",
-    sku: "FRG-HV-FILTER-BULK",
-    description: "HVAC Air Filter Multi-Pack (16x25x1) - Bulk Overstock",
-    category: "HVAC Supplies",
+    id: "GM-BTC-001",
+    sku: "GM-BTC-001",
+    description: "General Merchandise Battery Pack - Bulk Overstock",
+    category: "General Merchandise",
     location: "7-Eleven DC - Dallas, TX",
     quantity: 1500,
     unitCost: 29.99,
@@ -500,18 +500,18 @@ const sevenElevenInventoryData: SlowMovingInventoryItem[] = [
     launchDate: "2023-06-15",
     recommendations: [
       {
-        id: "rec-frg4001-1",
+        id: "rec-gmbtc-1",
         type: "Seasonal Push",
-        action: "Promote bulk filter packs to HVAC contractors ahead of cooling season",
-        impact: "Increase filter sales tied to seasonal HVAC maintenance demand",
+        action: "Promote bulk battery packs to store managers ahead of holiday and back-to-school season",
+        impact: "Increase battery sales tied to seasonal general merchandise demand",
         priority: "high",
         timeframe: "30 days",
       },
       {
-        id: "rec-frg4001-2",
-        type: "Property Management",
-        action: "Offer bulk filter discount to property management companies for maintenance cycles",
-        impact: "Move overstock through recurring maintenance channel",
+        id: "rec-gmbtc-2",
+        type: "McLane Distribution",
+        action: "Offer bulk battery discount through McLane distribution for store maintenance cycles",
+        impact: "Move overstock through recurring distribution channel",
         priority: "medium",
         timeframe: "45 days",
       },
@@ -735,7 +735,7 @@ export default function MetaVRAgingDashboard() {
             <div>
               <CardTitle className="text-2xl font-bold">7-Eleven Slow-Moving Inventory Aging Dashboard</CardTitle>
               <CardDescription>
-                Wholesale distribution products with aging alerts and obsolescence tracking
+                7-Eleven convenience store products with aging alerts and obsolescence tracking
               </CardDescription>
             </div>
 
@@ -965,12 +965,12 @@ export default function MetaVRAgingDashboard() {
                           <DropdownMenuItem>View Product Details</DropdownMenuItem>
                           <DropdownMenuItem>View Sales History</DropdownMenuItem>
                           <DropdownMenuSeparator />
-                          <DropdownMenuItem>Create Install Kit Bundle</DropdownMenuItem>
+                          <DropdownMenuItem>Create Combo Pack Bundle</DropdownMenuItem>
                           <DropdownMenuItem>Apply Discount</DropdownMenuItem>
-                          <DropdownMenuItem>Transfer to High-Demand Branch</DropdownMenuItem>
+                          <DropdownMenuItem>Transfer to High-Demand Store</DropdownMenuItem>
                           <DropdownMenuSeparator />
-                          <DropdownMenuItem>Target Contractor Accounts</DropdownMenuItem>
-                          <DropdownMenuItem>Offer to Municipal/Commercial</DropdownMenuItem>
+                          <DropdownMenuItem>Target Franchise Operator Accounts</DropdownMenuItem>
+                          <DropdownMenuItem>Offer to Core-Mark Distribution</DropdownMenuItem>
                           <DropdownMenuSeparator />
                           <DropdownMenuItem className="text-red-600">Mark for Liquidation</DropdownMenuItem>
                         </DropdownMenuContent>
@@ -1163,7 +1163,7 @@ export default function MetaVRAgingDashboard() {
       {/* VR-Specific Legend */}
       <Card>
         <CardHeader className="pb-2">
-          <CardTitle className="text-sm">Inventory Management Guide</CardTitle>
+          <CardTitle className="text-sm">7-Eleven Convenience Store Inventory Management Guide</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1197,14 +1197,14 @@ export default function MetaVRAgingDashboard() {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Wholesale Distribution Considerations:</h4>
+              <h4 className="font-semibold mb-2">7-Eleven Convenience Store Considerations:</h4>
               <ul className="text-sm space-y-1 text-muted-foreground">
-                <li>• Regulatory changes (DOE efficiency standards) drive product obsolescence</li>
-                <li>• New model introductions significantly impact older product demand</li>
-                <li>• Consider install-kit bundling strategies to increase value proposition</li>
-                <li>• Property management and municipal accounts may accept older models</li>
-                <li>• Seasonal demand patterns (HVAC cooling/heating) affect product movement</li>
-                <li>• Contractor account attach rates are crucial for profitability</li>
+                <li>• Seasonal demand patterns (summer beverages, holiday snacks) affect product movement</li>
+                <li>• New SKU introductions significantly impact older product demand</li>
+                <li>• Consider combo-pack bundling strategies to increase value proposition</li>
+                <li>• Core-Mark and McLane distribution accounts may accept slower-moving SKUs</li>
+                <li>• Franchise operator account attach rates are crucial for profitability</li>
+                <li>• Store manager and franchise operator attach rates drive category performance</li>
               </ul>
             </div>
           </div>
